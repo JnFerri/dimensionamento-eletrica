@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Botao = styled.button`
-    color: ${props=> props.color};
+    color: ${props=> props.color || 'black'};
     background-color: ${props=> props.backgroundcolor || 'white'};
     border-radius: ${props=> props.border_radius || '0px'};
     width: ${props=> props.width ||'100%'};
@@ -17,6 +17,7 @@ const Botao = styled.button`
       }
     &:hover {
         transform: scale(1.05);
+        color:${props=>props.colorHover || props.color}
     }
 `
 
