@@ -7,6 +7,7 @@ import Titulo4 from "../../Components/Titulo4/Titulo4.js"
 import Label from "../../Components/Label/Label";
 import Select from "../../Components/Select/Select.js"
 import Option from "../../Components/Select/Option/Option.js"
+import controladores from "../../Dados/controladores.js";
 
 const DimensionamentoContainer = styled.body`
 display:flex;
@@ -18,7 +19,7 @@ align-items:center;
 const DimensionamentoSection = styled.section`
 display:flex;
 flex-direction:column;
-width:80%;
+width:70%;
 padding:1rem 0;
 background-color:black;
 border:0.5px orange solid;
@@ -40,15 +41,22 @@ function Dimensionamento(){
             <Header/>
             <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black'>COLETA DE DADOS DE DIMENSIONAMENTO:</Titulo2>
             <DimensionamentoSection>
-                <Titulo4>Dados do Galpão</Titulo4>
+                <Titulo4 color="orange" font_size='32px'>Dados do Galpão</Titulo4>
                 <Form width='90%' >
                     <Label color="white">Dimensões do Galpão (m)</Label>
                 <FormDivLinha>
-                    <Input padding='20px 20px' width='30%' border='orange 0.5px solid' border_radius='10px' placeholder="Comprimento"></Input>
-                    <Input padding='20px 20px' width='30%' border='orange 0.5px solid' border_radius='10px' placeholder="Largura"></Input>
-                    <Input padding='20px 20px' width='30%' border='orange 0.5px solid' border_radius='10px' placeholder="Altura"></Input>
+                    <Input padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Comprimento"></Input>
+                    <Input padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Largura"></Input>
+                    <Input padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Altura"></Input>
                 </FormDivLinha>
-                    
+                    <Select padding='20px 20px' border='orange 0.5px solid' border_radius='10px'>
+                    <Option value={''} disabled selected hidden backgroundcolor ='orange' color="black" font_size='22px' border='0.1px solid black'>Controlador...</Option>
+                        {
+                            controladores.map(controlador => (
+                                <Option background_color ='orange' margin='1px 5px'color="black" font_size='22px' border='0.1px solid black'>{controlador}</Option>
+                            ))
+                        }
+                    </Select>
                 </Form>
             </DimensionamentoSection>
         </DimensionamentoContainer>
