@@ -24,7 +24,7 @@ function Login({setSituacaoLogin}){
     const navigate = useNavigate();
 
     const handleRetornaLogin = () => {
-        navigate("/home");
+        navigate("/dimensionamento");
     }
 
     const [Usuario, setUsuario] = useState('')

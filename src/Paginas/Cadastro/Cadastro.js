@@ -7,7 +7,7 @@ import ImagemPecas from "../../Images/pecas.png"
 import Header from "../../Components/Header/Header"
 import Titulo2 from "../../Components/Titulo2/Titulo2.js"
 import { useNavigate } from "react-router-dom"
-const CadastroBody = styled.body`
+const CadastroBody = styled.main`
 display:flex;
 flex-direction:column;
 width:100%;
