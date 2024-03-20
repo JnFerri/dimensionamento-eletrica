@@ -7,7 +7,8 @@ const Input = styled.input`
     border: ${props => props.border || '0px'};
     border-radius: ${props => props.border_radius || '0px'};
     text-align:${props => props.text_align || "center"};
-    font-size: ${props => props.font_size || '14px'}
+    font-size: ${props => props.font_size || '14px'};
+    background-color:${props => props.background_color || 'white'};
 `
 
 export default Input

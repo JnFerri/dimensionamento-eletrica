@@ -4,7 +4,8 @@ import Header from "../../Components/Header/Header";
 import DimensionamentoGalpao from "../../Components/DimensionamentoGalpao/DimensionamentoGalpao.js";
 import { useEffect, useState } from "react";
 import DimensionamentoVentilacao from "../../Components/DimensionamentoVentilacao/DimensionamentoVentilacao.js";
-import Botao from "../../Components/Botao/Botao.js";
+import Form from "../../Components/Form/Form.js"
+import Input from "../../Components/Input/Input.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -33,7 +34,15 @@ function Dimensionamento(){
     const [PotenciaVentiladoresForm,setPotenciaVentiladoresForm] = useState('')
     const [TodosOsDados, setTodosOsDados] = useState('')
 
-    function DefineDados(){
+    const todosDadosGalpao = {
+        setComprimentoForm,setLarguraForm,setAlturaForm,setControladorForm,setRedeEletricaForm,setProtecaoMotorForm,setMarcaForm,setQuantidadeCaixaForm,setSegurancaForm,ComprimentoForm,LarguraForm,AlturaForm,ControladorForm,RedeEletricaForm,ProtecaoMotorForm,MarcaForm,QuantidadeCaixaForm,SegurancaForm
+    }
+    const todosDadosVentilacao = {
+        setQuantidadeExaustoresForm,setPotenciaExaustoresForm,setQuantidadeAcCortinasForm,setPotenciaAcCortinasForm,setQuantidadeAcInletForm,setPotenciaAcInletForm,setPossuiAtuadorInlet,setQuantidadeVentiladoresForm,setPotenciaVentiladoresForm,QuantidadeExaustoresForm,PotenciaExaustoresForm,QuantidadeAcCortinasForm,PotenciaAcCortinasForm,QuantidadeAcInletForm,PotenciaAcInletForm,PossuiAtuadorInlet,QuantidadeVentiladoresForm,PotenciaVentiladoresForm
+    }
+
+    async function DefineDados(event){
+        event.preventDefault()
       setDadosGalpao({
             comprimento:ComprimentoForm,
             largura:LarguraForm,
@@ -72,16 +81,10 @@ function Dimensionamento(){
         setPotenciaVentiladoresForm('')
        }
 
-   async function EnviarDados(){
-        await DefineDados()
-        setTodosOsDados({
-            dadosGalpao ,
-            dadosVentilacao
-        })
-    }
-
-    const [dadosGalpao,setDadosGalpao] = useState({
-        comprimento:0,
+       
+       
+       const [dadosGalpao,setDadosGalpao] = useState({
+           comprimento:0,
         largura:0,
         altura:0,
         controlador:'',
@@ -91,62 +94,40 @@ function Dimensionamento(){
         quantidadeCaixas:'',
         Segurança:''
     })
-
+    
     const [dadosVentilacao,setDadosVentilacao] = useState({
         exaustor:{quantidade:0,potencia:0},
         acCortina:{quantidade:0,potencia:0},
         acInlet:{quantidade:0,potencia:0,atuador:false},
         ventilador:{quantidade:0,potencia:0},
     })
+    
+    
+    useEffect(() =>{
+     setTodosOsDados({
+         dadosGalpao ,
+         dadosVentilacao
+     })
+ },[dadosGalpao, dadosVentilacao])
 
     useEffect(() =>{
         console.log(TodosOsDados)
     },[TodosOsDados])
+    
     return(
         <DimensionamentoContainer>
+            <Form width='100%' onSubmit={DefineDados}>
             <Header/>
             <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black'>COLETA DE DADOS DE DIMENSIONAMENTO:</Titulo2>
             <DimensionamentoGalpao 
-           setComprimentoForm={setComprimentoForm}
-            setLarguraForm={setLarguraForm}
-            setAlturaForm={setAlturaForm}
-            setControladorForm={setControladorForm}
-            setRedeEletricaForm={setRedeEletricaForm}
-            setProtecaoMotorForm={setProtecaoMotorForm}
-            setMarcaForm={setMarcaForm}
-            setQuantidadeCaixaForm={setQuantidadeCaixaForm}
-            setSegurancaForm={setSegurancaForm}
-            ComprimentoForm={ComprimentoForm}
-            LarguraForm={LarguraForm}
-            AlturaForm={AlturaForm}
-            ControladorForm={ControladorForm}
-            RedeEletricaForm={RedeEletricaForm}
-            ProtecaoMotorForm={ProtecaoMotorForm}
-            MarcaForm={MarcaForm}
-            QuantidadeCaixaForm={QuantidadeCaixaForm}
-            SegurancaForm={SegurancaForm}
+            {...todosDadosGalpao}
             />
             <DimensionamentoVentilacao
-            setQuantidadeExaustoresForm={setQuantidadeExaustoresForm}
-            setPotenciaExaustoresForm={setPotenciaExaustoresForm}
-            setQuantidadeAcCortinasForm={setQuantidadeAcCortinasForm}
-            setPotenciaAcCortinasForm={setPotenciaAcCortinasForm}
-            setQuantidadeAcInletForm={setQuantidadeAcInletForm}
-            setPotenciaAcInletForm={setPotenciaAcInletForm}
-            setQuantidadeVentiladoresForm={setQuantidadeVentiladoresForm}
-            setPotenciaVentiladoresForm={setPotenciaVentiladoresForm}
-            QuantidadeExaustoresForm={QuantidadeExaustoresForm}
-            PotenciaExaustoresForm={PotenciaExaustoresForm}
-            QuantidadeAcCortinasForm={QuantidadeAcCortinasForm}
-            PotenciaAcCortinasForm={PotenciaAcCortinasForm}
-            QuantidadeAcInletForm={QuantidadeAcInletForm}
-            PotenciaAcInletForm={PotenciaAcInletForm}
-            setPossuiAtuadorInlet={setPossuiAtuadorInlet}
-            PossuiAtuadorInlet={PossuiAtuadorInlet}
-            QuantidadeVentiladoresForm={QuantidadeVentiladoresForm}
-            PotenciaVentiladoresForm={PotenciaVentiladoresForm}
+            {...todosDadosVentilacao}
             />
-            <Botao onClick={EnviarDados} color="black" padding='20px 0px' width='30%'>AVANÇAR</Botao>
+            <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
+            </Form>
+
         </DimensionamentoContainer>
         
 

@@ -9,7 +9,7 @@ const Select = styled.select`
     font-size:${props => props.font_size || '16px'};
     border:${props => props.border || '0px'};
     border-radius:${props => props.border_radius || '0px'};
-
+    
 `
 
 export default Select
