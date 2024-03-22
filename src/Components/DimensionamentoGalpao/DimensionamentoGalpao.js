@@ -13,6 +13,7 @@ import Titulo4 from "../Titulo4/Titulo4"
 
 
 
+
 const DimensionamentoSection = styled.section`
 display:flex;
 flex-direction:column;
@@ -40,36 +41,36 @@ const FormDiv = styled.div`
     width:100%;
 `
 
-function DimensionamentoGalpao({setComprimentoForm, setLarguraForm, setAlturaForm, setControladorForm, setRedeEletricaForm,setProtecaoMotorForm,setMarcaForm,setQuantidadeCaixaForm,setSegurancaForm,ComprimentoForm,LarguraForm,AlturaForm,ControladorForm,RedeEletricaForm,ProtecaoMotorForm,MarcaForm,QuantidadeCaixaForm,SegurancaForm}){
+function DimensionamentoGalpao({todosDadosGalpao}){
     
     
 
    function HandleComprimentoForm(event){
-    setComprimentoForm(event.target.value)
+    todosDadosGalpao.setComprimentoForm(event.target.value)
    }
    function HandleLarguraForm(event){
-    setLarguraForm(event.target.value)
+    todosDadosGalpao.setLarguraForm(event.target.value)
    }
    function HandleAlturaForm(event){
-    setAlturaForm(event.target.value)
+    todosDadosGalpao.setAlturaForm(event.target.value)
    }
    function HandleControladorForm(event){
-    setControladorForm(event.target.value)
+        todosDadosGalpao.setControladorForm(event.target.value)
    }
    function HandleRedeEletricaForm(event){
-    setRedeEletricaForm(event.target.value)
+    todosDadosGalpao.setRedeEletricaForm(event.target.value)
    }
    function HandleProtecaoMotorForm(event){
-    setProtecaoMotorForm(event.target.value)
+    todosDadosGalpao.setProtecaoMotorForm(event.target.value)
    }
    function HandleMarcaForm(event){
-    setMarcaForm(event.target.value)
+    todosDadosGalpao.setMarcaForm(event.target.value)
    }
    function HandleQuantidadeCaixaForm(event){
-    setQuantidadeCaixaForm(event.target.value)
+    todosDadosGalpao.setQuantidadeCaixaForm(event.target.value)
    }
    function HandleSegurancaForm(event){
-    setSegurancaForm(event.target.value)
+    todosDadosGalpao.setSegurancaForm(event.target.value)
    }
 
    
@@ -81,14 +82,14 @@ function DimensionamentoGalpao({setComprimentoForm, setLarguraForm, setAlturaFor
                 <Titulo4 color="orange" font_size='32px'>Dados do Galpão</Titulo4>
                     <Label color="white">Dimensões do Galpão (m)</Label>
                 <FormDivLinha>
-                    <Input value={ComprimentoForm} onChange={HandleComprimentoForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Comprimento"></Input>
-                    <Input value={LarguraForm} onChange={HandleLarguraForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Largura"></Input>
-                    <Input value={AlturaForm} onChange={HandleAlturaForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Altura"></Input>
+                    <Input value={todosDadosGalpao.ComprimentoForm} onChange={HandleComprimentoForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Comprimento"></Input>
+                    <Input value={todosDadosGalpao.LarguraForm} onChange={HandleLarguraForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Largura"></Input>
+                    <Input value={todosDadosGalpao.AlturaForm} onChange={HandleAlturaForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Altura"></Input>
                 </FormDivLinha>
                     <FormDivLinha>
                     <FormDiv>
                     <Label font_size='16px' translate="10px" background_color='black' color="orange" text_align='left' width='100%'>Controlador:</Label>
-                    <Select value={ControladorForm} onChange={HandleControladorForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Select value={todosDadosGalpao.ControladorForm} onChange={HandleControladorForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
                     <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                         {
                             controladores.map((controlador,index) => (
@@ -99,7 +100,7 @@ function DimensionamentoGalpao({setComprimentoForm, setLarguraForm, setAlturaFor
                     </FormDiv>
                     <FormDiv>
                     <Label font_size='16px' translate="10px" background_color='black' color="orange" text_align='left' width='100%'>Rede Elétrica:</Label>
-                    <Select value={RedeEletricaForm} onChange={HandleRedeEletricaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Select value={todosDadosGalpao.RedeEletricaForm} onChange={HandleRedeEletricaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
                     <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                         {
                             redeEletrica.map((rede,index) => (
@@ -112,7 +113,7 @@ function DimensionamentoGalpao({setComprimentoForm, setLarguraForm, setAlturaFor
                     <FormDivLinha>
                     <FormDiv>
                     <Label font_size='16px' translate="10px" background_color='black' color="orange" text_align='left' width='100%'>Proteção dos Motores:</Label>
-                    <Select value={ProtecaoMotorForm} onChange={HandleProtecaoMotorForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Select value={todosDadosGalpao.ProtecaoMotorForm} onChange={HandleProtecaoMotorForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
                     <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                         {
                             protecaoMotores.map((protecao,index) => (
@@ -123,7 +124,7 @@ function DimensionamentoGalpao({setComprimentoForm, setLarguraForm, setAlturaFor
                     </FormDiv>
                     <FormDiv>
                     <Label font_size='16px' translate="10px" background_color='black' color="orange" text_align='left' width='100%'>Marca dos Componentes:</Label>
-                    <Select value={MarcaForm} onChange={HandleMarcaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Select value={todosDadosGalpao.MarcaForm} onChange={HandleMarcaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
                     <Option value={''} disabled  hidden  color="#FF8C00" font_size='22px'></Option>
                         {
                             marcaComponentes.map((marca,index) => (
@@ -136,7 +137,7 @@ function DimensionamentoGalpao({setComprimentoForm, setLarguraForm, setAlturaFor
                     <FormDivLinha>
                     <FormDiv>
                     <Label font_size='16px' translate="10px" background_color='black' color="orange" text_align='left' width='100%'>Montagem em Quantas Caixas ?</Label>
-                    <Select value={QuantidadeCaixaForm} onChange={HandleQuantidadeCaixaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Select value={todosDadosGalpao.QuantidadeCaixaForm} onChange={HandleQuantidadeCaixaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
                     <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                         {
                             caixas.map((caixa,index) => (
@@ -147,7 +148,7 @@ function DimensionamentoGalpao({setComprimentoForm, setLarguraForm, setAlturaFor
                     </FormDiv>
                     <FormDiv>
                     <Label font_size='16px' translate="10px" background_color='black' color="orange" text_align='left' width='100%' >Segurança:</Label>
-                    <Select value={SegurancaForm} onChange={HandleSegurancaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Select value={todosDadosGalpao.SegurancaForm} onChange={HandleSegurancaForm} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
                     <Option value={''} disabled  hidden  color="#FF8C00" font_size='22px'></Option>
                         {
                             seguranca.map((item,index) => (

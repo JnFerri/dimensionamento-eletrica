@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import DimensionamentoVentilacao from "../../Components/DimensionamentoVentilacao/DimensionamentoVentilacao.js";
 import Form from "../../Components/Form/Form.js"
 import Input from "../../Components/Input/Input.js";
+import DimensionamentoResfriamento from "../../Components/DimensionamentoResfriamento/DimensionamentoResfriamento.js";
+import DimensionamentoAlimentacao from "../../Components/DimensionamentoAlimentacao/DimensionamentoAlimentacao.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -32,6 +34,14 @@ function Dimensionamento(){
     const [PossuiAtuadorInlet, setPossuiAtuadorInlet] = useState(false)
     const [QuantidadeVentiladoresForm, setQuantidadeVentiladoresForm] = useState('')
     const [PotenciaVentiladoresForm,setPotenciaVentiladoresForm] = useState('')
+    const [QuantidadeNebulizador, setQuantidadeNebulizador] = useState('')
+    const [PotenciaNebulizador, setPotenciaNebulizador] = useState('')
+    const [QuantidadeCooling, setQuantidadeCooling] = useState('')
+    const [PotenciaCooling, setPotenciaCooling] = useState('')
+    const [QuantidadeLinhas, setQuantidadeLinhas] = useState('')
+    const [PotenciaLinhas, setPotenciaLinhas] = useState('')
+    const [QuantidadeComedouros, setQuantidadeComedouros] = useState('')
+    const [PotenciaComedouros, setPotenciaComedouros] = useState('')
     const [TodosOsDados, setTodosOsDados] = useState('')
 
     const todosDadosGalpao = {
@@ -39,6 +49,12 @@ function Dimensionamento(){
     }
     const todosDadosVentilacao = {
         setQuantidadeExaustoresForm,setPotenciaExaustoresForm,setQuantidadeAcCortinasForm,setPotenciaAcCortinasForm,setQuantidadeAcInletForm,setPotenciaAcInletForm,setPossuiAtuadorInlet,setQuantidadeVentiladoresForm,setPotenciaVentiladoresForm,QuantidadeExaustoresForm,PotenciaExaustoresForm,QuantidadeAcCortinasForm,PotenciaAcCortinasForm,QuantidadeAcInletForm,PotenciaAcInletForm,PossuiAtuadorInlet,QuantidadeVentiladoresForm,PotenciaVentiladoresForm
+    }
+    const todosDadosResfriamento = {
+        setQuantidadeNebulizador,setPotenciaNebulizador,setQuantidadeCooling,setPotenciaCooling,QuantidadeNebulizador,PotenciaNebulizador,QuantidadeCooling,PotenciaCooling
+    }
+    const todosDadosAlimentacao ={
+        setQuantidadeLinhas,setPotenciaLinhas,setQuantidadeComedouros,setPotenciaComedouros,QuantidadeLinhas,PotenciaLinhas,QuantidadeComedouros,PotenciaComedouros
     }
 
     async function DefineDados(event){
@@ -79,12 +95,30 @@ function Dimensionamento(){
         setPossuiAtuadorInlet(false)
         setQuantidadeVentiladoresForm('')
         setPotenciaVentiladoresForm('')
+
+        setDadosResfriamento({
+        nebulizadores:{quantidade:QuantidadeNebulizador,potencia:PotenciaNebulizador},
+        cooling:{quantidade:QuantidadeCooling,potencia:PotenciaCooling}
+        })
+        setQuantidadeCooling('')
+        setPotenciaCooling('')
+        setQuantidadeNebulizador('')
+        setPotenciaNebulizador('')
+
+        setDadosAlimentacao({
+        linhas:{quantidade:QuantidadeLinhas,potencia:PotenciaLinhas},
+        comedouros:{quantidade:QuantidadeComedouros,potencia:PotenciaComedouros}
+        })
+        setQuantidadeLinhas('')
+        setPotenciaLinhas('')
+        setQuantidadeComedouros('')
+        setPotenciaComedouros('')
        }
 
        
        
        const [dadosGalpao,setDadosGalpao] = useState({
-           comprimento:0,
+        comprimento:0,
         largura:0,
         altura:0,
         controlador:'',
@@ -101,14 +135,25 @@ function Dimensionamento(){
         acInlet:{quantidade:0,potencia:0,atuador:false},
         ventilador:{quantidade:0,potencia:0},
     })
+
+    const [dadosResfriamento, setDadosResfriamento] = useState({
+        nebulizadores:{quantidade:0,potencia:0},
+        cooling:{quantidade:0,potencia:0}
+    })
     
+    const [dadosAlimentacao, setDadosAlimentacao] = useState({
+        linhas:{quantidade:0,potencia:0},
+        comedouros:{quantidade:0,potencia:0}
+    })
     
     useEffect(() =>{
      setTodosOsDados({
          dadosGalpao ,
-         dadosVentilacao
+         dadosVentilacao,
+         dadosResfriamento,
+         dadosAlimentacao
      })
- },[dadosGalpao, dadosVentilacao])
+    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao])
 
     useEffect(() =>{
         console.log(TodosOsDados)
@@ -120,10 +165,16 @@ function Dimensionamento(){
             <Header/>
             <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black'>COLETA DE DADOS DE DIMENSIONAMENTO:</Titulo2>
             <DimensionamentoGalpao 
-            {...todosDadosGalpao}
+            todosDadosGalpao = {{...todosDadosGalpao}}
             />
             <DimensionamentoVentilacao
-            {...todosDadosVentilacao}
+            todosDadosVentilacao = {{...todosDadosVentilacao}}
+            />
+            <DimensionamentoResfriamento
+           todosDadosResfriamento= {{...todosDadosResfriamento}}
+            />
+            <DimensionamentoAlimentacao
+            todosDadosAlimentacao={{...todosDadosAlimentacao}}
             />
             <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
             </Form>

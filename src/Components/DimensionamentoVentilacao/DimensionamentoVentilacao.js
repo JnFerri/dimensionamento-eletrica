@@ -2,6 +2,8 @@ import styled from "styled-components"
 import Label from "../Label/Label"
 import Input from "../Input/Input"
 import Titulo4 from "../Titulo4/Titulo4"
+import { VerificaSeNumeroInteiroEMaiorQueZero } from "../../Helpers/VerificaSeNumeroInteiroEMaiorQueZero"
+import { VerificaSeNumeroMaiorQueZero } from "../../Helpers/VerificaSeNumeroMaiorQueZero"
 
 
 const DimensionamentoSection = styled.section`
@@ -34,42 +36,66 @@ const FormDiv = styled.div`
     padding:10px 10px;
 `
 
-function DimensionamentoVentilacao({setQuantidadeExaustoresForm,setPotenciaExaustoresForm,setQuantidadeAcCortinasForm,setPotenciaAcCortinasForm,setQuantidadeAcInletForm,setPotenciaAcInletForm,setQuantidadeVentiladoresForm,setPotenciaVentiladoresForm,QuantidadeExaustoresForm,PotenciaExaustoresForm,QuantidadeAcCortinasForm,PotenciaAcCortinasForm,QuantidadeAcInletForm,PotenciaAcInletForm,setPossuiAtuadorInlet,PossuiAtuadorInlet,QuantidadeVentiladoresForm,PotenciaVentiladoresForm}){
+function DimensionamentoVentilacao({todosDadosVentilacao}){
     
     function HandleQuantidadeExaustores(event){
-    setQuantidadeExaustoresForm(event.target.value)
+        const valor = event.target.value
+        if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
+                todosDadosVentilacao.setQuantidadeExaustoresForm(valor)
+        }
     }
 
     function HandlePotenciaExaustores(event){
-        setPotenciaExaustoresForm(event.target.value)
+        const valor = event.target.value.replace(',', '.')
+        if(VerificaSeNumeroMaiorQueZero(valor)){
+            todosDadosVentilacao.setPotenciaExaustoresForm(valor)
+        }
     }
 
     function HandleQuantidadeAcCortinas(event){
-        setQuantidadeAcCortinasForm(event.target.value)
+        const valor = event.target.value
+        if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
+            todosDadosVentilacao.setQuantidadeAcCortinasForm()
+        }
     }
 
     function HandlePotenciaAcCortinas(event){
-        setPotenciaAcCortinasForm(event.target.value)
+        const valor = event.target.value.replace(',', '.')
+        if(VerificaSeNumeroMaiorQueZero(valor)){
+            todosDadosVentilacao.setPotenciaAcCortinasForm(valor)
+        }
     }
 
     function HandleQuantidadeAcInlet(event){
-        setQuantidadeAcInletForm(event.target.value)
+        const valor = event.target.value
+        if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
+            todosDadosVentilacao.setQuantidadeAcInletForm(valor)
+        }
     }
 
     function HandlePotenciaAcInlet(event){
-        setPotenciaAcInletForm(event.target.value)
+        const valor = event.target.value.replace(',', '.')
+        if(VerificaSeNumeroMaiorQueZero(valor)){
+            todosDadosVentilacao.setPotenciaAcInletForm(valor)
+        }
     }
 
     function HandlePossuiAtuador(event){
-        setPossuiAtuadorInlet(event.target.checked)
+        todosDadosVentilacao.setPossuiAtuadorInlet(event.target.checked)
     }
 
     function HandleQuantidadeVentiladores(event){
-        setQuantidadeVentiladoresForm(event.target.value)
+        const valor = event.target.value
+        if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
+            todosDadosVentilacao.setQuantidadeVentiladoresForm(event.target.value)
+        }
     }
 
     function HandlePotenciaVentiladores(event){
-        setPotenciaVentiladoresForm(event.target.value)
+        const valor = event.target.value.replace(',', '.')
+        if(VerificaSeNumeroMaiorQueZero(valor)){
+            todosDadosVentilacao.setPotenciaVentiladoresForm(event.target.value)
+        }
     }
 
     
@@ -81,15 +107,15 @@ function DimensionamentoVentilacao({setQuantidadeExaustoresForm,setPotenciaExaus
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Exaustores:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeExaustores} value={QuantidadeExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Exaustores"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaExaustores} value={PotenciaExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" required  onChange={HandleQuantidadeExaustores} value={todosDadosVentilacao.QuantidadeExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Exaustores"></Input>
+                <Input  type="number" required  onChange={HandlePotenciaExaustores} value={todosDadosVentilacao.PotenciaExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Cortinas:</Label>
                 <FormDivLinha>
-                <Input  type="number" required onChange={HandleQuantidadeAcCortinas} value={QuantidadeAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Cortinas"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaAcCortinas} value={PotenciaAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" required onChange={HandleQuantidadeAcCortinas} value={todosDadosVentilacao.QuantidadeAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Cortinas"></Input>
+                <Input  type="number" required  onChange={HandlePotenciaAcCortinas} value={todosDadosVentilacao.PotenciaAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>
@@ -97,19 +123,19 @@ function DimensionamentoVentilacao({setQuantidadeExaustoresForm,setPotenciaExaus
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Inlet:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeAcInlet} value={QuantidadeAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Inlet"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaAcInlet} value={PotenciaAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" required  onChange={HandleQuantidadeAcInlet} value={todosDadosVentilacao.QuantidadeAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Inlet"></Input>
+                <Input  type="number" required  onChange={HandlePotenciaAcInlet} value={todosDadosVentilacao.PotenciaAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 <FormDivLinha>
                 <Label font_size='16px' translate="0px" color="orange" text_align='center' width='100%'>Assinale caso possua atuador</Label>
-                <Input type="checkbox" onChange={HandlePossuiAtuador} checked={PossuiAtuadorInlet} width='100%'></Input>
+                <Input type="checkbox" onChange={HandlePossuiAtuador} checked={todosDadosVentilacao.PossuiAtuadorInlet} width='100%'></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Ventiladores:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeVentiladores} value={QuantidadeVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ventiladores"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaVentiladores} value={PotenciaVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" required  onChange={HandleQuantidadeVentiladores} value={todosDadosVentilacao.QuantidadeVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ventiladores"></Input>
+                <Input  type="number" required  onChange={HandlePotenciaVentiladores} value={todosDadosVentilacao.PotenciaVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>
