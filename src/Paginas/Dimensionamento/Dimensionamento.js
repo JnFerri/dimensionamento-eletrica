@@ -9,6 +9,7 @@ import Input from "../../Components/Input/Input.js";
 import DimensionamentoResfriamento from "../../Components/DimensionamentoResfriamento/DimensionamentoResfriamento.js";
 import DimensionamentoAlimentacao from "../../Components/DimensionamentoAlimentacao/DimensionamentoAlimentacao.js";
 import DimensionamentoAquecedores from "../../Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js";
+import DimensionamentoIluminacao from "../../Components/DimensionamentoIluminacao/DimensionamentoIluminacao.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -50,6 +51,11 @@ function Dimensionamento(){
     const [QuantidadeFoguista, setQuantidadeFoguista] = useState('')
     const [PotenciaFoguista, setPotenciaFoguista] = useState('')
     const [FornoPossuiPainel, setFornoPossuiPainel] = useState(false)
+    const [QuantidadeWY03, setQuantidadeWY03] = useState('')
+    const [QuantidadeWY04, setQuantidadeWY04] = useState('')
+    const [QuantidadeBocais, setQuantidadeBocais] = useState('')
+    const [QuantidadeCircuitos, setQuantidadeCircuitos] = useState('')
+    const [Dimerizavel, setDimerizavel] = useState(true)
     const [TodosOsDados, setTodosOsDados] = useState('')
 
     const todosDadosGalpao = {
@@ -66,6 +72,9 @@ function Dimensionamento(){
     }
     const todosDadosAquecedores = {
         setQuantidadeAquecedor1,setPotenciaAquecedor1,setQuantidadeAquecedor2,setPotenciaAquecedor2,setQuantidadeFoguista,setPotenciaFoguista,setFornoPossuiPainel,QuantidadeAquecedor1,PotenciaAquecedor1,QuantidadeAquecedor2,PotenciaAquecedor2,QuantidadeFoguista,PotenciaFoguista,FornoPossuiPainel
+    }
+    const todosDadosIluminacao = {
+        setQuantidadeWY03,setQuantidadeWY04,setQuantidadeBocais,setDimerizavel,setQuantidadeCircuitos,QuantidadeWY03,QuantidadeWY04,QuantidadeBocais,Dimerizavel,QuantidadeCircuitos
     }
 
     async function DefineDados(event){
@@ -138,45 +147,34 @@ function Dimensionamento(){
         setQuantidadeFoguista('')
         setPotenciaFoguista('')
         setFornoPossuiPainel(false)
+
+        setDadosIluminacao({
+            lampadaWY03:QuantidadeWY03,
+            lampadaWY04:QuantidadeWY04,
+            bocais:QuantidadeBocais,
+            circuitos:QuantidadeCircuitos,
+            dimerizavel:Dimerizavel
+        })
+        setQuantidadeWY03('')
+        setQuantidadeWY04('')
+        setQuantidadeBocais('')
+        setQuantidadeCircuitos('')
+        setDimerizavel(true)
        }
 
        
        
-       const [dadosGalpao,setDadosGalpao] = useState({
-        comprimento:0,
-        largura:0,
-        altura:0,
-        controlador:'',
-        redeEletrica:'',
-        protecaoMotor:'',
-        marcaComponentes:'',
-        quantidadeCaixas:'',
-        Segurança:''
-    })
+       const [dadosGalpao,setDadosGalpao] = useState({})
     
-    const [dadosVentilacao,setDadosVentilacao] = useState({
-        exaustor:{quantidade:0,potencia:0},
-        acCortina:{quantidade:0,potencia:0},
-        acInlet:{quantidade:0,potencia:0,atuador:false},
-        ventilador:{quantidade:0,potencia:0},
-    })
+    const [dadosVentilacao,setDadosVentilacao] = useState({})
 
-    const [dadosResfriamento, setDadosResfriamento] = useState({
-        nebulizadores:{quantidade:0,potencia:0},
-        cooling:{quantidade:0,potencia:0}
-    })
+    const [dadosResfriamento, setDadosResfriamento] = useState({})
     
-    const [dadosAlimentacao, setDadosAlimentacao] = useState({
-        linhas:{quantidade:0,potencia:0},
-        comedouros:{quantidade:0,potencia:0}
-    })
+    const [dadosAlimentacao, setDadosAlimentacao] = useState({})
 
-    const [dadosAquecedores, setDadosAquecedores] = useState({
-        aquecedor1:{quantidade:0,potencia:0},
-        aquecedor2:{quantidade:0,potencia:0},
-        foguista:{quantidade:0,potencia:0},
-        fornoPossuiPainel:false
-    })
+    const [dadosAquecedores, setDadosAquecedores] = useState({})
+
+    const [dadosIluminacao, setDadosIluminacao] = useState({})
     
     useEffect(() =>{
      setTodosOsDados({
@@ -184,9 +182,10 @@ function Dimensionamento(){
          dadosVentilacao,
          dadosResfriamento,
          dadosAlimentacao,
-         dadosAquecedores
+         dadosAquecedores,
+         dadosIluminacao
      })
-    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores])
+    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao])
 
     useEffect(() =>{
         console.log(TodosOsDados)
@@ -204,13 +203,16 @@ function Dimensionamento(){
             todosDadosVentilacao = {{...todosDadosVentilacao}}
             />
             <DimensionamentoResfriamento
-           todosDadosResfriamento= {{...todosDadosResfriamento}}
+            todosDadosResfriamento= {{...todosDadosResfriamento}}
             />
             <DimensionamentoAlimentacao
             todosDadosAlimentacao={{...todosDadosAlimentacao}}
             />
             <DimensionamentoAquecedores
             todosDadosAquecedores={{...todosDadosAquecedores}}
+            />
+            <DimensionamentoIluminacao
+            todosDadosIluminacao={{...todosDadosIluminacao}}
             />
             <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
             </Form>
