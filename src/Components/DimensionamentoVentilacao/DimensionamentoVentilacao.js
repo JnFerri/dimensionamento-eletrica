@@ -55,7 +55,7 @@ function DimensionamentoVentilacao({todosDadosVentilacao}){
     function HandleQuantidadeAcCortinas(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
-            todosDadosVentilacao.setQuantidadeAcCortinasForm()
+            todosDadosVentilacao.setQuantidadeAcCortinasForm(valor)
         }
     }
 

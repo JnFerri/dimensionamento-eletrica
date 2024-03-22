@@ -8,6 +8,7 @@ import Form from "../../Components/Form/Form.js"
 import Input from "../../Components/Input/Input.js";
 import DimensionamentoResfriamento from "../../Components/DimensionamentoResfriamento/DimensionamentoResfriamento.js";
 import DimensionamentoAlimentacao from "../../Components/DimensionamentoAlimentacao/DimensionamentoAlimentacao.js";
+import DimensionamentoAquecedores from "../../Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -42,6 +43,13 @@ function Dimensionamento(){
     const [PotenciaLinhas, setPotenciaLinhas] = useState('')
     const [QuantidadeComedouros, setQuantidadeComedouros] = useState('')
     const [PotenciaComedouros, setPotenciaComedouros] = useState('')
+    const [QuantidadeAquecedor1, setQuantidadeAquecedor1] = useState('')
+    const [PotenciaAquecedor1, setPotenciaAquecedor1] = useState('')
+    const [QuantidadeAquecedor2, setQuantidadeAquecedor2] = useState('')
+    const [PotenciaAquecedor2, setPotenciaAquecedor2] = useState('')
+    const [QuantidadeFoguista, setQuantidadeFoguista] = useState('')
+    const [PotenciaFoguista, setPotenciaFoguista] = useState('')
+    const [FornoPossuiPainel, setFornoPossuiPainel] = useState(false)
     const [TodosOsDados, setTodosOsDados] = useState('')
 
     const todosDadosGalpao = {
@@ -55,6 +63,9 @@ function Dimensionamento(){
     }
     const todosDadosAlimentacao ={
         setQuantidadeLinhas,setPotenciaLinhas,setQuantidadeComedouros,setPotenciaComedouros,QuantidadeLinhas,PotenciaLinhas,QuantidadeComedouros,PotenciaComedouros
+    }
+    const todosDadosAquecedores = {
+        setQuantidadeAquecedor1,setPotenciaAquecedor1,setQuantidadeAquecedor2,setPotenciaAquecedor2,setQuantidadeFoguista,setPotenciaFoguista,setFornoPossuiPainel,QuantidadeAquecedor1,PotenciaAquecedor1,QuantidadeAquecedor2,PotenciaAquecedor2,QuantidadeFoguista,PotenciaFoguista,FornoPossuiPainel
     }
 
     async function DefineDados(event){
@@ -113,6 +124,20 @@ function Dimensionamento(){
         setPotenciaLinhas('')
         setQuantidadeComedouros('')
         setPotenciaComedouros('')
+
+        setDadosAquecedores({
+        aquecedor1:{quantidade:QuantidadeAquecedor1,potencia:PotenciaAquecedor1},
+        aquecedor2:{quantidade:QuantidadeAquecedor2,potencia:PotenciaAquecedor2},
+        foguista:{quantidade:QuantidadeFoguista,potencia:PotenciaFoguista},
+        fornoPossuiPainel:FornoPossuiPainel
+        })
+        setQuantidadeAquecedor1('')
+        setPotenciaAquecedor1('')
+        setQuantidadeAquecedor2('')
+        setPotenciaAquecedor2('')
+        setQuantidadeFoguista('')
+        setPotenciaFoguista('')
+        setFornoPossuiPainel(false)
        }
 
        
@@ -145,15 +170,23 @@ function Dimensionamento(){
         linhas:{quantidade:0,potencia:0},
         comedouros:{quantidade:0,potencia:0}
     })
+
+    const [dadosAquecedores, setDadosAquecedores] = useState({
+        aquecedor1:{quantidade:0,potencia:0},
+        aquecedor2:{quantidade:0,potencia:0},
+        foguista:{quantidade:0,potencia:0},
+        fornoPossuiPainel:false
+    })
     
     useEffect(() =>{
      setTodosOsDados({
          dadosGalpao ,
          dadosVentilacao,
          dadosResfriamento,
-         dadosAlimentacao
+         dadosAlimentacao,
+         dadosAquecedores
      })
-    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao])
+    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores])
 
     useEffect(() =>{
         console.log(TodosOsDados)
@@ -175,6 +208,9 @@ function Dimensionamento(){
             />
             <DimensionamentoAlimentacao
             todosDadosAlimentacao={{...todosDadosAlimentacao}}
+            />
+            <DimensionamentoAquecedores
+            todosDadosAquecedores={{...todosDadosAquecedores}}
             />
             <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
             </Form>
