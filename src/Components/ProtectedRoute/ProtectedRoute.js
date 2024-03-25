@@ -1,12 +1,12 @@
 import React from 'react';
-import { useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 const ProtectedRoute = ({ component: Component, isAuthenticated, ...rest }) => {
     const navigate = useNavigate();
 
     const handleRetornaLogin = () => {
-        navigate("/Login");
-    }
+            navigate('/');
+    };
     return (
                 isAuthenticated ? <Component {...rest} /> : handleRetornaLogin()
         );

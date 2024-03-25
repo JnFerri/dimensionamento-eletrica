@@ -4,7 +4,6 @@ import Imagem from "../../Components/Imagem/Imagem"
 import ImagemMotor from "../../Images/motor.png"
 import ImagemCabo from "../../Images/cabos.png"
 import ImagemPecas from "../../Images/pecas.png"
-import Header from "../../Components/Header/Header"
 import Titulo2 from "../../Components/Titulo2/Titulo2.js"
 import { useNavigate } from "react-router-dom"
 const CadastroBody = styled.main`
@@ -53,7 +52,6 @@ function Cadastro(){
 
     return(
         <CadastroBody>
-            <Header/>
             <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black' >CADASTRO DE NOVOS MATERIAIS:</Titulo2>
         <CadastroContainer>
             <CadastroItem>

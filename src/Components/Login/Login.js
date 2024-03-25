@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Label from "../Label/Label.js";
 import Input from "../Input/Input.js"
 import Botao from "../Botao/Botao.js"
-import { useState } from "react";
+import {  useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const LoginContainer = styled.section`
@@ -19,19 +19,24 @@ margin-top:5%;
 `
 
 
-function Login({setSituacaoLogin}){
+function Login({setSituacaoLogin, setLoginLocalStorage, LoginLocalStorage, SituacaoLogin}){
     
     const navigate = useNavigate();
-
-    const handleRetornaLogin = () => {
-        navigate("/dimensionamento");
-    }
 
     const [Usuario, setUsuario] = useState('')
     const [Senha, setSenha] = useState('')
 
+    useEffect(() => {
+      const handleRetornaLogin = () => {
+        navigate("/dimensionamento");
+      }
+      if(SituacaoLogin === true){
+        handleRetornaLogin()
+      }
+    },[LoginLocalStorage, SituacaoLogin,navigate])
+
     const confereLogin = async() => {
-        await fetch('http://localhost:3000/autorizacao',{ method: 'POST',
+        /*await fetch('http://localhost:3000/autorizacao',{ method: 'POST',
         headers: {
           accept: 'application/json',
           'content-type': 'application/json'
@@ -42,13 +47,14 @@ function Login({setSituacaoLogin}){
     .then(data => {
       if(data === true) {
         setSituacaoLogin(true)
+        localStorage.setItem('Login',JSON.stringify({ usuario : Usuario, senha: Senha  }) )
+        setLogin(JSON.parse(localStorage.getItem('Login')))
         handleRetornaLogin()
       }else{
         window.alert('Login incorreto, caso esqueceu a senha contatar o administrador.')
-      }
-    
-    });
-    
+      }*/
+      localStorage.setItem('Login',JSON.stringify({ usuario : Usuario, senha: Senha  }))
+      setLoginLocalStorage(JSON.parse(localStorage.getItem('Login')))
 }
     const HandleUsuario = (event) => {
         setUsuario(event.target.value)

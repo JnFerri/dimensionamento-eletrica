@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Titulo2 from "../../Components/Titulo2/Titulo2";
-import Header from "../../Components/Header/Header";
 import DimensionamentoGalpao from "../../Components/DimensionamentoGalpao/DimensionamentoGalpao.js";
 import { useEffect, useState } from "react";
 import DimensionamentoVentilacao from "../../Components/DimensionamentoVentilacao/DimensionamentoVentilacao.js";
@@ -10,6 +9,7 @@ import DimensionamentoResfriamento from "../../Components/DimensionamentoResfria
 import DimensionamentoAlimentacao from "../../Components/DimensionamentoAlimentacao/DimensionamentoAlimentacao.js";
 import DimensionamentoAquecedores from "../../Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js";
 import DimensionamentoIluminacao from "../../Components/DimensionamentoIluminacao/DimensionamentoIluminacao.js";
+import DimensionamentoDiversos from "../../Components/DimensionamentoDiversos/DimensionamentoDiversos.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -40,7 +40,7 @@ function Dimensionamento(){
     const [PotenciaNebulizador, setPotenciaNebulizador] = useState('')
     const [QuantidadeCooling, setQuantidadeCooling] = useState('')
     const [PotenciaCooling, setPotenciaCooling] = useState('')
-    const [QuantidadeLinhas, setQuantidadeLinhas] = useState('')
+    const [QuantidadeLinhasPrimarias, setQuantidadeLinhasPrimarias] = useState('')
     const [PotenciaLinhas, setPotenciaLinhas] = useState('')
     const [QuantidadeComedouros, setQuantidadeComedouros] = useState('')
     const [PotenciaComedouros, setPotenciaComedouros] = useState('')
@@ -56,6 +56,18 @@ function Dimensionamento(){
     const [QuantidadeBocais, setQuantidadeBocais] = useState('')
     const [QuantidadeCircuitos, setQuantidadeCircuitos] = useState('')
     const [Dimerizavel, setDimerizavel] = useState(true)
+    const [QuantidadeSondaT, setQuantidadeSondaT] = useState('')
+    const [QuantidadeSondaTU, setQuantidadeSondaTU] = useState('')
+    const [QuantidadeSondaPE, setQuantidadeSondaPE] = useState('')
+    const [QuantidadeSondaCo2, setQuantidadeSondaCo2] = useState('')
+    const [QuantidadeSondaH2O, setQuantidadeSondaH2O] = useState('')
+    const [MotorRedutorCortina, setMotorRedutorCortina] = useState(true)
+    const [QuantidadeGatilho, setQuantidadeGatilho] = useState('')
+    const [QuantidadePPs, setQuantidadePPs] = useState('')
+    const [QuantidadeFlushing, setQuantidadeFlushing] = useState('')
+    const [QuantidadeLinhas, setQuantidadeLinhas] = useState('')
+    const [TipoAnimalGalpao, setTipoAnimalGalpao] = useState('Aves')
+    const [TipoCriacaoAnimal, setTipoCriacaoAnimal] = useState('')
     const [TodosOsDados, setTodosOsDados] = useState('')
 
     const todosDadosGalpao = {
@@ -68,13 +80,16 @@ function Dimensionamento(){
         setQuantidadeNebulizador,setPotenciaNebulizador,setQuantidadeCooling,setPotenciaCooling,QuantidadeNebulizador,PotenciaNebulizador,QuantidadeCooling,PotenciaCooling
     }
     const todosDadosAlimentacao ={
-        setQuantidadeLinhas,setPotenciaLinhas,setQuantidadeComedouros,setPotenciaComedouros,QuantidadeLinhas,PotenciaLinhas,QuantidadeComedouros,PotenciaComedouros
+        setQuantidadeLinhasPrimarias,setPotenciaLinhas,setQuantidadeComedouros,setPotenciaComedouros,QuantidadeLinhasPrimarias,PotenciaLinhas,QuantidadeComedouros,PotenciaComedouros
     }
     const todosDadosAquecedores = {
         setQuantidadeAquecedor1,setPotenciaAquecedor1,setQuantidadeAquecedor2,setPotenciaAquecedor2,setQuantidadeFoguista,setPotenciaFoguista,setFornoPossuiPainel,QuantidadeAquecedor1,PotenciaAquecedor1,QuantidadeAquecedor2,PotenciaAquecedor2,QuantidadeFoguista,PotenciaFoguista,FornoPossuiPainel
     }
     const todosDadosIluminacao = {
         setQuantidadeWY03,setQuantidadeWY04,setQuantidadeBocais,setDimerizavel,setQuantidadeCircuitos,QuantidadeWY03,QuantidadeWY04,QuantidadeBocais,Dimerizavel,QuantidadeCircuitos
+    }
+    const todosDadosDiversos = {
+        setQuantidadeSondaT,setQuantidadeSondaTU,setQuantidadeSondaPE,setQuantidadeSondaCo2,setQuantidadeSondaH2O,setMotorRedutorCortina,setQuantidadeGatilho,setQuantidadePPs,setQuantidadeFlushing,setTipoAnimalGalpao,setTipoCriacaoAnimal,setQuantidadeLinhas,QuantidadeLinhas,QuantidadeSondaT,QuantidadeSondaTU,QuantidadeSondaPE,QuantidadeSondaCo2,QuantidadeSondaH2O,MotorRedutorCortina,QuantidadeGatilho,QuantidadePPs,QuantidadeFlushing,TipoAnimalGalpao,TipoCriacaoAnimal
     }
 
     async function DefineDados(event){
@@ -126,10 +141,10 @@ function Dimensionamento(){
         setPotenciaNebulizador('')
 
         setDadosAlimentacao({
-        linhas:{quantidade:QuantidadeLinhas,potencia:PotenciaLinhas},
+        linhas:{quantidade:QuantidadeLinhasPrimarias,potencia:PotenciaLinhas},
         comedouros:{quantidade:QuantidadeComedouros,potencia:PotenciaComedouros}
         })
-        setQuantidadeLinhas('')
+        setQuantidadeLinhasPrimarias('')
         setPotenciaLinhas('')
         setQuantidadeComedouros('')
         setPotenciaComedouros('')
@@ -160,11 +175,40 @@ function Dimensionamento(){
         setQuantidadeBocais('')
         setQuantidadeCircuitos('')
         setDimerizavel(true)
+
+        setDadosDiversos({
+            sondaT:QuantidadeSondaT,
+            sondaTU:QuantidadeSondaTU,
+            sondaPE:QuantidadeSondaPE,
+            sondaCo2:QuantidadeSondaCo2,
+            sondaH2O:QuantidadeSondaH2O,
+            motorRedutorCortina:MotorRedutorCortina,
+            gatilhos:QuantidadeGatilho,
+            PPs:QuantidadePPs,
+            flushing:QuantidadeFlushing,
+            linhas:QuantidadeLinhas,
+            tipoAnimalGalpao:TipoAnimalGalpao,
+            tipoCriacaoAnimal:TipoCriacaoAnimal
+        })
+        setQuantidadeSondaT('')
+        setQuantidadeSondaTU('')
+        setQuantidadeSondaPE('')
+        setQuantidadeSondaCo2('')
+        setQuantidadeSondaH2O('')
+        setMotorRedutorCortina(true)
+        setQuantidadeGatilho('')
+        setQuantidadePPs('')
+        setQuantidadeFlushing('')
+        setQuantidadeLinhas('')
+        setTipoAnimalGalpao('Aves')
+        setTipoCriacaoAnimal('')
+
+
        }
 
        
        
-       const [dadosGalpao,setDadosGalpao] = useState({})
+    const [dadosGalpao,setDadosGalpao] = useState({})
     
     const [dadosVentilacao,setDadosVentilacao] = useState({})
 
@@ -175,6 +219,8 @@ function Dimensionamento(){
     const [dadosAquecedores, setDadosAquecedores] = useState({})
 
     const [dadosIluminacao, setDadosIluminacao] = useState({})
+
+    const [dadosDiversos, setDadosDiversos] = useState({})
     
     useEffect(() =>{
      setTodosOsDados({
@@ -183,9 +229,10 @@ function Dimensionamento(){
          dadosResfriamento,
          dadosAlimentacao,
          dadosAquecedores,
-         dadosIluminacao
+         dadosIluminacao,
+         dadosDiversos
      })
-    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao])
+    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos])
 
     useEffect(() =>{
         console.log(TodosOsDados)
@@ -194,7 +241,6 @@ function Dimensionamento(){
     return(
         <DimensionamentoContainer>
             <Form width='100%' onSubmit={DefineDados}>
-            <Header/>
             <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black'>COLETA DE DADOS DE DIMENSIONAMENTO:</Titulo2>
             <DimensionamentoGalpao 
             todosDadosGalpao = {{...todosDadosGalpao}}
@@ -213,6 +259,9 @@ function Dimensionamento(){
             />
             <DimensionamentoIluminacao
             todosDadosIluminacao={{...todosDadosIluminacao}}
+            />
+            <DimensionamentoDiversos
+            todosDadosDiversos={{...todosDadosDiversos}}
             />
             <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
             </Form>

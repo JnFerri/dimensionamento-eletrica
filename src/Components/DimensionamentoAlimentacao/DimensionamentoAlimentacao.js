@@ -38,10 +38,10 @@ const FormDiv = styled.div`
 
 function DimensionamentoAlimentacao({todosDadosAlimentacao}){
 
-    function HandleQuantidadeLinhas(event){
+    function HandleQuantidadeLinhasPrimarias(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
-            todosDadosAlimentacao.setQuantidadeLinhas(valor)
+            todosDadosAlimentacao.setQuantidadeLinhasPrimarias(valor)
         }
     }
     function HandlePotenciaLinhas(event){
@@ -72,7 +72,7 @@ function DimensionamentoAlimentacao({todosDadosAlimentacao}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Linha Primária:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeLinhas} value={todosDadosAlimentacao.QuantidadeLinhas} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Nebulizadores"></Input>
+                <Input  type="number" required  onChange={HandleQuantidadeLinhasPrimarias} value={todosDadosAlimentacao.QuantidadeLinhasPrimarias} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Linhas"></Input>
                 <Input  type="number" required  onChange={HandlePotenciaLinhas} value={todosDadosAlimentacao.PotenciaLinhas} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>

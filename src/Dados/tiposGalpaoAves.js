@@ -1,0 +1,1 @@
+export const tiposGalpaoAves = ['Frango de Corte', 'Recria', 'Produção']

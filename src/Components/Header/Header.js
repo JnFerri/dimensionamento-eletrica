@@ -44,7 +44,14 @@ const NavLink = styled.a`
     }
 `
 
-function Header(){
+function Header({setSituacaoLogin}){
+
+    function Deslogar(event){
+        event.preventDefault()
+        setSituacaoLogin(false)
+        localStorage.clear('Login')
+    }
+
     return(
         <HeaderContainer>
             <Imagem width='5%' margin='20px 20px' src={logo}/>
@@ -52,6 +59,7 @@ function Header(){
             <NavBarContainer>
                 <NavLink href="/dimensionamento">Dimensionamento</NavLink>
                 <NavLink href="/cadastro" >Cadastrar Produto</NavLink>
+                <NavLink href="/" onClick={Deslogar} >Sair</NavLink>
             </NavBarContainer>
         </HeaderContainer>
     )
