@@ -10,6 +10,9 @@ import CadastroCabos from './Paginas/Cadastro/CadastroCabos/CadastroCabos.js';
 import CadastroMaterial from './Paginas/Cadastro/CadastroMaterial/CadastroMaterial.js';
 import Dimensionamento from './Paginas/Dimensionamento/Dimensionamento.js';
 import Header from './Components/Header/Header.js';
+import ListaComponentes from './Paginas/ListaComponentes/ListaComponentes.js';
+import ListaComponentesMotor from './Paginas/ListaComponentes/ListaComponentesMotor/ListaComponentesMotor.js';
+import ListaComponentesCabos from './Paginas/ListaComponentes/ListaComponentesCabos/ListaComponentesCabos.js';
 
 function App() {
   
@@ -57,6 +60,9 @@ function App() {
           <Route path="/cadastro/motor" element={<ProtectedRoute component={CadastroMotor} isAuthenticated={SituacaoLogin} />} />
           <Route path="/cadastro/cabos" element={<ProtectedRoute component={CadastroCabos} isAuthenticated={SituacaoLogin} />} />
           <Route path="/cadastro/materiais" element={<ProtectedRoute component={CadastroMaterial} isAuthenticated={SituacaoLogin} />} />
+          <Route path="/listaComponentes" element={<ProtectedRoute component={ListaComponentes} isAuthenticated={SituacaoLogin} />} />
+          <Route path="/listaComponentes/motor" element={<ProtectedRoute component={ListaComponentesMotor} isAuthenticated={SituacaoLogin} />} />
+          <Route path="/listaComponentes/cabos" element={<ProtectedRoute component={ListaComponentesCabos} isAuthenticated={SituacaoLogin} />} />
           <Route path="/dimensionamento" element={<ProtectedRoute component={Dimensionamento} isAuthenticated={SituacaoLogin} />} />
           {/* Outras rotas protegidas */}
         </Routes>

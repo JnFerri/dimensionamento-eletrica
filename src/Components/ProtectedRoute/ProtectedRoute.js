@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom';
 const ProtectedRoute = ({ component: Component, isAuthenticated, ...rest }) => {
     const navigate = useNavigate();
 
+
     const handleRetornaLogin = () => {
             navigate('/');
     };

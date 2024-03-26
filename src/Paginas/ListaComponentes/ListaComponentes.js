@@ -36,45 +36,44 @@ const CadastroItem = styled.div`
     margin: 1rem 0;
 
 `
-function Cadastro(){
+function ListaComponentes(){
 
     const navigate = useNavigate();
 
     const handleMotor = () => {
-        navigate('/cadastro/motor')
+        navigate('/listaComponentes/motor')
     }
     const handleCabos = () => {
-        navigate('/cadastro/cabos')
+        navigate('/listaComponentes/cabos')
     }
     const handlePecas = () => {
-        navigate('/cadastro/materiais')
+        navigate('/listaComponentes/materiais')
     }
-    const handleLista = () => {
-        navigate('/listaComponentes')
+    const handleVoltar = () => {
+        navigate('/cadastro')
     }
+    
 
     return(
         <CadastroBody>
-            <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black' >CADASTRO DE NOVOS MATERIAIS:</Titulo2>
+            <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black' >Lista de Componentes Cadastrados:</Titulo2>
         <CadastroContainer>
             <CadastroItem>
             <Imagem width='15%' src={ImagemMotor}></Imagem>
-            <Botao  onClick={handleMotor} padding='15px 0px' colorHover='white' font_size='24px' backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' >MOTORES</Botao>
+            <Botao  onClick={handleMotor} padding='15px 0px' colorHover='white' font_size='24px' backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' >TODOS OS MOTORES</Botao>
             </CadastroItem>
             <CadastroItem>
             <Imagem width='15%' src={ImagemCabo}></Imagem>
-            <Botao onClick={handleCabos} padding='15px 0px'  colorHover='white' font_size='24px' backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' >CABOS</Botao>
+            <Botao onClick={handleCabos} padding='15px 0px'  colorHover='white' font_size='24px' backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' >TODOS OS CABOS</Botao>
             </CadastroItem>
             <CadastroItem>
             <Imagem width='15%' src={ImagemPecas}></Imagem>
-            <Botao onClick={handlePecas} padding='15px 0px'  colorHover='white' font_size='24px'  backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' >MATERIAIS</Botao>
+            <Botao onClick={handlePecas} padding='15px 0px'  colorHover='white' font_size='24px'  backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' > TODOS OS MATERIAIS</Botao>
             </CadastroItem>
-            <CadastroItem>
-            <Botao onClick={handleLista} padding='15px 0px'  colorHover='white' font_size='24px'  backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' >LISTA DE COMPONENTES</Botao>
-            </CadastroItem>
+            <Botao onClick={handleVoltar} padding='15px 0px'  colorHover='white' font_size='24px'  backgroundcolor='orange' width='50% ' border='0.5px black solid' border_radius='10px' > VOLTAR</Botao>
         </CadastroContainer>
         </CadastroBody>
     )
 }
 
-export default Cadastro
+export default ListaComponentes

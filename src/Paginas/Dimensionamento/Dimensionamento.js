@@ -11,6 +11,7 @@ import DimensionamentoAquecedores from "../../Components/DimensionamentoAquecedo
 import DimensionamentoIluminacao from "../../Components/DimensionamentoIluminacao/DimensionamentoIluminacao.js";
 import DimensionamentoDiversos from "../../Components/DimensionamentoDiversos/DimensionamentoDiversos.js";
 import DimensionamentoInlet from "../../Components/DimensionamentoInlet/DimensionamentoInlet.js";
+import DimensionamentoCalculoInlet from "../../Components/DimensionamentoCalculoInlet/DimensionamentoCalculoInlet.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -73,6 +74,8 @@ function Dimensionamento(){
     const [FixacaoInlet, setFixacaoInlet] = useState('')
     const [MotorInlet, setMotorInlet] = useState('')
     const [QuantidadeInlet, setQuantidadeInlet] = useState('')
+    const [CapacidadeExaustor, setCapacidadeExaustor] = useState('')
+    const [PercentualExaustor, setPercentualExaustor] = useState('')
     const [TodosOsDados, setTodosOsDados] = useState('')
 
     const todosDadosGalpao = {
@@ -99,6 +102,10 @@ function Dimensionamento(){
 
     const todosDadosInlet = {
         setTipoInlet,setFixacaoInlet,setMotorInlet,setQuantidadeInlet,TipoInlet,FixacaoInlet,MotorInlet,QuantidadeInlet
+    }
+
+    const todosDadosCalculoInlet ={
+        setCapacidadeExaustor,setPercentualExaustor,CapacidadeExaustor,PercentualExaustor
     }
 
     async function DefineDados(event){
@@ -223,6 +230,12 @@ function Dimensionamento(){
         setMotorInlet('')
         setQuantidadeInlet('')
 
+        setdadosCalculoInlet({
+            capacidadeExaustor:CapacidadeExaustor,
+            porcentagemExasutorTransicao:PercentualExaustor
+        })
+        setCapacidadeExaustor('')
+        setPercentualExaustor('')
        }
 
        
@@ -243,6 +256,8 @@ function Dimensionamento(){
     
     const [dadosInlets, setDadosInlets] = useState({})
 
+    const [dadosCalculoInlet, setdadosCalculoInlet] = useState({})
+
     useEffect(() =>{
      setTodosOsDados({
          dadosGalpao ,
@@ -252,9 +267,10 @@ function Dimensionamento(){
          dadosAquecedores,
          dadosIluminacao,
          dadosDiversos,
-         dadosInlets
+         dadosInlets,
+         dadosCalculoInlet
      })
-    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos,dadosInlets])
+    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos,dadosInlets,dadosCalculoInlet])
 
     useEffect(() =>{
         console.log(TodosOsDados)
@@ -287,6 +303,9 @@ function Dimensionamento(){
             />
             <DimensionamentoInlet 
             todosDadosInlet={{...todosDadosInlet}}
+            />
+            <DimensionamentoCalculoInlet
+            todosDadosCalculoInlet={{...todosDadosCalculoInlet}}
             />
             <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
             </Form>
