@@ -1,0 +1,1 @@
+export const tiposFixacaoInlet = ['Fixado em tela', 'Fixado na parede', 'Fixado com caixa espacadora']

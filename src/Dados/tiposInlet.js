@@ -1,0 +1,1 @@
+export const tiposInlet = ['Inlet - Não', 'Inlet sem escurecedor', 'Inlet com escurecedor']

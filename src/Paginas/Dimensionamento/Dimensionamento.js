@@ -10,6 +10,7 @@ import DimensionamentoAlimentacao from "../../Components/DimensionamentoAlimenta
 import DimensionamentoAquecedores from "../../Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js";
 import DimensionamentoIluminacao from "../../Components/DimensionamentoIluminacao/DimensionamentoIluminacao.js";
 import DimensionamentoDiversos from "../../Components/DimensionamentoDiversos/DimensionamentoDiversos.js";
+import DimensionamentoInlet from "../../Components/DimensionamentoInlet/DimensionamentoInlet.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -68,6 +69,10 @@ function Dimensionamento(){
     const [QuantidadeLinhas, setQuantidadeLinhas] = useState('')
     const [TipoAnimalGalpao, setTipoAnimalGalpao] = useState('Aves')
     const [TipoCriacaoAnimal, setTipoCriacaoAnimal] = useState('')
+    const [TipoInlet, setTipoInlet] = useState('')
+    const [FixacaoInlet, setFixacaoInlet] = useState('')
+    const [MotorInlet, setMotorInlet] = useState('')
+    const [QuantidadeInlet, setQuantidadeInlet] = useState('')
     const [TodosOsDados, setTodosOsDados] = useState('')
 
     const todosDadosGalpao = {
@@ -90,6 +95,10 @@ function Dimensionamento(){
     }
     const todosDadosDiversos = {
         setQuantidadeSondaT,setQuantidadeSondaTU,setQuantidadeSondaPE,setQuantidadeSondaCo2,setQuantidadeSondaH2O,setMotorRedutorCortina,setQuantidadeGatilho,setQuantidadePPs,setQuantidadeFlushing,setTipoAnimalGalpao,setTipoCriacaoAnimal,setQuantidadeLinhas,QuantidadeLinhas,QuantidadeSondaT,QuantidadeSondaTU,QuantidadeSondaPE,QuantidadeSondaCo2,QuantidadeSondaH2O,MotorRedutorCortina,QuantidadeGatilho,QuantidadePPs,QuantidadeFlushing,TipoAnimalGalpao,TipoCriacaoAnimal
+    }
+
+    const todosDadosInlet = {
+        setTipoInlet,setFixacaoInlet,setMotorInlet,setQuantidadeInlet,TipoInlet,FixacaoInlet,MotorInlet,QuantidadeInlet
     }
 
     async function DefineDados(event){
@@ -203,6 +212,16 @@ function Dimensionamento(){
         setTipoAnimalGalpao('Aves')
         setTipoCriacaoAnimal('')
 
+        setDadosInlets({
+            tipoInlet:TipoInlet,
+            fixacaoInlet: FixacaoInlet,
+            motorInlet:MotorInlet,
+            quantidadeInlet:QuantidadeInlet
+        })
+        setTipoInlet('')
+        setFixacaoInlet('')
+        setMotorInlet('')
+        setQuantidadeInlet('')
 
        }
 
@@ -222,6 +241,8 @@ function Dimensionamento(){
 
     const [dadosDiversos, setDadosDiversos] = useState({})
     
+    const [dadosInlets, setDadosInlets] = useState({})
+
     useEffect(() =>{
      setTodosOsDados({
          dadosGalpao ,
@@ -230,9 +251,10 @@ function Dimensionamento(){
          dadosAlimentacao,
          dadosAquecedores,
          dadosIluminacao,
-         dadosDiversos
+         dadosDiversos,
+         dadosInlets
      })
-    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos])
+    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos,dadosInlets])
 
     useEffect(() =>{
         console.log(TodosOsDados)
@@ -262,6 +284,9 @@ function Dimensionamento(){
             />
             <DimensionamentoDiversos
             todosDadosDiversos={{...todosDadosDiversos}}
+            />
+            <DimensionamentoInlet 
+            todosDadosInlet={{...todosDadosInlet}}
             />
             <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
             </Form>

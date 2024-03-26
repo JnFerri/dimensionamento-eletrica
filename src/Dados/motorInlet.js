@@ -1,0 +1,1 @@
+export const motorInlet = ['Motorredutor inlet - Não', 'Motorredutor inlet - Sim', 'Atuador 300mm', 'Atuador 200mm']
