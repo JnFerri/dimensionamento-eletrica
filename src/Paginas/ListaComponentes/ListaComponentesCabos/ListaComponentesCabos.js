@@ -75,7 +75,7 @@ function ListaComponentesCabos() {
                     size: '10000'
                   })
             }
-            const response = await fetch('http://localhost:3000/api/jestor/lista', option);
+            const response = await fetch('http://srv-services:3000/api/jestor/lista', option);
             const data = await response.json();
             setTodosCabos(data);
             if (data !== '') {

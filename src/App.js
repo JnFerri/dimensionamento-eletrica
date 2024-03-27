@@ -28,7 +28,7 @@ function App() {
       async function confereLoginLocalStorage(){
         const loginStorage = JSON.parse(localStorage.getItem('Login'))
         if(loginStorage){
-          await fetch('http://localhost:3000/autorizacao',{ method: 'POST',
+          await fetch('http://localhost:3000/autorizacao/dimensionamentoEletrica',{ method: 'POST',
           headers: {
             accept: 'application/json',
             'content-type': 'application/json'
