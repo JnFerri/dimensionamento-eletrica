@@ -76,6 +76,7 @@ function DimensionamentoInlet({todosDadosInlet}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Inlet:</Label>
                 <Select value={todosDadosInlet.TipoInlet} onChange={HandleTipoInlet} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     {
                         tiposInlet.map((inlet,index) => (
                             <Option key={index} color="#FF8C00" font_size='22px'>{inlet}</Option>
@@ -86,6 +87,7 @@ function DimensionamentoInlet({todosDadosInlet}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Fixação:</Label>
                 <Select value={todosDadosInlet.FixacaoInlet} onChange={HandleFixacaoInlet} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                 {
                         tiposFixacaoInlet.map((fixacao,index) => (
                             <Option key={index} color="#FF8C00" font_size='22px'>{fixacao}</Option>
@@ -96,6 +98,7 @@ function DimensionamentoInlet({todosDadosInlet}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Motor Inlet:</Label>
                 <Select value={todosDadosInlet.MotorInlet} onChange={HandleMotorInlet} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                 {
                         motorInlet.map((motor,index) => (
                             <Option key={index} color="#FF8C00" font_size='22px'>{motor}</Option>

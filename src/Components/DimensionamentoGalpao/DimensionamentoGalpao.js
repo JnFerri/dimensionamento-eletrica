@@ -10,6 +10,7 @@ import redeEletrica from "../../Dados/redeEletrica"
 import controladores from "../../Dados/controladores"
 import Input from "../Input/Input"
 import Titulo4 from "../Titulo4/Titulo4"
+import { VerificaSeNumeroMaiorQueZero } from "../../Helpers/VerificaSeNumeroMaiorQueZero"
 
 
 
@@ -46,14 +47,26 @@ function DimensionamentoGalpao({todosDadosGalpao}){
     
 
    function HandleComprimentoForm(event){
-    todosDadosGalpao.setComprimentoForm(event.target.value)
+    const valor = event.target.value.replace(',','.')
+    if(VerificaSeNumeroMaiorQueZero(valor)){
+        todosDadosGalpao.setComprimentoForm(valor)
+    }
    }
+
    function HandleLarguraForm(event){
-    todosDadosGalpao.setLarguraForm(event.target.value)
+    const valor = event.target.value.replace(',','.')
+    if(VerificaSeNumeroMaiorQueZero(valor)){
+    todosDadosGalpao.setLarguraForm(valor)
+    }
    }
+
    function HandleAlturaForm(event){
-    todosDadosGalpao.setAlturaForm(event.target.value)
+    const valor = event.target.value.replace(',','.')
+    if(VerificaSeNumeroMaiorQueZero(valor)){
+        todosDadosGalpao.setAlturaForm(valor)
+    }
    }
+
    function HandleControladorForm(event){
         todosDadosGalpao.setControladorForm(event.target.value)
    }

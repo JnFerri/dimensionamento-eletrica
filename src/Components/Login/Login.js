@@ -35,6 +35,8 @@ function Login({setSituacaoLogin, setLoginLocalStorage, LoginLocalStorage, Situa
       }
     },[LoginLocalStorage, SituacaoLogin,navigate])
 
+    
+
     const confereLogin = async() => {
         /*await fetch('http://localhost:3000/autorizacao',{ method: 'POST',
         headers: {
@@ -64,13 +66,19 @@ function Login({setSituacaoLogin, setLoginLocalStorage, LoginLocalStorage, Situa
         setSenha(event.target.value)
         }
 
+    const HandlePressEnter = (event) => {
+      if (event.key === 'Enter'){
+        confereLogin()
+      }
+    }
+
     return(
         <LoginContainer>
             <Label width='60%' font_size='38px'>USUARIO:</Label>
-            <Input type="text" width='60%' value={Usuario} onChange={HandleUsuario} placeholder="Coloque o Nome do Usuario..." border='0.7px black solid' padding='15px 15px' border_radius='10px' margin='10px 10px'></Input>
+            <Input type="text" width='60%' onKeyDown={HandlePressEnter} value={Usuario} onChange={HandleUsuario} placeholder="Coloque o Nome do Usuario..." border='0.7px black solid' padding='15px 15px' border_radius='10px' margin='10px 10px'></Input>
             <Label width='60%' font_size='38px'>SENHA:</Label>
-            <Input type="password" width='60%' value={Senha} onChange={HandleSenha} placeholder="Coloque a Senha do Usuario..." border='0.7px black solid' padding='15px 15px' border_radius='10px' margin='10px 10px'></Input>
-            <Botao onClick={confereLogin} backgroundcolor='orange' border='0.75px black solid' width='40%' padding='20px 20px' border_radius='20px' font_size='24px'>ENTRAR</Botao>
+            <Input type="password" width='60%' onKeyDown={HandlePressEnter} value={Senha} onChange={HandleSenha} placeholder="Coloque a Senha do Usuario..." border='0.7px black solid' padding='15px 15px' border_radius='10px' margin='10px 10px'></Input>
+            <Botao onClick={confereLogin}  backgroundcolor='orange' border='0.75px black solid' width='40%' padding='20px 20px' border_radius='20px' font_size='24px'>ENTRAR</Botao>
         </LoginContainer>
     )
 }

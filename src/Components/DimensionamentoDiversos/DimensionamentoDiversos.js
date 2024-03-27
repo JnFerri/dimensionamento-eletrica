@@ -154,6 +154,7 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Gatilhos:</Label>
                 <Select value={todosDadosDiversos.QuantidadeGatilho} onChange={HandleQuantidadeGatilho} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     <Option value={0} color="#FF8C00" font_size='22px'>Gatilhos - Não</Option>
                     <Option value={2} color="#FF8C00" font_size='22px'>02 Gatilhos</Option>
                     <Option value={4} color="#FF8C00" font_size='22px'>04 Gatilhos</Option>
@@ -177,6 +178,7 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Galpão de:</Label>
                 <Select value={todosDadosDiversos.TipoAnimalGalpao} onChange={HandleTipoAnimalGalpao} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     <Option value={'Suinos'} color="#FF8C00" font_size='22px'>Suínos</Option>
                     <Option value={'Aves'} color="#FF8C00" font_size='22px'>Aves</Option>
                 </Select>
@@ -184,6 +186,7 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Tipo de Galpão:</Label>
                 <Select value={todosDadosDiversos.TipoCriacaoAnimal} onChange={HandleTipoCriacaoAnimal} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     {todosDadosDiversos.TipoAnimalGalpao === 'Aves' ?
                      tiposGalpaoAves.map((tipo,index) => (
                      <Option key={index} color="#FF8C00" font_size='22px'>{tipo}</Option>

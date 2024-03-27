@@ -87,14 +87,14 @@ function DimensionamentoVentilacao({todosDadosVentilacao}){
     function HandleQuantidadeVentiladores(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
-            todosDadosVentilacao.setQuantidadeVentiladoresForm(event.target.value)
+            todosDadosVentilacao.setQuantidadeVentiladoresForm(valor)
         }
     }
 
     function HandlePotenciaVentiladores(event){
         const valor = event.target.value.replace(',', '.')
         if(VerificaSeNumeroMaiorQueZero(valor)){
-            todosDadosVentilacao.setPotenciaVentiladoresForm(event.target.value)
+            todosDadosVentilacao.setPotenciaVentiladoresForm(valor)
         }
     }
 

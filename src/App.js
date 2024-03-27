@@ -13,6 +13,7 @@ import Header from './Components/Header/Header.js';
 import ListaComponentes from './Paginas/ListaComponentes/ListaComponentes.js';
 import ListaComponentesMotor from './Paginas/ListaComponentes/ListaComponentesMotor/ListaComponentesMotor.js';
 import ListaComponentesCabos from './Paginas/ListaComponentes/ListaComponentesCabos/ListaComponentesCabos.js';
+import ListaComponentesMaterial from './Paginas/ListaComponentes/ListaComponentesMateriais/ListaComponentesMateriais.js';
 
 function App() {
   
@@ -41,6 +42,7 @@ function App() {
           setSituacaoLogin(true)
         }else{
           setSituacaoLogin(false)
+          window.alert('Login incorreto, caso esqueceu a senha contatar o administrador.')
         }
       });
         }
@@ -63,6 +65,7 @@ function App() {
           <Route path="/listaComponentes" element={<ProtectedRoute component={ListaComponentes} isAuthenticated={SituacaoLogin} />} />
           <Route path="/listaComponentes/motor" element={<ProtectedRoute component={ListaComponentesMotor} isAuthenticated={SituacaoLogin} />} />
           <Route path="/listaComponentes/cabos" element={<ProtectedRoute component={ListaComponentesCabos} isAuthenticated={SituacaoLogin} />} />
+          <Route path="/listaComponentes/materiais" element={<ProtectedRoute component={ListaComponentesMaterial} isAuthenticated={SituacaoLogin} />} />
           <Route path="/dimensionamento" element={<ProtectedRoute component={Dimensionamento} isAuthenticated={SituacaoLogin} />} />
           {/* Outras rotas protegidas */}
         </Routes>
