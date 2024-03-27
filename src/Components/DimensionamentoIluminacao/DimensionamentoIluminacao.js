@@ -40,24 +40,24 @@ const FormDiv = styled.div`
 
 function DimensionamentoIluminacao({todosDadosIluminacao}){
 
-    function HandleQauntidadeWY03(event){
+    function HandleQauntidadeLampadas(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
-            todosDadosIluminacao.setQuantidadeWY03(valor)
+            todosDadosIluminacao.setQuantidadeLampadas(valor)
         }
     }
 
-    function HandleQauntidadeWY04(event){
+    function HandlePotenciaLampadas(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
-            todosDadosIluminacao.setQuantidadeWY04(valor)
+            todosDadosIluminacao.setPotenciaLampadas(valor)
         }
     }
 
-    function HandleQuantidadeBocais(event){
+    function HandleCorLampadas(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
-            todosDadosIluminacao.setQuantidadeBocais(valor)
+            todosDadosIluminacao.setCorLampadas(valor)
         }
     }
     function HandleQuantidadeCircuitos(event){
@@ -78,20 +78,24 @@ function DimensionamentoIluminacao({todosDadosIluminacao}){
                 <FormDivLinha>
                 <FormDiv>
                 <FormDivLinha>
-                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>WY-03 (4500K):</Label>
-                <Input  type="number"  required  onChange={HandleQauntidadeWY03} value={todosDadosIluminacao.QuantidadeWY03} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
+                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Quantidade Lampadas:</Label>
+                <Input  type="number"  required  onChange={HandleQauntidadeLampadas} value={todosDadosIluminacao.QuantidadeLampadas} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <FormDivLinha>
-                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>WY-04 (2700K):</Label>
-                <Input  type="number" required  onChange={HandleQauntidadeWY04} value={todosDadosIluminacao.QuantidadeWY04} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
+                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Potencia Lampadas:</Label>
+                <Input  type="number" required  onChange={HandlePotenciaLampadas} value={todosDadosIluminacao.PotenciaLampadas} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <FormDivLinha>
-                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Bocais:</Label>
-                <Input  type="number"  required onChange={HandleQuantidadeBocais} value={todosDadosIluminacao.QuantidadeBocais} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
+                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Cor das Lampadas:</Label>
+                <Select value={todosDadosIluminacao.CorLampadas} onChange={HandleCorLampadas} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Option value={''} color="#FF8C00" font_size='22px'></Option>
+                    <Option value={2700} color="#FF8C00" font_size='22px'>2700k</Option>
+                    <Option value={4500} color="#FF8C00" font_size='22px'>4500k</Option>
+                </Select>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>
@@ -99,13 +103,13 @@ function DimensionamentoIluminacao({todosDadosIluminacao}){
                 <FormDivLinha>
                 <FormDiv>
                 <FormDivLinha>
-                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Circuitos:</Label>
+                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='50%'>Circuitos:</Label>
                 <Input  type="number"  required  onChange={HandleQuantidadeCircuitos} value={todosDadosIluminacao.QuantidadeCircuitos} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Circuitos"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
-                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Dimerizável ?</Label>
                 <FormDivLinha>
+                <Label font_size='16px' translate="0px" color="orange" text_align='left' width='50%'>Dimerizável:</Label>
                 <Select value={todosDadosIluminacao.Dimerizavel} onChange={HandleDimerizavel} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
                     <Option value={true} color="#FF8C00" font_size='22px'>Dimerizável - Sim</Option>
                     <Option value={false} color="#FF8C00" font_size='22px'>Dimerizável - Não</Option>

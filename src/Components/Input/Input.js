@@ -9,6 +9,7 @@ const Input = styled.input`
     text-align:${props => props.text_align || "center"};
     font-size: ${props => props.font_size || '14px'};
     background-color:${props => props.background_color || 'white'};
+    cursor: ${props => props.cursor || 'auto'}
 `
 
 export default Input

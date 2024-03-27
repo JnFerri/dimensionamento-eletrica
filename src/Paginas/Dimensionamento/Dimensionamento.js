@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Titulo2 from "../../Components/Titulo2/Titulo2";
 import DimensionamentoGalpao from "../../Components/DimensionamentoGalpao/DimensionamentoGalpao.js";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import DimensionamentoVentilacao from "../../Components/DimensionamentoVentilacao/DimensionamentoVentilacao.js";
 import Form from "../../Components/Form/Form.js"
 import Input from "../../Components/Input/Input.js";
@@ -10,8 +10,6 @@ import DimensionamentoAlimentacao from "../../Components/DimensionamentoAlimenta
 import DimensionamentoAquecedores from "../../Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js";
 import DimensionamentoIluminacao from "../../Components/DimensionamentoIluminacao/DimensionamentoIluminacao.js";
 import DimensionamentoDiversos from "../../Components/DimensionamentoDiversos/DimensionamentoDiversos.js";
-import DimensionamentoInlet from "../../Components/DimensionamentoInlet/DimensionamentoInlet.js";
-import DimensionamentoCalculoInlet from "../../Components/DimensionamentoCalculoInlet/DimensionamentoCalculoInlet.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -53,9 +51,9 @@ function Dimensionamento(){
     const [QuantidadeFoguista, setQuantidadeFoguista] = useState('')
     const [PotenciaFoguista, setPotenciaFoguista] = useState('')
     const [FornoPossuiPainel, setFornoPossuiPainel] = useState(false)
-    const [QuantidadeWY03, setQuantidadeWY03] = useState('')
-    const [QuantidadeWY04, setQuantidadeWY04] = useState('')
-    const [QuantidadeBocais, setQuantidadeBocais] = useState('')
+    const [QuantidadeLampadas, setQuantidadeLampadas] = useState('')
+    const [PotenciaLampadas, setPotenciaLampadas] = useState('')
+    const [CorLampadas, setCorLampadas] = useState('')
     const [QuantidadeCircuitos, setQuantidadeCircuitos] = useState('')
     const [Dimerizavel, setDimerizavel] = useState(true)
     const [QuantidadeSondaT, setQuantidadeSondaT] = useState('')
@@ -64,19 +62,13 @@ function Dimensionamento(){
     const [QuantidadeSondaCo2, setQuantidadeSondaCo2] = useState('')
     const [QuantidadeSondaH2O, setQuantidadeSondaH2O] = useState('')
     const [MotorRedutorCortina, setMotorRedutorCortina] = useState(true)
-    const [QuantidadeGatilho, setQuantidadeGatilho] = useState('')
-    const [QuantidadePPs, setQuantidadePPs] = useState('')
-    const [QuantidadeFlushing, setQuantidadeFlushing] = useState('')
+    const [Gatilho, setGatilho] = useState(true)
+    const [Flushing, setFlushing] = useState(true)
     const [QuantidadeLinhas, setQuantidadeLinhas] = useState('')
-    const [TipoAnimalGalpao, setTipoAnimalGalpao] = useState('Aves')
+    const [TipoAnimalGalpao, setTipoAnimalGalpao] = useState('')
     const [TipoCriacaoAnimal, setTipoCriacaoAnimal] = useState('')
-    const [TipoInlet, setTipoInlet] = useState('')
-    const [FixacaoInlet, setFixacaoInlet] = useState('')
-    const [MotorInlet, setMotorInlet] = useState('')
-    const [QuantidadeInlet, setQuantidadeInlet] = useState('')
-    const [CapacidadeExaustor, setCapacidadeExaustor] = useState('')
-    const [PercentualExaustor, setPercentualExaustor] = useState('')
-    const [TodosOsDados, setTodosOsDados] = useState('')
+    const [TodosOsDados, setTodosOsDados] = useState(null)
+    const todosOsDadosDefinidos = useRef(false)
 
     const todosDadosGalpao = {
         setComprimentoForm,setLarguraForm,setAlturaForm,setControladorForm,setRedeEletricaForm,setProtecaoMotorForm,setMarcaForm,setQuantidadeCaixaForm,setSegurancaForm,ComprimentoForm,LarguraForm,AlturaForm,ControladorForm,RedeEletricaForm,ProtecaoMotorForm,MarcaForm,QuantidadeCaixaForm,SegurancaForm
@@ -94,19 +86,13 @@ function Dimensionamento(){
         setQuantidadeAquecedor1,setPotenciaAquecedor1,setQuantidadeAquecedor2,setPotenciaAquecedor2,setQuantidadeFoguista,setPotenciaFoguista,setFornoPossuiPainel,QuantidadeAquecedor1,PotenciaAquecedor1,QuantidadeAquecedor2,PotenciaAquecedor2,QuantidadeFoguista,PotenciaFoguista,FornoPossuiPainel
     }
     const todosDadosIluminacao = {
-        setQuantidadeWY03,setQuantidadeWY04,setQuantidadeBocais,setDimerizavel,setQuantidadeCircuitos,QuantidadeWY03,QuantidadeWY04,QuantidadeBocais,Dimerizavel,QuantidadeCircuitos
+        setQuantidadeLampadas,setPotenciaLampadas,setCorLampadas,setDimerizavel,setQuantidadeCircuitos,QuantidadeLampadas,PotenciaLampadas,CorLampadas,Dimerizavel,QuantidadeCircuitos
     }
     const todosDadosDiversos = {
-        setQuantidadeSondaT,setQuantidadeSondaTU,setQuantidadeSondaPE,setQuantidadeSondaCo2,setQuantidadeSondaH2O,setMotorRedutorCortina,setQuantidadeGatilho,setQuantidadePPs,setQuantidadeFlushing,setTipoAnimalGalpao,setTipoCriacaoAnimal,setQuantidadeLinhas,QuantidadeLinhas,QuantidadeSondaT,QuantidadeSondaTU,QuantidadeSondaPE,QuantidadeSondaCo2,QuantidadeSondaH2O,MotorRedutorCortina,QuantidadeGatilho,QuantidadePPs,QuantidadeFlushing,TipoAnimalGalpao,TipoCriacaoAnimal
+        setQuantidadeSondaT,setQuantidadeSondaTU,setQuantidadeSondaPE,setQuantidadeSondaCo2,setQuantidadeSondaH2O,setMotorRedutorCortina,setGatilho,setFlushing,setTipoAnimalGalpao,setTipoCriacaoAnimal,setQuantidadeLinhas,QuantidadeLinhas,QuantidadeSondaT,QuantidadeSondaTU,QuantidadeSondaPE,QuantidadeSondaCo2,QuantidadeSondaH2O,MotorRedutorCortina,Gatilho,Flushing,TipoAnimalGalpao,TipoCriacaoAnimal
     }
 
-    const todosDadosInlet = {
-        setTipoInlet,setFixacaoInlet,setMotorInlet,setQuantidadeInlet,TipoInlet,FixacaoInlet,MotorInlet,QuantidadeInlet
-    }
-
-    const todosDadosCalculoInlet ={
-        setCapacidadeExaustor,setPercentualExaustor,CapacidadeExaustor,PercentualExaustor
-    }
+    
 
     async function DefineDados(event){
         event.preventDefault()
@@ -180,15 +166,15 @@ function Dimensionamento(){
         setFornoPossuiPainel(false)
 
         setDadosIluminacao({
-            lampadaWY03:QuantidadeWY03,
-            lampadaWY04:QuantidadeWY04,
-            bocais:QuantidadeBocais,
+            quantidadeLampadas:QuantidadeLampadas,
+            potenciaLampadas:PotenciaLampadas,
+            corLampadas:CorLampadas,
             circuitos:QuantidadeCircuitos,
             dimerizavel:Dimerizavel
         })
-        setQuantidadeWY03('')
-        setQuantidadeWY04('')
-        setQuantidadeBocais('')
+        setQuantidadeLampadas('')
+        setPotenciaLampadas('')
+        setCorLampadas('')
         setQuantidadeCircuitos('')
         setDimerizavel(true)
 
@@ -199,9 +185,8 @@ function Dimensionamento(){
             sondaCo2:QuantidadeSondaCo2,
             sondaH2O:QuantidadeSondaH2O,
             motorRedutorCortina:MotorRedutorCortina,
-            gatilhos:QuantidadeGatilho,
-            PPs:QuantidadePPs,
-            flushing:QuantidadeFlushing,
+            gatilho:Gatilho,
+            flushing:Flushing,
             linhas:QuantidadeLinhas,
             tipoAnimalGalpao:TipoAnimalGalpao,
             tipoCriacaoAnimal:TipoCriacaoAnimal
@@ -212,52 +197,31 @@ function Dimensionamento(){
         setQuantidadeSondaCo2('')
         setQuantidadeSondaH2O('')
         setMotorRedutorCortina(true)
-        setQuantidadeGatilho('')
-        setQuantidadePPs('')
-        setQuantidadeFlushing('')
+        setGatilho('')
+        setFlushing('')
         setQuantidadeLinhas('')
         setTipoAnimalGalpao('Aves')
         setTipoCriacaoAnimal('')
-
-        setDadosInlets({
-            tipoInlet:TipoInlet,
-            fixacaoInlet: FixacaoInlet,
-            motorInlet:MotorInlet,
-            quantidadeInlet:QuantidadeInlet
-        })
-        setTipoInlet('')
-        setFixacaoInlet('')
-        setMotorInlet('')
-        setQuantidadeInlet('')
-
-        setdadosCalculoInlet({
-            capacidadeExaustor:CapacidadeExaustor,
-            porcentagemExasutorTransicao:PercentualExaustor
-        })
-        setCapacidadeExaustor('')
-        setPercentualExaustor('')
        }
 
        
        
-    const [dadosGalpao,setDadosGalpao] = useState({})
+    const [dadosGalpao,setDadosGalpao] = useState(null)
     
-    const [dadosVentilacao,setDadosVentilacao] = useState({})
+    const [dadosVentilacao,setDadosVentilacao] = useState(null)
 
-    const [dadosResfriamento, setDadosResfriamento] = useState({})
+    const [dadosResfriamento, setDadosResfriamento] = useState(null)
     
-    const [dadosAlimentacao, setDadosAlimentacao] = useState({})
+    const [dadosAlimentacao, setDadosAlimentacao] = useState(null)
 
-    const [dadosAquecedores, setDadosAquecedores] = useState({})
+    const [dadosAquecedores, setDadosAquecedores] = useState(null)
 
-    const [dadosIluminacao, setDadosIluminacao] = useState({})
+    const [dadosIluminacao, setDadosIluminacao] = useState(null)
 
-    const [dadosDiversos, setDadosDiversos] = useState({})
+    const [dadosDiversos, setDadosDiversos] = useState(null)
+
+
     
-    const [dadosInlets, setDadosInlets] = useState({})
-
-    const [dadosCalculoInlet, setdadosCalculoInlet] = useState({})
-
     useEffect(() =>{
      setTodosOsDados({
          dadosGalpao ,
@@ -267,18 +231,21 @@ function Dimensionamento(){
          dadosAquecedores,
          dadosIluminacao,
          dadosDiversos,
-         dadosInlets,
-         dadosCalculoInlet
+        
      })
-    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos,dadosInlets,dadosCalculoInlet])
+     todosOsDadosDefinidos.current = true
+    },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos,])
 
     useEffect(() =>{
-        console.log(TodosOsDados)
+        if (TodosOsDados && todosOsDadosDefinidos.current === true){
+            console.log(TodosOsDados)
+        }
+        todosOsDadosDefinidos.current = false
     },[TodosOsDados])
     
     return(
         <DimensionamentoContainer>
-            <Form width='100%' onSubmit={DefineDados}>
+            <Form width='100%' onSubmit={DefineDados} >
             <Titulo2 color="orange" font_size='40px' text_shadow='2px 2px 2px black'>COLETA DE DADOS DE DIMENSIONAMENTO:</Titulo2>
             <DimensionamentoGalpao 
             todosDadosGalpao = {{...todosDadosGalpao}}
@@ -301,13 +268,7 @@ function Dimensionamento(){
             <DimensionamentoDiversos
             todosDadosDiversos={{...todosDadosDiversos}}
             />
-            <DimensionamentoInlet 
-            todosDadosInlet={{...todosDadosInlet}}
-            />
-            <DimensionamentoCalculoInlet
-            todosDadosCalculoInlet={{...todosDadosCalculoInlet}}
-            />
-            <Input type="Submit" color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO'/>
+            <Input type="Submit"  color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO' cursor='pointer' readOnly/>
             </Form>
 
         </DimensionamentoContainer>
