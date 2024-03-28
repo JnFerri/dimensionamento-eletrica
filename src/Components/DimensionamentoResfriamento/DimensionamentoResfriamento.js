@@ -74,15 +74,15 @@ function DimensionamentoResfriamento({todosDadosResfriamento}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Nebulizador:</Label>
                 <FormDivLinha>
-                <Input  type="number"  required  onChange={HandleQuantidadeNebulizadores} value={todosDadosResfriamento.QuantidadeNebulizador} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Nebulizadores"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaNebulizadores} value={todosDadosResfriamento.PotenciaNebulizador} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandleQuantidadeNebulizadores} value={todosDadosResfriamento.QuantidadeNebulizador} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Nebulizadores"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaNebulizadores} value={todosDadosResfriamento.PotenciaNebulizador} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Pad Cooling:</Label>
                 <FormDivLinha>
-                <Input  type="number"  required onChange={HandleQuantidadeCooling} value={todosDadosResfriamento.QuantidadeCooling} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Pad Cooling"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaCooling} value={todosDadosResfriamento.PotenciaCooling} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required onChange={HandleQuantidadeCooling} value={todosDadosResfriamento.QuantidadeCooling} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Pad Cooling"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaCooling} value={todosDadosResfriamento.PotenciaCooling} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>

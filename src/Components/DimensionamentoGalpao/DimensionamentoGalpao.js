@@ -87,7 +87,7 @@ function DimensionamentoGalpao({todosDadosGalpao}){
    }
 
    
-   
+  
    
 
     return(
@@ -95,9 +95,9 @@ function DimensionamentoGalpao({todosDadosGalpao}){
                 <Titulo4 color="orange" font_size='32px'>Dados do Galpão</Titulo4>
                     <Label color="white">Dimensões do Galpão (m)</Label>
                 <FormDivLinha>
-                    <Input value={todosDadosGalpao.ComprimentoForm} onChange={HandleComprimentoForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Comprimento"></Input>
-                    <Input value={todosDadosGalpao.LarguraForm} onChange={HandleLarguraForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Largura"></Input>
-                    <Input value={todosDadosGalpao.AlturaForm} onChange={HandleAlturaForm} required   type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Altura"></Input>
+                    <Input value={todosDadosGalpao.ComprimentoForm} onChange={HandleComprimentoForm} required onWheel={(e) => e.target.blur()}  type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Comprimento"></Input>
+                    <Input value={todosDadosGalpao.LarguraForm} onChange={HandleLarguraForm} required  onWheel={(e) => e.target.blur()}  type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Largura"></Input>
+                    <Input value={todosDadosGalpao.AlturaForm} onChange={HandleAlturaForm} required  onWheel={(e) => e.target.blur()}  type="number" padding='20px 20px' width='25%' border='orange 0.5px solid' border_radius='10px' placeholder="Altura"></Input>
                 </FormDivLinha>
                     <FormDivLinha>
                     <FormDiv>

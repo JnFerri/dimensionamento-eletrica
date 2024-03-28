@@ -79,13 +79,13 @@ function DimensionamentoIluminacao({todosDadosIluminacao}){
                 <FormDiv>
                 <FormDivLinha>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Quantidade Lampadas:</Label>
-                <Input  type="number"  required  onChange={HandleQauntidadeLampadas} value={todosDadosIluminacao.QuantidadeLampadas} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
+                <Input  type="number"   required  onChange={HandleQauntidadeLampadas} onWheel={(e) => e.target.blur()} value={todosDadosIluminacao.QuantidadeLampadas} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <FormDivLinha>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Potencia Lampadas:</Label>
-                <Input  type="number" required  onChange={HandlePotenciaLampadas} value={todosDadosIluminacao.PotenciaLampadas} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade"></Input>
+                <Input  type="number" required  onChange={HandlePotenciaLampadas} onWheel={(e) => e.target.blur()} value={todosDadosIluminacao.PotenciaLampadas} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Potencia"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
@@ -104,7 +104,7 @@ function DimensionamentoIluminacao({todosDadosIluminacao}){
                 <FormDiv>
                 <FormDivLinha>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='50%'>Circuitos:</Label>
-                <Input  type="number"  required  onChange={HandleQuantidadeCircuitos} value={todosDadosIluminacao.QuantidadeCircuitos} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Circuitos"></Input>
+                <Input  type="number"  required  onChange={HandleQuantidadeCircuitos} onWheel={(e) => e.target.blur()} value={todosDadosIluminacao.QuantidadeCircuitos} padding='20px 20px' width='100%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Circuitos"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>

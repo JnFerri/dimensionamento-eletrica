@@ -96,15 +96,15 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Aquecedor 1:</Label>
                 <FormDivLinha>
-                <Input  type="number"  required  onChange={HandleQuantidadeAquecedor1} value={todosDadosAquecedores.QuantidadeAquecedor1} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Aquecedores 1"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaAquecedor1} value={todosDadosAquecedores.PotenciaAquecedor1} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required  onChange={HandleQuantidadeAquecedor1} value={todosDadosAquecedores.QuantidadeAquecedor1} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Aquecedores 1"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaAquecedor1} value={todosDadosAquecedores.PotenciaAquecedor1} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Aquecedor 2:</Label>
                 <FormDivLinha>
-                <Input  type="number"  required onChange={HandleQuantidadeAquecedor2} value={todosDadosAquecedores.QuantidadeAquecedor2} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Aquecedores 2"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaAquecedor2} value={todosDadosAquecedores.PotenciaAquecedor2} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required onChange={HandleQuantidadeAquecedor2} value={todosDadosAquecedores.QuantidadeAquecedor2} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Aquecedores 2"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaAquecedor2} value={todosDadosAquecedores.PotenciaAquecedor2} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>
@@ -112,8 +112,8 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Foguista:</Label>
                 <FormDivLinha>
-                <Input  type="number"  required  onChange={HandleQuantidadeFoguista} value={todosDadosAquecedores.QuantidadeFoguista} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Foguista"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaFoguista} value={todosDadosAquecedores.PotenciaFoguista} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required  onChange={HandleQuantidadeFoguista} value={todosDadosAquecedores.QuantidadeFoguista} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Foguista"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaFoguista} value={todosDadosAquecedores.PotenciaFoguista} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>

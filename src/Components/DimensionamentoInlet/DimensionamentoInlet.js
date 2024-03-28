@@ -108,7 +108,7 @@ function DimensionamentoInlet({todosDadosInlet}){
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Quantidade de Inlets:</Label>
-                <Input  type="number"  required onChange={HandleQuantidadeInlet} value={todosDadosInlet.QuantidadeInlet} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Inlets"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required onChange={HandleQuantidadeInlet} value={todosDadosInlet.QuantidadeInlet} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Inlets"></Input>
                 </FormDiv>
                 </FormDivLinha>
             </DimensionamentoSection>

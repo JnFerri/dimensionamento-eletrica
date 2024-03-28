@@ -72,15 +72,15 @@ function DimensionamentoAlimentacao({todosDadosAlimentacao}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Linha Primária:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeLinhasPrimarias} value={todosDadosAlimentacao.QuantidadeLinhasPrimarias} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Linhas"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaLinhas} value={todosDadosAlimentacao.PotenciaLinhas} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandleQuantidadeLinhasPrimarias} value={todosDadosAlimentacao.QuantidadeLinhasPrimarias} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Linhas"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaLinhas} value={todosDadosAlimentacao.PotenciaLinhas} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Comedouros:</Label>
                 <FormDivLinha>
-                <Input  type="number" required onChange={HandleQuantidadeComedouros} value={todosDadosAlimentacao.QuantidadeComedouros} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Comedouros"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaComedouros} value={todosDadosAlimentacao.PotenciaComedouros} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required onChange={HandleQuantidadeComedouros} value={todosDadosAlimentacao.QuantidadeComedouros} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Comedouros"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaComedouros} value={todosDadosAlimentacao.PotenciaComedouros} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>

@@ -107,15 +107,15 @@ function DimensionamentoVentilacao({todosDadosVentilacao}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Exaustores:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeExaustores} value={todosDadosVentilacao.QuantidadeExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Exaustores"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaExaustores} value={todosDadosVentilacao.PotenciaExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandleQuantidadeExaustores} value={todosDadosVentilacao.QuantidadeExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Exaustores"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaExaustores} value={todosDadosVentilacao.PotenciaExaustoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Cortinas:</Label>
                 <FormDivLinha>
-                <Input  type="number" required onChange={HandleQuantidadeAcCortinas} value={todosDadosVentilacao.QuantidadeAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Cortinas"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaAcCortinas} value={todosDadosVentilacao.PotenciaAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required onChange={HandleQuantidadeAcCortinas} value={todosDadosVentilacao.QuantidadeAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Cortinas"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaAcCortinas} value={todosDadosVentilacao.PotenciaAcCortinasForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>
@@ -123,19 +123,19 @@ function DimensionamentoVentilacao({todosDadosVentilacao}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Inlet:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeAcInlet} value={todosDadosVentilacao.QuantidadeAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Inlet"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaAcInlet} value={todosDadosVentilacao.PotenciaAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandleQuantidadeAcInlet} value={todosDadosVentilacao.QuantidadeAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ac. Inlet"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaAcInlet} value={todosDadosVentilacao.PotenciaAcInletForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 <FormDivLinha>
                 <Label font_size='16px' translate="0px" color="orange" text_align='center' width='100%'>Assinale caso possua atuador</Label>
-                <Input type="checkbox" onChange={HandlePossuiAtuador} checked={todosDadosVentilacao.PossuiAtuadorInlet} width='100%'></Input>
+                <Input type="checkbox" onWheel={(e) => e.target.blur()} onChange={HandlePossuiAtuador} checked={todosDadosVentilacao.PossuiAtuadorInlet} width='100%'></Input>
                 </FormDivLinha>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Ventiladores:</Label>
                 <FormDivLinha>
-                <Input  type="number" required  onChange={HandleQuantidadeVentiladores} value={todosDadosVentilacao.QuantidadeVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ventiladores"></Input>
-                <Input  type="number" required  onChange={HandlePotenciaVentiladores} value={todosDadosVentilacao.PotenciaVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandleQuantidadeVentiladores} value={todosDadosVentilacao.QuantidadeVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Ventiladores"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandlePotenciaVentiladores} value={todosDadosVentilacao.PotenciaVentiladoresForm} padding='20px 20px' width='40%' border='orange 0.5px solid' border_radius='10px' placeholder="Potência em CV"></Input>
                 </FormDivLinha>
                 </FormDiv>
                 </FormDivLinha>

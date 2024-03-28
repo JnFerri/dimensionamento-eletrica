@@ -112,26 +112,26 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDivLinha>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Temperatura:</Label>
-                <Input  type="number"  required  onChange={HandleQuantidadeSondaT} value={todosDadosDiversos.QuantidadeSondaT} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda T"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required  onChange={HandleQuantidadeSondaT} value={todosDadosDiversos.QuantidadeSondaT} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda T"></Input>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Umidade:</Label>
-                <Input  type="number"  required onChange={HandleQuantidadeSondaTU} value={todosDadosDiversos.QuantidadeSondaTU} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda T/U"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required onChange={HandleQuantidadeSondaTU} value={todosDadosDiversos.QuantidadeSondaTU} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda T/U"></Input>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Pressão:</Label>
-                <Input  type="number"  required  onChange={HandleQuantidadeSondaPE} value={todosDadosDiversos.QuantidadeSondaPE} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda PE"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required  onChange={HandleQuantidadeSondaPE} value={todosDadosDiversos.QuantidadeSondaPE} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda PE"></Input>
                 </FormDiv>
                 </FormDivLinha>
 
                 <FormDivLinha>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Sonda Co2:</Label>
-                <Input  type="number"  required  onChange={HandleQuantidadeSondaCo2} value={todosDadosDiversos.QuantidadeSondaCo2} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda Co2"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required  onChange={HandleQuantidadeSondaCo2} value={todosDadosDiversos.QuantidadeSondaCo2} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda Co2"></Input>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Hidrometro:</Label>
-                <Input  type="number"  required onChange={HandleQuantidadeSondaH2O} value={todosDadosDiversos.QuantidadeSondaH2O} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda H2O"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required onChange={HandleQuantidadeSondaH2O} value={todosDadosDiversos.QuantidadeSondaH2O} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Sonda H2O"></Input>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Motorredutor cortina:</Label>
@@ -146,7 +146,6 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Gatilhos:</Label>
                 <Select value={todosDadosDiversos.Gatilho} onChange={HandleGatilho} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
-                    <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     <Option value={true} color="#FF8C00" font_size='22px'>Sim</Option>
                     <Option value={false} color="#FF8C00" font_size='22px'>Não</Option>
                 </Select>
@@ -154,7 +153,6 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Flushing:</Label>
                 <Select value={todosDadosDiversos.Flushing} onChange={HandleFlushing} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
-                    <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     <Option value={true} color="#FF8C00" font_size='22px'>Sim</Option>
                     <Option value={false} color="#FF8C00" font_size='22px'>Não</Option>
                 </Select>
@@ -164,7 +162,7 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDivLinha>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>N° Linhas:</Label>
-                <Input  type="number"  required onChange={HandleQuantidadeLinhas} value={todosDadosDiversos.QuantidadeLinhas} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Linhas"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required onChange={HandleQuantidadeLinhas} value={todosDadosDiversos.QuantidadeLinhas} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Quantidade Linhas"></Input>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Galpão de:</Label>

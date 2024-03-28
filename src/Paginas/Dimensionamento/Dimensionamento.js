@@ -10,6 +10,7 @@ import DimensionamentoAlimentacao from "../../Components/DimensionamentoAlimenta
 import DimensionamentoAquecedores from "../../Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js";
 import DimensionamentoIluminacao from "../../Components/DimensionamentoIluminacao/DimensionamentoIluminacao.js";
 import DimensionamentoDiversos from "../../Components/DimensionamentoDiversos/DimensionamentoDiversos.js";
+import { CriaPdfDimensionamento } from "../../Services/CriaPdfDimensionamento.js";
 
 const DimensionamentoContainer = styled.main`
 display:flex;
@@ -50,20 +51,20 @@ function Dimensionamento(){
     const [PotenciaAquecedor2, setPotenciaAquecedor2] = useState('')
     const [QuantidadeFoguista, setQuantidadeFoguista] = useState('')
     const [PotenciaFoguista, setPotenciaFoguista] = useState('')
-    const [FornoPossuiPainel, setFornoPossuiPainel] = useState(false)
+    const [FornoPossuiPainel, setFornoPossuiPainel] = useState('false')
     const [QuantidadeLampadas, setQuantidadeLampadas] = useState('')
     const [PotenciaLampadas, setPotenciaLampadas] = useState('')
     const [CorLampadas, setCorLampadas] = useState('')
     const [QuantidadeCircuitos, setQuantidadeCircuitos] = useState('')
-    const [Dimerizavel, setDimerizavel] = useState(true)
+    const [Dimerizavel, setDimerizavel] = useState('true')
     const [QuantidadeSondaT, setQuantidadeSondaT] = useState('')
     const [QuantidadeSondaTU, setQuantidadeSondaTU] = useState('')
     const [QuantidadeSondaPE, setQuantidadeSondaPE] = useState('')
     const [QuantidadeSondaCo2, setQuantidadeSondaCo2] = useState('')
     const [QuantidadeSondaH2O, setQuantidadeSondaH2O] = useState('')
-    const [MotorRedutorCortina, setMotorRedutorCortina] = useState(true)
-    const [Gatilho, setGatilho] = useState('')
-    const [Flushing, setFlushing] = useState('')
+    const [MotorRedutorCortina, setMotorRedutorCortina] = useState('true')
+    const [Gatilho, setGatilho] = useState('false')
+    const [Flushing, setFlushing] = useState('false')
     const [QuantidadeLinhas, setQuantidadeLinhas] = useState('')
     const [TipoAnimalGalpao, setTipoAnimalGalpao] = useState('')
     const [TipoCriacaoAnimal, setTipoCriacaoAnimal] = useState('')
@@ -105,7 +106,7 @@ function Dimensionamento(){
             protecaoMotor:ProtecaoMotorForm,
             marcaComponentes:MarcaForm,
             quantidadeCaixas:QuantidadeCaixaForm,
-            Segurança:SegurancaForm,
+            seguranca:SegurancaForm,
         })
         setComprimentoForm('')
         setLarguraForm('')
@@ -118,7 +119,7 @@ function Dimensionamento(){
         setSegurancaForm('')
 
         setDadosVentilacao({
-        exaustor:{quantidade:QuantidadeVentiladoresForm,potencia:PotenciaExaustoresForm},
+        exaustor:{quantidade:QuantidadeExaustoresForm,potencia:PotenciaExaustoresForm},
         acCortina:{quantidade:QuantidadeAcCortinasForm,potencia:PotenciaAcCortinasForm},
         acInlet:{quantidade:QuantidadeAcInletForm,potencia:PotenciaAcInletForm,atuador:PossuiAtuadorInlet},
         ventilador:{quantidade:QuantidadeVentiladoresForm,potencia:PotenciaVentiladoresForm},
@@ -262,9 +263,9 @@ function Dimensionamento(){
                 }
                 
                const resposta = await fetch('http://localhost:5000/enviaDimensionamento', options)
-                console.log( await resposta.json())
-
-
+               console.log(TodosOsDados)
+                CriaPdfDimensionamento(TodosOsDados,await resposta.json())
+                
                 }
 
                 

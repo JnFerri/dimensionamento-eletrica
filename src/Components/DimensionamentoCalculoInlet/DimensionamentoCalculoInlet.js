@@ -63,11 +63,11 @@ function DimensionamentoCalculoInlet({todosDadosCalculoInlet}){
                 <FormDivLinha>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Capacidade do exaustor em 37,5PA:</Label>
-                <Input  type="number"  required onChange={HandleCapacidadeExaustor} value={todosDadosCalculoInlet.CapacidadeExaustor} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Capacidade do exaustor em 37,5PA"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()}  required onChange={HandleCapacidadeExaustor} value={todosDadosCalculoInlet.CapacidadeExaustor} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Capacidade do exaustor em 37,5PA"></Input>
                 </FormDiv>
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Porcentagem dos exaustores para transição:</Label>
-                <Input  type="number"  required onChange={HandlePercentualExaustor} value={todosDadosCalculoInlet.PercentualExaustor} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Porcentagem dos exaustores para transição"></Input>
+                <Input  type="number" onWheel={(e) => e.target.blur()} required onChange={HandlePercentualExaustor} value={todosDadosCalculoInlet.PercentualExaustor} padding='20px 20px' width='80%' border='orange 0.5px solid' border_radius='10px' placeholder="Porcentagem dos exaustores para transição"></Input>
                 </FormDiv>
                 </FormDivLinha>
             </DimensionamentoSection>
