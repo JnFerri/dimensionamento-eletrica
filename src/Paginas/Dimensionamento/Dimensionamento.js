@@ -244,7 +244,7 @@ function Dimensionamento(){
         const url = URL.createObjectURL(blob);
         const linkDownload = document.createElement('a');
         linkDownload.href = url;
-        linkDownload.download = 'meuarquivo.json';
+        linkDownload.download = 'exemploArquivoDimensionamento.json';
         document.body.appendChild(linkDownload);
         linkDownload.click();
         document.body.removeChild(linkDownload);
