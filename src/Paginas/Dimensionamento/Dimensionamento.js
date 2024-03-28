@@ -239,6 +239,16 @@ function Dimensionamento(){
     useEffect(() =>{
         if (TodosOsDados && todosOsDadosDefinidos.current === true){
             console.log(TodosOsDados)
+            const dadosString = JSON.stringify(TodosOsDados,null, 2)
+            const blob = new Blob([dadosString], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const linkDownload = document.createElement('a');
+        linkDownload.href = url;
+        linkDownload.download = 'meuarquivo.json';
+        document.body.appendChild(linkDownload);
+        linkDownload.click();
+        document.body.removeChild(linkDownload);
+        URL.revokeObjectURL(url);
         }
         todosOsDadosDefinidos.current = false
     },[TodosOsDados])
@@ -269,6 +279,7 @@ function Dimensionamento(){
             todosDadosDiversos={{...todosDadosDiversos}}
             />
             <Input type="Submit"  color="black" padding='20px 0px' background_color='orange' border='white 0.5px solid' border_radius='10px' font_size='24px' width='30%' value='GERAR QUADRO' cursor='pointer' readOnly/>
+            
             </Form>
 
         </DimensionamentoContainer>

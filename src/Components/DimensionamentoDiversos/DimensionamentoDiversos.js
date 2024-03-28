@@ -146,6 +146,7 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Gatilhos:</Label>
                 <Select value={todosDadosDiversos.Gatilho} onChange={HandleGatilho} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     <Option value={true} color="#FF8C00" font_size='22px'>Sim</Option>
                     <Option value={false} color="#FF8C00" font_size='22px'>Não</Option>
                 </Select>
@@ -153,6 +154,7 @@ function DimensionamentoDiversos({todosDadosDiversos}){
                 <FormDiv>
                 <Label font_size='16px' translate="0px" color="orange" text_align='left' width='100%'>Flushing:</Label>
                 <Select value={todosDadosDiversos.Flushing} onChange={HandleFlushing} required   padding='20px 20px' border='orange 0.5px solid' border_radius='10px' >
+                    <Option value={''} disabled hidden  color="#FF8C00" font_size='22px'></Option>
                     <Option value={true} color="#FF8C00" font_size='22px'>Sim</Option>
                     <Option value={false} color="#FF8C00" font_size='22px'>Não</Option>
                 </Select>

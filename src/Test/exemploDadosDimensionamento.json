@@ -1,0 +1,87 @@
+{
+  "dadosGalpao": {
+    "comprimento": "250",
+    "largura": "60",
+    "altura": "5",
+    "controlador": "Smaai 03",
+    "redeEletrica": "Trifásico 220Vca",
+    "protecaoMotor": "Disjuntor motor",
+    "marcaComponentes": "WEG",
+    "quantidadeCaixas": "2",
+    "Segurança": "I-Allerta"
+  },
+  "dadosVentilacao": {
+    "exaustor": {
+      "quantidade": "20",
+      "potencia": "1.5"
+    },
+    "acCortina": {
+      "quantidade": "2",
+      "potencia": "1.5"
+    },
+    "acInlet": {
+      "quantidade": "2",
+      "potencia": "1",
+      "atuador": false
+    },
+    "ventilador": {
+      "quantidade": "20",
+      "potencia": "0.75"
+    }
+  },
+  "dadosResfriamento": {
+    "nebulizadores": {
+      "quantidade": "2",
+      "potencia": "1.5"
+    },
+    "cooling": {
+      "quantidade": "3",
+      "potencia": "1.5"
+    }
+  },
+  "dadosAlimentacao": {
+    "linhas": {
+      "quantidade": "2",
+      "potencia": "1.5"
+    },
+    "comedouros": {
+      "quantidade": "0",
+      "potencia": "0"
+    }
+  },
+  "dadosAquecedores": {
+    "aquecedor1": {
+      "quantidade": "1",
+      "potencia": "1.5"
+    },
+    "aquecedor2": {
+      "quantidade": "1",
+      "potencia": "1.5"
+    },
+    "foguista": {
+      "quantidade": "2",
+      "potencia": "0.75"
+    },
+    "fornoPossuiPainel": false
+  },
+  "dadosIluminacao": {
+    "quantidadeLampadas": "60",
+    "potenciaLampadas": "12",
+    "corLampadas": "2700",
+    "circuitos": "2",
+    "dimerizavel": true
+  },
+  "dadosDiversos": {
+    "sondaT": "2",
+    "sondaTU": "2",
+    "sondaPE": "2",
+    "sondaCo2": "1",
+    "sondaH2O": "1",
+    "motorRedutorCortina": true,
+    "gatilho": "",
+    "flushing": "false",
+    "linhas": "2",
+    "tipoAnimalGalpao": "Aves",
+    "tipoCriacaoAnimal": "Frango de Corte"
+  }
+}

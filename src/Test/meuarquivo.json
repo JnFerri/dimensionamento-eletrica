@@ -1,0 +1,87 @@
+{
+  "dadosGalpao": {
+    "comprimento": "123",
+    "largura": "123",
+    "altura": "123",
+    "controlador": "Smaai 01S",
+    "redeEletrica": "Bifásico 440Vca",
+    "protecaoMotor": "DJ termomagnético e Relé térmico",
+    "marcaComponentes": "SEC POWER",
+    "quantidadeCaixas": "1",
+    "Segurança": "Central Cai-01"
+  },
+  "dadosVentilacao": {
+    "exaustor": {
+      "quantidade": "231",
+      "potencia": "123"
+    },
+    "acCortina": {
+      "quantidade": "123",
+      "potencia": "123"
+    },
+    "acInlet": {
+      "quantidade": "123",
+      "potencia": "123",
+      "atuador": false
+    },
+    "ventilador": {
+      "quantidade": "231",
+      "potencia": "123"
+    }
+  },
+  "dadosResfriamento": {
+    "nebulizadores": {
+      "quantidade": "123",
+      "potencia": "123"
+    },
+    "cooling": {
+      "quantidade": "123",
+      "potencia": "123"
+    }
+  },
+  "dadosAlimentacao": {
+    "linhas": {
+      "quantidade": "123",
+      "potencia": "2311"
+    },
+    "comedouros": {
+      "quantidade": "23",
+      "potencia": "123"
+    }
+  },
+  "dadosAquecedores": {
+    "aquecedor1": {
+      "quantidade": "123",
+      "potencia": "2311"
+    },
+    "aquecedor2": {
+      "quantidade": "23",
+      "potencia": "23"
+    },
+    "foguista": {
+      "quantidade": "123",
+      "potencia": "123"
+    },
+    "fornoPossuiPainel": "true"
+  },
+  "dadosIluminacao": {
+    "quantidadeLampadas": "123",
+    "potenciaLampadas": "231",
+    "corLampadas": "4500",
+    "circuitos": "123",
+    "dimerizavel": "false"
+  },
+  "dadosDiversos": {
+    "sondaT": "123",
+    "sondaTU": "123",
+    "sondaPE": "123",
+    "sondaCo2": "123",
+    "sondaH2O": "123",
+    "motorRedutorCortina": "false",
+    "gatilho": true,
+    "flushing": true,
+    "linhas": "123",
+    "tipoAnimalGalpao": "Suinos",
+    "tipoCriacaoAnimal": "Gestacao"
+  }
+}
