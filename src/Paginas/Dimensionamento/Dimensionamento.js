@@ -62,8 +62,8 @@ function Dimensionamento(){
     const [QuantidadeSondaCo2, setQuantidadeSondaCo2] = useState('')
     const [QuantidadeSondaH2O, setQuantidadeSondaH2O] = useState('')
     const [MotorRedutorCortina, setMotorRedutorCortina] = useState(true)
-    const [Gatilho, setGatilho] = useState(true)
-    const [Flushing, setFlushing] = useState(true)
+    const [Gatilho, setGatilho] = useState('')
+    const [Flushing, setFlushing] = useState('')
     const [QuantidadeLinhas, setQuantidadeLinhas] = useState('')
     const [TipoAnimalGalpao, setTipoAnimalGalpao] = useState('')
     const [TipoCriacaoAnimal, setTipoCriacaoAnimal] = useState('')
@@ -263,7 +263,11 @@ function Dimensionamento(){
                 
                const resposta = await fetch('http://localhost:5000/enviaDimensionamento', options)
                 console.log( await resposta.json())
+
+
                 }
+
+                
             
             todosOsDadosDefinidos.current = false
 
