@@ -237,20 +237,38 @@ function Dimensionamento(){
     },[dadosGalpao, dadosVentilacao, dadosResfriamento, dadosAlimentacao,dadosAquecedores,dadosIluminacao,dadosDiversos,])
 
     useEffect(() =>{
-        if (TodosOsDados && todosOsDadosDefinidos.current === true){
-            console.log(TodosOsDados)
-            const dadosString = JSON.stringify(TodosOsDados,null, 2)
-            const blob = new Blob([dadosString], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        const linkDownload = document.createElement('a');
-        linkDownload.href = url;
-        linkDownload.download = 'exemploArquivoDimensionamento.json';
-        document.body.appendChild(linkDownload);
-        linkDownload.click();
-        document.body.removeChild(linkDownload);
-        URL.revokeObjectURL(url);
+        async function MostraResultado(){
+            if (TodosOsDados && todosOsDadosDefinidos.current === true){
+                console.log(TodosOsDados)
+                const dadosString = JSON.stringify(TodosOsDados,null, 2)
+                const blob = new Blob([dadosString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const linkDownload = document.createElement('a');
+            linkDownload.href = url;
+            linkDownload.download = 'exemploArquivoDimensionamento.json';
+            document.body.appendChild(linkDownload);
+            linkDownload.click();
+            document.body.removeChild(linkDownload);
+            URL.revokeObjectURL(url);
+    
+            const options={
+                method: 'POST',
+                    headers: {
+                      accept: 'application/json',
+                      'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(TodosOsDados)
+                
+                }
+                
+               const resposta = await fetch('http://localhost:5000/enviaDimensionamento', options)
+                console.log( await resposta.json())
+                }
+            
+            todosOsDadosDefinidos.current = false
+
         }
-        todosOsDadosDefinidos.current = false
+        MostraResultado()
     },[TodosOsDados])
     
     return(
