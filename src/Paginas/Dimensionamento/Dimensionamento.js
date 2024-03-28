@@ -239,7 +239,7 @@ function Dimensionamento(){
     useEffect(() =>{
         async function MostraResultado(){
             if (TodosOsDados && todosOsDadosDefinidos.current === true){
-                console.log(TodosOsDados)
+                /*console.log(TodosOsDados)
                 const dadosString = JSON.stringify(TodosOsDados,null, 2)
                 const blob = new Blob([dadosString], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
@@ -249,7 +249,7 @@ function Dimensionamento(){
             document.body.appendChild(linkDownload);
             linkDownload.click();
             document.body.removeChild(linkDownload);
-            URL.revokeObjectURL(url);
+            URL.revokeObjectURL(url);*/
     
             const options={
                 method: 'POST',
