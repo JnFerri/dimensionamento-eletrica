@@ -240,31 +240,35 @@ function Dimensionamento(){
     useEffect(() =>{
         async function MostraResultado(){
             if (TodosOsDados && todosOsDadosDefinidos.current === true){
-                /*console.log(TodosOsDados)
+                //console.log(TodosOsDados)
+            
+                //faz download do arquivo json
                 const dadosString = JSON.stringify(TodosOsDados,null, 2)
                 const blob = new Blob([dadosString], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const linkDownload = document.createElement('a');
-            linkDownload.href = url;
-            linkDownload.download = 'exemploArquivoDimensionamento.json';
-            document.body.appendChild(linkDownload);
-            linkDownload.click();
-            document.body.removeChild(linkDownload);
-            URL.revokeObjectURL(url);*/
-    
-            const options={
-                method: 'POST',
-                    headers: {
-                      accept: 'application/json',
-                      'content-type': 'application/json'
-                    },
-                    body: JSON.stringify(TodosOsDados)
+                const url = URL.createObjectURL(blob);
+                const linkDownload = document.createElement('a');
+                linkDownload.href = url;
+                linkDownload.download = 'exemploArquivoDimensionamento.json';
+                document.body.appendChild(linkDownload);
+                linkDownload.click();
+                document.body.removeChild(linkDownload);
+                URL.revokeObjectURL(url);
                 
-                }
+                // Envia para o servidor python " Aguardando servidor Real "
+               /* const options={
+                    method: 'POST',
+                        headers: {
+                        accept: 'application/json',
+                        'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(TodosOsDados)
+                    
+                    }
+                    
+                const resposta = await fetch('http://localhost:5000/enviaDimensionamento', options)*/
                 
-               const resposta = await fetch('http://localhost:5000/enviaDimensionamento', options)
-               console.log(TodosOsDados)
-                CriaPdfDimensionamento(TodosOsDados,await resposta.json())
+                // Função que cria o PDF e faz Download.
+                 CriaPdfDimensionamento(TodosOsDados,/*await resposta.json()*/)
                 
                 }
 
