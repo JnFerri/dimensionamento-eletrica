@@ -27,7 +27,8 @@ function App() {
       async function confereLoginLocalStorage(){
         const loginStorage = JSON.parse(localStorage.getItem('Login'))
         if(loginStorage){
-          await fetch(`${process.env.REACT_APP_BACKEND_URL}/autorizacao/dimensionamentoEletrica`,{ method: 'POST',
+          const url = process.env.REACT_APP_BACKEND_URL
+          await fetch(`${url}/autorizacao/dimensionamentoEletrica`,{ method: 'POST',
           headers: {
             accept: 'application/json',
             'content-type': 'application/json'
