@@ -1,1 +1,2 @@
+/** Array com os valores que servirão como options do select de motor do inlet no formulario. */
 export const motorInlet = ['Motorredutor inlet - Não', 'Motorredutor inlet - Sim', 'Atuador 300mm', 'Atuador 200mm']

@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
+/** Styled-component de section que serve de container para a pagina do jestor. */
 const CadastroCabosContainer = styled.section`
 width:100%;
 display:flex;
 flex-direction:column;
 height:100vh;
 `
-
+/**
+ * Componente com um iframe da pagina publica do formulario jestor para cadastrar novos cabos. Utilizado para cadastrar novos cabos na tabela jestor.
+ * @returns {JSX.Element} Componente com pagina do formulario publico do jestor.
+ */
 function CadastroCabos(){
     return(
         <CadastroCabosContainer>

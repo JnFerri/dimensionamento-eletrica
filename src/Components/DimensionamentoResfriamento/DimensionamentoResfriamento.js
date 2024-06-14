@@ -6,7 +6,7 @@ import { VerificaSeNumeroInteiroEMaiorQueZero } from "../../Helpers/VerificaSeNu
 import { VerificaSeNumeroMaiorQueZero } from "../../Helpers/VerificaSeNumeroMaiorQueZero"
 
 
-
+/** Styled-component de section que engloba componentes do formulario de dados sobre alimentação do galpão. */
 const DimensionamentoSection = styled.section`
 display:flex;
 flex-direction:column;
@@ -18,6 +18,8 @@ border-radius:30px;
 align-items:center;
 margin: 1rem 0px;
 `
+
+/** Styled-component de div que organiza os componentes em linha um ao lado do outro. */
 const FormDivLinha = styled.div`
     display:flex;
     align-items:center;
@@ -25,6 +27,8 @@ const FormDivLinha = styled.div`
     margin: 0.5rem 0px;
     width:100%;
 `
+
+/** Styled-component de div que engloba cada item do formulario com Label da pergunta e inputs abaixo. */
 const FormDiv = styled.div`
     display:flex;
     flex-direction:column;
@@ -37,14 +41,31 @@ const FormDiv = styled.div`
     padding:10px 10px;
 `
 
+/**
+ * Componente de formulário que pega os dados sobre resfriamento na pagina de dimensionamento.
+ * @param {object} props Props do componente react. 
+ * @param {object} props.todosDadosResfriamento Objeto com os estados react utilizados neste componente que foram passados como propriedade deste componente a partir do componente dimensionamento.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosResfriamento.setQuantidadeNebulizador Função responsável por definir novo valor para o estado QuantidadeNebulizador.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosResfriamento.setPotenciaNebulizador Função responsável por definir novo valor para o estado PotenciaNebulizador.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosResfriamento.setQuantidadeCooling Função responsável por definir novo valor para o estado QuantidadeCooling.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosResfriamento.setPotenciaCooling Função responsável por definir novo valor para o estado PotenciaCooling.
+ * @param {number} props.todosDadosResfriamento.QuantidadeNebulizador Estado que guarda o valor do input de quantidade de nebulizador.
+ * @param {number} props.todosDadosResfriamento.PotenciaNebulizador Estado que guarda o valor do input de potencia do nebulizador.
+ * @param {number} props.todosDadosResfriamento.QuantidadeCooling Estado que guarda o valor do input de quantidade de cooling.
+ * @param {number} props.todosDadosresfriamento.PotenciaCooling Estado que guarda o valor do input de pontecia cooling.
+ * @returns {JSX.Element} Componente com inputs que captam informações sobre a resfriamento.
+ */
 function DimensionamentoResfriamento({todosDadosResfriamento}){
 
+    /** Caso o valor do input seja um numero inteiro e maior ou igual a 0, define o estado QuantidadeNebulizador com o valor do input. */
     function HandleQuantidadeNebulizadores(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
             todosDadosResfriamento.setQuantidadeNebulizador(valor)
         }
     }
+
+    /** Caso o valor do input seja um numero maior ou igual a 0, define o estado PotenciaNebulizadores com o valor do input. */
     function HandlePotenciaNebulizadores(event){
         const valor = event.target.value.replace(',', '.')
         if(VerificaSeNumeroMaiorQueZero(valor)){
@@ -52,6 +73,7 @@ function DimensionamentoResfriamento({todosDadosResfriamento}){
         }
     }
 
+    /** Caso o valor do input seja um numero inteiro e maior ou igual a 0, define o estado QuantidadeCooling com o valor do input. */
     function HandleQuantidadeCooling(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
@@ -59,6 +81,7 @@ function DimensionamentoResfriamento({todosDadosResfriamento}){
         }
     }
     
+    /** Caso o valor do input seja um numero maior ou igual a 0, define o estado PotenciaCooling com o valor do input. */
     function HandlePotenciaCooling(event){
         const valor = event.target.value.replace(',', '.')
         if(VerificaSeNumeroMaiorQueZero(valor)){

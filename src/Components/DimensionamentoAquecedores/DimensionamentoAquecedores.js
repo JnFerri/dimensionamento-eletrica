@@ -8,7 +8,7 @@ import Select from "../Select/Select"
 import Option from "../Select/Option/Option"
 
 
-
+/** Styled-component de section que engloba componentes do formulario de dados sobre alimentação do galpão. */
 const DimensionamentoSection = styled.section`
 display:flex;
 flex-direction:column;
@@ -20,6 +20,8 @@ border-radius:30px;
 align-items:center;
 margin: 1rem 0px;
 `
+
+/** Styled-component de div que organiza os componentes em linha um ao lado do outro. */
 const FormDivLinha = styled.div`
     display:flex;
     align-items:center;
@@ -27,6 +29,8 @@ const FormDivLinha = styled.div`
     margin: 0.5rem 0px;
     width:100%;
 `
+
+/** Styled-component de div que engloba cada item do formulario com Label da pergunta e inputs abaixo. */
 const FormDiv = styled.div`
     display:flex;
     flex-direction:column;
@@ -39,8 +43,29 @@ const FormDiv = styled.div`
     padding:10px 10px;
 `
 
+/**
+ * Componente de formulario que pega os dados sobre aquecedores na pagina de dimensionamento.
+ * @param {object} props Props do componente react.
+ * @param {object} props.todosDadosAquecedores  Objeto com os estados react utilizados neste componente que foram passados como propriedade deste componente a partir do componente dimensionamento.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosAquecedores.setQuantidadeAquecedor1 Função responsável por definir novo valor para o estado QuantidadeAqeucedor1.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosAquecedores.setPotenciaAquecedor1 Funcao responsável por definir novo valor para o estado PotenciaAquecedor1.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosAquecedores.setQuantidadeAquecedor2 Função responsável por definir novo valor para o estado QuantidadeAquecedor2.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosAquecedores.setPotenciaAquecedor2 Função responsavel por definir novo valor para o estado PotenciaAquecedor2.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosAquecedores.setQuantidadeFoguista Função reponsável por definir novo valor para o estado QuantidadeFoguista.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosAquecedores.setPotenciaFoguista Função responsável por definir novo valor para o estado PotenciaFoguista.
+ * @param {React.Dispatch<React.SetStateAction<boolean>>} props.todosDadosAquecedores.setFornoPossuiPainel Função responsável por definir novo valor para o estado FornoPossuiPainel.
+ * @param {number} props.todosDadosAquecedores.QuantidadeAquecedor1 Estado react que guarda o valor do input de quantidade de aquecedores 1. 
+ * @param {number} props.todosDadosAquecedores.PotenciaAquecedor1 Estado react que guarda o valor do input de potencia dos aquecedores 1.
+ * @param {number} props.todosDadosAquecedores.QuantidadeAquecedor2 Estado react que guarda o valor do input de quantidade de aquecedores 2.
+ * @param {number} props.todosDadosAquecedores.PotenciaAquecedor2 Estado react que guarda o valor do input de potencia dos aquecedores 2.
+ * @param {number} props.todosDadosAquecedores.QuantidadeFoguista Estado react que guarda o valor do input de quantidade de foguista.
+ * @param {number} props.todosDadosAquecedores.PotenciaFoguista Estado react que guarda o valor do input de potencia do foguista.
+ * @param {boolean} props.todosDadosAquecedores.FornoPossuiPainel Estado react que guarda o valor da option selecionada no select de forno possui painel.
+ * @returns {JSX.Element} Componente com inputs que captam informações sobre aquecimento do galpão.
+ */
 function DimensionamentoAquecedores({todosDadosAquecedores}){
 
+    /** Caso o valor do input de quantidade de aquecedores 1 for inteiro e maior ou igual a 0, define o estado QuantidadeAquecedor1 com o valor do input. */
     function HandleQuantidadeAquecedor1(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
@@ -48,6 +73,7 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
         }
     }
 
+    /** Caso o valor do input de potencia dos aquecedores 1 for maior ou igual a 0, define o estado PotenciaAquecedor1 com o valor do input. */
     function HandlePotenciaAquecedor1(event){
         const valor = event.target.value.replace(',', '.')
         if(VerificaSeNumeroMaiorQueZero(valor)){
@@ -55,6 +81,7 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
         }
     }
 
+    /** Caso o valor do input de quantidade de aquecedores 2 for inteiro e maior ou igual a 0, define o estado QuantidadeAqecedor2 com o valor do input. */
     function HandleQuantidadeAquecedor2(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
@@ -62,6 +89,7 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
         }
     }
 
+    /** Caso o valor do input de potencia dos aquecedores 2 for maior ou igual a 0, define o estado PotenciaAquecedor2 com o valor do input. */
     function HandlePotenciaAquecedor2(event){
         const valor = event.target.value.replace(',', '.')
         if(VerificaSeNumeroMaiorQueZero(valor)){
@@ -69,6 +97,7 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
         }
     }
 
+    /** Caso o valor do input de quantidade de foguista seja inteiro e maior ou igual a 0, define o estado QuantidadeFoguista com o valor do input. */
     function HandleQuantidadeFoguista(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
@@ -76,6 +105,7 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
         }
     }
 
+    /** Caso o valor do input de potencia dos foguista seja maior ou igual a 0, define o estado PotenciaFoguista com o valor do input. */
     function HandlePotenciaFoguista(event){
         const valor = event.target.value.replace(',', '.')
         if(VerificaSeNumeroMaiorQueZero(valor)){
@@ -83,6 +113,7 @@ function DimensionamentoAquecedores({todosDadosAquecedores}){
         }
     }
 
+    /** Define o estado FornoPossuiPainel com o valor do option selecionado no select de forno possui painel. */
     function HandleFornoPossuiPainel(event){
         todosDadosAquecedores.setFornoPossuiPainel(event.target.value)
     }

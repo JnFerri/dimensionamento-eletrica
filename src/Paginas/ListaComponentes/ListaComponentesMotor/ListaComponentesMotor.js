@@ -7,7 +7,7 @@ import Imagem from "../../../Components/Imagem/Imagem";
 import { useNavigate } from "react-router-dom";
 import setaVoltar from "../../../Images/setaVoltar.png"
 
-
+/** Styled-component de section que serve como container para todos os componentes da pagina. */
 const ListaMateriaisContainer = styled.section`
     display:flex;
     flex-direction:column;
@@ -20,7 +20,7 @@ const ListaMateriaisContainer = styled.section`
     border-radius:30px;
 
 `
-
+/** Styled-component de div que serve como container das informações de cada cabo como se fosse uma li da lista de cabos cadastrados. */
 const ItemContainer = styled.div`
     display:flex;
     align-items:center;
@@ -32,19 +32,21 @@ const ItemContainer = styled.div`
     margin:2px 0;
     width:99%;
     `
-
+/** Styled-component de div que serve como container para alinhar na vertical o titulo da informação e a informação sobre o produto. */
 const Item = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
     margin:0 10px;
 `
+/** Styled-component de div que serve como container da barra de pesquisa e da opção de voltar. */
 const PesquisaContainer = styled.div`
 width:98%;
 display:flex;
 justify-content: flex-start;
 align-items:center;
 `
+/** Styled-component de div que serve como container para alinhar a imagem e botão de voltar. */
 const VoltarContainer = styled.div`
 width:5%;
 color:orange;
@@ -53,14 +55,32 @@ margin-rigth: 10px;
 `
     
 
+/**
+ * Estado que guarda os dados de todos os motores cadastrados no jestor.
+ * @typedef {EstadoReact} TodosMotores
+ * @property {Array} TodosMotores Dados de todos os motores cadastrados no jestor.
+ * @property {React.Dispatch<React.setStateAction<Array>>} setTodosMateriais Função responsável por definir novo valor ao estado TodosMotores.
+ */
 
+/**
+ * Estado que guarda o valor do input de pesquisa para filtrar os dados.
+ * @typedef {EstadoReact} pesquisa
+ * @property {string} pesquisa Valor do input de pesquisa.
+ * @property {React.Dispatch<React.setStateAction<string>>} setPesquisa Função responsável por definir novo valor para o estado 'pesquisa'.
+ */
+
+/**
+ * Componente de pagina com lista dos motores cadastrados no jestor com suas informações e com barra de pesquisa para filtrar o resultado.
+ * @returns {JSX.Element} Componente react mostrando todos os motores cadastrados.
+ */
 function ListaComponentesMotor() {
     const [TodosMotores,setTodosMotores] = useState('')
-   // const [TodosCabos,setTodosCabos] = useState({})
-    //const [TodosMateriais, setTodosMateriais] = useState({})
     const [pesquisa, setPesquisa] = useState('');
+
+    //React Hook utilizado para navegar para outras rotas da aplicação.
     const navigate = useNavigate()
 
+    /** Pega todos os dados da tabela de motores do jestor através do backend e define o estado TodosMotores com os dados e também salva os dados na localStorage 'ListaMotores'. */
     useEffect(()=>{
         async function pegarDadosMotor(){
             const option ={
@@ -76,7 +96,7 @@ function ListaComponentesMotor() {
                     size: '10000'
                   })
             }
-            const response = await fetch('http://srv-services:3000/api/jestor/lista', option);
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/jestor/lista`, option);
             const data = await response.json();
             setTodosMotores(data);
             if (data !== '') {
@@ -87,13 +107,8 @@ function ListaComponentesMotor() {
         
     },[])
 
-    useEffect(() =>{
-        if(TodosMotores !== ''){
-            const dado = TodosMotores
-            console.log(dado)
-        }
-    },[TodosMotores])
-
+    
+/** Caso tenha algum valor no input de pesquisa, define o Estado pesquisa com o valor do input e filtra o estado TodosMotores conforme valor do input e salva o seu valor conforme valor fitrado, caso input pesquisa esteja nulo ou nada escrito irá definir o estado TodosMotores conforme valor da localStorage 'ListaMotores'. */
    async function fazPesquisa(event){
         const texto = event.target.value
         setPesquisa(texto)
@@ -107,6 +122,7 @@ function ListaComponentesMotor() {
         
     }
 
+    /** Retorna a pagina onde se escolhe qual lista quer visualizar. */
     function HandleVoltar(){
         navigate("/listaComponentes")
     }

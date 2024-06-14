@@ -1,1 +1,2 @@
+/** Array com dados que servirão de options do select de tipo de fixação do inlet no formulario.  */
 export const tiposFixacaoInlet = ['Fixado em tela', 'Fixado na parede', 'Fixado com caixa espacadora']

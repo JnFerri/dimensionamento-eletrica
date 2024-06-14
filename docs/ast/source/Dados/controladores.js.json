@@ -1,0 +1,1704 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 325,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 4,
+      "column": 28
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 325,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 4,
+        "column": 28
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "Identifier",
+        "start": 110,
+        "end": 293,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 183
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 116,
+            "end": 293,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 6
+              },
+              "end": {
+                "line": 2,
+                "column": 183
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 116,
+              "end": 129,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 6
+                },
+                "end": {
+                  "line": 2,
+                  "column": 19
+                },
+                "identifierName": "controladores"
+              },
+              "name": "controladores",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ArrayExpression",
+              "start": 132,
+              "end": 293,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 22
+                },
+                "end": {
+                  "line": 2,
+                  "column": 183
+                }
+              },
+              "elements": [
+                {
+                  "type": "StringLiteral",
+                  "start": 133,
+                  "end": 143,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 23
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 33
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 01",
+                    "raw": "'Smaai 01'"
+                  },
+                  "value": "Smaai 01"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 145,
+                  "end": 156,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 35
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 46
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 01S",
+                    "raw": "'Smaai 01S'"
+                  },
+                  "value": "Smaai 01S"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 158,
+                  "end": 168,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 48
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 58
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 02",
+                    "raw": "'Smaai 02'"
+                  },
+                  "value": "Smaai 02"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 170,
+                  "end": 180,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 60
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 70
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 03",
+                    "raw": "'Smaai 03'"
+                  },
+                  "value": "Smaai 03"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 182,
+                  "end": 193,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 72
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 83
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 03C",
+                    "raw": "'Smaai 03C'"
+                  },
+                  "value": "Smaai 03C"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 195,
+                  "end": 207,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 85
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 97
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 03CC",
+                    "raw": "'Smaai 03CC'"
+                  },
+                  "value": "Smaai 03CC"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 209,
+                  "end": 221,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 99
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 111
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 03PE",
+                    "raw": "'Smaai 03PE'"
+                  },
+                  "value": "Smaai 03PE"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 223,
+                  "end": 233,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 113
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 123
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 04",
+                    "raw": "'Smaai 04'"
+                  },
+                  "value": "Smaai 04"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 235,
+                  "end": 247,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 125
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 137
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 04CH",
+                    "raw": "'Smaai 04CH'"
+                  },
+                  "value": "Smaai 04CH"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 249,
+                  "end": 260,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 139
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 150
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 04S",
+                    "raw": "'Smaai 04S'"
+                  },
+                  "value": "Smaai 04S"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 262,
+                  "end": 272,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 152
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 162
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Smaai 05",
+                    "raw": "'Smaai 05'"
+                  },
+                  "value": "Smaai 05"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 274,
+                  "end": 285,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 164
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 175
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "AMBIENTTE",
+                    "raw": "'AMBIENTTE'"
+                  },
+                  "value": "AMBIENTTE"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 287,
+                  "end": 292,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 177
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 182
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "Não",
+                    "raw": "'Não'"
+                  },
+                  "value": "Não"
+                }
+              ]
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "Identifier",
+        "start": 297,
+        "end": 325,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 28
+          }
+        },
+        "declaration": {
+          "type": "Identifier",
+          "start": 312,
+          "end": 325,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 15
+            },
+            "end": {
+              "line": 4,
+              "column": 28
+            },
+            "identifierName": "controladores"
+          },
+          "name": "controladores"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 297,
+        "end": 325,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 28
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 110,
+          "end": 293,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 183
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 116,
+              "end": 293,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 6
+                },
+                "end": {
+                  "line": 2,
+                  "column": 183
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 116,
+                "end": 129,
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 2,
+                    "column": 19
+                  },
+                  "identifierName": "controladores"
+                },
+                "name": "controladores",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrayExpression",
+                "start": 132,
+                "end": 293,
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 22
+                  },
+                  "end": {
+                    "line": 2,
+                    "column": 183
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "StringLiteral",
+                    "start": 133,
+                    "end": 143,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 33
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 01",
+                      "raw": "'Smaai 01'"
+                    },
+                    "value": "Smaai 01"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 145,
+                    "end": 156,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 46
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 01S",
+                      "raw": "'Smaai 01S'"
+                    },
+                    "value": "Smaai 01S"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 158,
+                    "end": 168,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 48
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 58
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 02",
+                      "raw": "'Smaai 02'"
+                    },
+                    "value": "Smaai 02"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 170,
+                    "end": 180,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 60
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 70
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 03",
+                      "raw": "'Smaai 03'"
+                    },
+                    "value": "Smaai 03"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 182,
+                    "end": 193,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 72
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 83
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 03C",
+                      "raw": "'Smaai 03C'"
+                    },
+                    "value": "Smaai 03C"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 195,
+                    "end": 207,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 85
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 97
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 03CC",
+                      "raw": "'Smaai 03CC'"
+                    },
+                    "value": "Smaai 03CC"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 209,
+                    "end": 221,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 99
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 111
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 03PE",
+                      "raw": "'Smaai 03PE'"
+                    },
+                    "value": "Smaai 03PE"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 223,
+                    "end": 233,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 113
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 123
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 04",
+                      "raw": "'Smaai 04'"
+                    },
+                    "value": "Smaai 04"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 235,
+                    "end": 247,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 125
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 137
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 04CH",
+                      "raw": "'Smaai 04CH'"
+                    },
+                    "value": "Smaai 04CH"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 249,
+                    "end": 260,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 139
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 150
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 04S",
+                      "raw": "'Smaai 04S'"
+                    },
+                    "value": "Smaai 04S"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 262,
+                    "end": 272,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 152
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 162
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Smaai 05",
+                      "raw": "'Smaai 05'"
+                    },
+                    "value": "Smaai 05"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 274,
+                    "end": 285,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 164
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 175
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "AMBIENTTE",
+                      "raw": "'AMBIENTTE'"
+                    },
+                    "value": "AMBIENTTE"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 287,
+                    "end": 292,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 177
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 182
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "Não",
+                      "raw": "'Não'"
+                    },
+                    "value": "Não"
+                  }
+                ]
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "* Array com os nomes dos controladores para servirem de options do select de controlador no formulario. ",
+              "start": 0,
+              "end": 108,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 108
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "* Array com os nomes dos controladores para servirem de options do select de controlador no formulario. ",
+      "start": 0,
+      "end": 108,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 108
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "* Array com os nomes dos controladores para servirem de options do select de controlador no formulario. ",
+      "start": 0,
+      "end": 108,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 108
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 110,
+      "end": 115,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "controladores",
+      "start": 116,
+      "end": 129,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 6
+        },
+        "end": {
+          "line": 2,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 130,
+      "end": 131,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 20
+        },
+        "end": {
+          "line": 2,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "[",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 132,
+      "end": 133,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 22
+        },
+        "end": {
+          "line": 2,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 01",
+      "start": 133,
+      "end": 143,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 23
+        },
+        "end": {
+          "line": 2,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 143,
+      "end": 144,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 33
+        },
+        "end": {
+          "line": 2,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 01S",
+      "start": 145,
+      "end": 156,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 35
+        },
+        "end": {
+          "line": 2,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 156,
+      "end": 157,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 46
+        },
+        "end": {
+          "line": 2,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 02",
+      "start": 158,
+      "end": 168,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 48
+        },
+        "end": {
+          "line": 2,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 168,
+      "end": 169,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 58
+        },
+        "end": {
+          "line": 2,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 03",
+      "start": 170,
+      "end": 180,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 60
+        },
+        "end": {
+          "line": 2,
+          "column": 70
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 180,
+      "end": 181,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 70
+        },
+        "end": {
+          "line": 2,
+          "column": 71
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 03C",
+      "start": 182,
+      "end": 193,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 72
+        },
+        "end": {
+          "line": 2,
+          "column": 83
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 193,
+      "end": 194,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 83
+        },
+        "end": {
+          "line": 2,
+          "column": 84
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 03CC",
+      "start": 195,
+      "end": 207,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 85
+        },
+        "end": {
+          "line": 2,
+          "column": 97
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 207,
+      "end": 208,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 97
+        },
+        "end": {
+          "line": 2,
+          "column": 98
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 03PE",
+      "start": 209,
+      "end": 221,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 99
+        },
+        "end": {
+          "line": 2,
+          "column": 111
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 221,
+      "end": 222,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 111
+        },
+        "end": {
+          "line": 2,
+          "column": 112
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 04",
+      "start": 223,
+      "end": 233,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 113
+        },
+        "end": {
+          "line": 2,
+          "column": 123
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 233,
+      "end": 234,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 123
+        },
+        "end": {
+          "line": 2,
+          "column": 124
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 04CH",
+      "start": 235,
+      "end": 247,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 125
+        },
+        "end": {
+          "line": 2,
+          "column": 137
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 247,
+      "end": 248,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 137
+        },
+        "end": {
+          "line": 2,
+          "column": 138
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 04S",
+      "start": 249,
+      "end": 260,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 139
+        },
+        "end": {
+          "line": 2,
+          "column": 150
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 260,
+      "end": 261,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 150
+        },
+        "end": {
+          "line": 2,
+          "column": 151
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Smaai 05",
+      "start": 262,
+      "end": 272,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 152
+        },
+        "end": {
+          "line": 2,
+          "column": 162
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 272,
+      "end": 273,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 162
+        },
+        "end": {
+          "line": 2,
+          "column": 163
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "AMBIENTTE",
+      "start": 274,
+      "end": 285,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 164
+        },
+        "end": {
+          "line": 2,
+          "column": 175
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 285,
+      "end": 286,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 175
+        },
+        "end": {
+          "line": 2,
+          "column": 176
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Não",
+      "start": 287,
+      "end": 292,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 177
+        },
+        "end": {
+          "line": 2,
+          "column": 182
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "]",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 292,
+      "end": 293,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 182
+        },
+        "end": {
+          "line": 2,
+          "column": 183
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 297,
+      "end": 303,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 304,
+      "end": 311,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 7
+        },
+        "end": {
+          "line": 4,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "controladores",
+      "start": 312,
+      "end": 325,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 15
+        },
+        "end": {
+          "line": 4,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 325,
+      "end": 325,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 28
+        },
+        "end": {
+          "line": 4,
+          "column": 28
+        }
+      }
+    }
+  ]
+}

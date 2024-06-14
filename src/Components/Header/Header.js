@@ -4,7 +4,7 @@ import logo from "../../Images/logo.png"
 import Titulo1 from "../Titulo1/Titulo1";
 import Imagem from "../Imagem/Imagem";
 
-
+/** Styled-component de header que serve de container para os componentes de logo e barra de navegação. */
 const HeaderContainer = styled.header`
 display:flex;
 align-items:center;
@@ -13,6 +13,8 @@ width:100%;
 background-color:black;
 
 `
+
+/** Styled-component de Barra de navegação. */
 const NavBarContainer = styled.nav`
 display:flex;
 align-items:center;
@@ -21,6 +23,7 @@ margin:20px 20px;
 width:80%;
 `
 
+/** Styled-component de link que serve de botao da barra de navegação para navegar aos outros caminhos da aplicação.  */
 const NavLink = styled.a`
     font-size: 25px;
     margin: 0 10px;
@@ -44,8 +47,15 @@ const NavLink = styled.a`
     }
 `
 
+/**
+ * 
+ * @param {object} props Props React.
+ * @param {React.Dispatch<React.SetStateAction<boolean>>} props.setSituacaoLogin Função que define novo valor para o estado SituaçãoLogin que é responsavel por dizer se o usuario esta logado ou não.
+ * @returns {JSX.Element} Componente React de Header com logo e barra de navegação.
+ */
 function Header({setSituacaoLogin}){
 
+    /** Sai da aplicação e retorna a pagina de login.  */
     function Deslogar(event){
         event.preventDefault()
         setSituacaoLogin(false)

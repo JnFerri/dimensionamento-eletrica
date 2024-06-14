@@ -1,5 +1,10 @@
 import jsPDF from 'jspdf';
-
+ 
+/**
+ * Função que cria Pdf de resposta ao enviar o formulário de dimensionamento. Por enquanto apenas com informações dos dados coletados do formulário pois o backend de calculo não foi criado.
+ * @param {object} dadosForm Todos os dados coletados do formulario. 
+ * @param {object} dadosDimensionamento Dados dos produtos que retornam do calculo no backend.
+ */
 export function CriaPdfDimensionamento(dadosForm, dadosDimensionamento){
     // Cria um novo documento PDF
     const doc = new jsPDF('a4');

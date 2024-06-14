@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js | projeto-eletrica-dimencionamento</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-App">App</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-reportWebVitals">reportWebVitals</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-LoginLocalStorage">LoginLocalStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SituacaoLogin">SituacaoLogin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-botao">Components/Botao</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Botao">Botao</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-dimensionamentoalimentacao">Components/DimensionamentoAlimentacao</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DimensionamentoAlimentacao">DimensionamentoAlimentacao</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-dimensionamentoaquecedores">Components/DimensionamentoAquecedores</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DimensionamentoAquecedores">DimensionamentoAquecedores</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-dimensionamentodiversos">Components/DimensionamentoDiversos</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DimensionamentoDiversos">DimensionamentoDiversos</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-dimensionamentogalpao">Components/DimensionamentoGalpao</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DimensionamentoGalpao">DimensionamentoGalpao</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-dimensionamentoiluminacao">Components/DimensionamentoIluminacao</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DimensionamentoIluminacao">DimensionamentoIluminacao</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-dimensionamentoresfriamento">Components/DimensionamentoResfriamento</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DimensionamentoResfriamento">DimensionamentoResfriamento</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-dimensionamentoventilacao">Components/DimensionamentoVentilacao</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DimensionamentoVentilacao">DimensionamentoVentilacao</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-form">Components/Form</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Form">Form</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-header">Components/Header</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Header">Header</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-imagem">Components/Imagem</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Imagem">Imagem</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-input">Components/Input</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Input">Input</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-label">Components/Label</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Label">Label</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-login">Components/Login</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Login">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Senha">Senha</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Usuario">Usuario</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-protectedroute">Components/ProtectedRoute</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ProtectedRoute">ProtectedRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-select">Components/Select</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Select">Select</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-select-option">Components/Select/Option</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Option">Option</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-titulo1">Components/Titulo1</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Titulo1">Titulo1</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-titulo2">Components/Titulo2</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Titulo2">Titulo2</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-titulo4">Components/Titulo4</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Titulo4">Titulo4</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#dados">Dados</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-caixas">caixas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-controladores">controladores</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-marcaComponentes">marcaComponentes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-motorInlet">motorInlet</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-protecaoMotores">protecaoMotores</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-redeEletrica">redeEletrica</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-seguranca">seguranca</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-tiposFixacaoInlet">tiposFixacaoInlet</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-tiposGalpaoAves">tiposGalpaoAves</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-tiposGalpaoSuino">tiposGalpaoSuino</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-tiposInlet">tiposInlet</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#helpers">Helpers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-VerificaSeNumeroInteiroEMaiorQueZero">VerificaSeNumeroInteiroEMaiorQueZero</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-VerificaSeNumeroMaiorQueZero">VerificaSeNumeroMaiorQueZero</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-cadastro">Paginas/Cadastro</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Cadastro">Cadastro</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-cadastro-cadastrocabos">Paginas/Cadastro/CadastroCabos</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-CadastroCabos">CadastroCabos</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-cadastro-cadastromaterial">Paginas/Cadastro/CadastroMaterial</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-CadastroMaterial">CadastroMaterial</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-cadastro-cadastromotor">Paginas/Cadastro/CadastroMotor</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-CadastroMotor">CadastroMotor</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-dimensionamento">Paginas/Dimensionamento</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Dimensionamento">Dimensionamento</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AlturaForm">AlturaForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ComprimentoForm">ComprimentoForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ControladorForm">ControladorForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-CorLampadas">CorLampadas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-DadosAlimentacao">DadosAlimentacao</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-DadosAquecedores">DadosAquecedores</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-DadosDiversos">DadosDiversos</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-DadosIluminacao">DadosIluminacao</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-DadosResfriamento">DadosResfriamento</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-DadosVentilacao">DadosVentilacao</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Dimerizavel">Dimerizavel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Flushing">Flushing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FornoPossuiPainel">FornoPossuiPainel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Gatilho">Gatilho</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-LarguraForm">LarguraForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-MarcaForm">MarcaForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-MotorRedutorCortina">MotorRedutorCortina</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PossuiAtuadorInlet">PossuiAtuadorInlet</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaAcCortinasForm">PotenciaAcCortinasForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaAcInletForm">PotenciaAcInletForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaAquecedor1">PotenciaAquecedor1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaAquecedor2">PotenciaAquecedor2</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaComedouros">PotenciaComedouros</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaCooling">PotenciaCooling</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaExaustoresForm">PotenciaExaustoresForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaFoguista">PotenciaFoguista</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaLampadas">PotenciaLampadas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaLinhas">PotenciaLinhas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaNebulizador">PotenciaNebulizador</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PotenciaVentiladoresForm">PotenciaVentiladoresForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProtecaoMotorForm">ProtecaoMotorForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeAcCortinasForm">QuantidadeAcCortinasForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeAcInletForm">QuantidadeAcInletForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeAquecedor1">QuantidadeAquecedor1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeAquecedor2">QuantidadeAquecedor2</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeCaixaForm">QuantidadeCaixaForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeCircuitos">QuantidadeCircuitos</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeComedouros">QuantidadeComedouros</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeCooling">QuantidadeCooling</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeExaustoresForm">QuantidadeExaustoresForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeFoguista">QuantidadeFoguista</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeLampadas">QuantidadeLampadas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeLinhas">QuantidadeLinhas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeLinhasPrimarias">QuantidadeLinhasPrimarias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeNebulizador">QuantidadeNebulizador</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeSondaCo2">QuantidadeSondaCo2</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeSondaH2O">QuantidadeSondaH2O</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeSondaPE">QuantidadeSondaPE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeSondaT">QuantidadeSondaT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeSondaTU">QuantidadeSondaTU</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-QuantidadeVentiladoresForm">QuantidadeVentiladoresForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-RedeEletricaForm">RedeEletricaForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SegurancaForm">SegurancaForm</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-TipoAnimalGalpao">TipoAnimalGalpao</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-TipoCriacaoAnimal">TipoCriacaoAnimal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-TodosOsDados">TodosOsDados</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-dadosGalpao">dadosGalpao</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-listacomponentes">Paginas/ListaComponentes</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ListaComponentes">ListaComponentes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-listacomponentes-listacomponentescabos">Paginas/ListaComponentes/ListaComponentesCabos</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ListaComponentesCabos">ListaComponentesCabos</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-TodosCabos">TodosCabos</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-pesquisa">pesquisa</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-listacomponentes-listacomponentesmateriais">Paginas/ListaComponentes/ListaComponentesMateriais</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ListaComponentesMaterial">ListaComponentesMaterial</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-TodosMateriais">TodosMateriais</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-pesquisa">pesquisa</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#paginas-listacomponentes-listacomponentesmotor">Paginas/ListaComponentes/ListaComponentesMotor</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ListaComponentesMotor">ListaComponentesMotor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-TodosMotores">TodosMotores</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-pesquisa">pesquisa</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">Services</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-CriaPdfDimensionamento">CriaPdfDimensionamento</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TranformaImagemUrlBase64">TranformaImagemUrlBase64</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Components/DimensionamentoAquecedores/DimensionamentoAquecedores.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import styled from &quot;styled-components&quot;
+import Label from &quot;../Label/Label&quot;
+import Input from &quot;../Input/Input&quot;
+import Titulo4 from &quot;../Titulo4/Titulo4&quot;
+import { VerificaSeNumeroInteiroEMaiorQueZero } from &quot;../../Helpers/VerificaSeNumeroInteiroEMaiorQueZero&quot;
+import { VerificaSeNumeroMaiorQueZero } from &quot;../../Helpers/VerificaSeNumeroMaiorQueZero&quot;
+import Select from &quot;../Select/Select&quot;
+import Option from &quot;../Select/Option/Option&quot;
+
+
+/** Styled-component de section que engloba componentes do formulario de dados sobre alimenta&#xE7;&#xE3;o do galp&#xE3;o. */
+const DimensionamentoSection = styled.section`
+display:flex;
+flex-direction:column;
+width:70%;
+padding:1rem 1rem;
+background-color:black;
+border:0.5px orange solid;
+border-radius:30px;
+align-items:center;
+margin: 1rem 0px;
+`
+
+/** Styled-component de div que organiza os componentes em linha um ao lado do outro. */
+const FormDivLinha = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin: 0.5rem 0px;
+    width:100%;
+`
+
+/** Styled-component de div que engloba cada item do formulario com Label da pergunta e inputs abaixo. */
+const FormDiv = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 1rem;
+    width:100%;
+    border:orange 0.1px solid;
+    border-radius:10px;
+    padding:10px 10px;
+`
+
+/**
+ * Componente de formulario que pega os dados sobre aquecedores na pagina de dimensionamento.
+ * @param {object} props Props do componente react.
+ * @param {object} props.todosDadosAquecedores  Objeto com os estados react utilizados neste componente que foram passados como propriedade deste componente a partir do componente dimensionamento.
+ * @param {React.Dispatch&lt;React.SetStateAction&lt;number&gt;&gt;} props.todosDadosAquecedores.setQuantidadeAquecedor1 Fun&#xE7;&#xE3;o respons&#xE1;vel por definir novo valor para o estado QuantidadeAqeucedor1.
+ * @param {React.Dispatch&lt;React.SetStateAction&lt;number&gt;&gt;} props.todosDadosAquecedores.setPotenciaAquecedor1 Funcao respons&#xE1;vel por definir novo valor para o estado PotenciaAquecedor1.
+ * @param {React.Dispatch&lt;React.SetStateAction&lt;number&gt;&gt;} props.todosDadosAquecedores.setQuantidadeAquecedor2 Fun&#xE7;&#xE3;o respons&#xE1;vel por definir novo valor para o estado QuantidadeAquecedor2.
+ * @param {React.Dispatch&lt;React.SetStateAction&lt;number&gt;&gt;} props.todosDadosAquecedores.setPotenciaAquecedor2 Fun&#xE7;&#xE3;o responsavel por definir novo valor para o estado PotenciaAquecedor2.
+ * @param {React.Dispatch&lt;React.SetStateAction&lt;number&gt;&gt;} props.todosDadosAquecedores.setQuantidadeFoguista Fun&#xE7;&#xE3;o repons&#xE1;vel por definir novo valor para o estado QuantidadeFoguista.
+ * @param {React.Dispatch&lt;React.SetStateAction&lt;number&gt;&gt;} props.todosDadosAquecedores.setPotenciaFoguista Fun&#xE7;&#xE3;o respons&#xE1;vel por definir novo valor para o estado PotenciaFoguista.
+ * @param {React.Dispatch&lt;React.SetStateAction&lt;boolean&gt;&gt;} props.todosDadosAquecedores.setFornoPossuiPainel Fun&#xE7;&#xE3;o respons&#xE1;vel por definir novo valor para o estado FornoPossuiPainel.
+ * @param {number} props.todosDadosAquecedores.QuantidadeAquecedor1 Estado react que guarda o valor do input de quantidade de aquecedores 1. 
+ * @param {number} props.todosDadosAquecedores.PotenciaAquecedor1 Estado react que guarda o valor do input de potencia dos aquecedores 1.
+ * @param {number} props.todosDadosAquecedores.QuantidadeAquecedor2 Estado react que guarda o valor do input de quantidade de aquecedores 2.
+ * @param {number} props.todosDadosAquecedores.PotenciaAquecedor2 Estado react que guarda o valor do input de potencia dos aquecedores 2.
+ * @param {number} props.todosDadosAquecedores.QuantidadeFoguista Estado react que guarda o valor do input de quantidade de foguista.
+ * @param {number} props.todosDadosAquecedores.PotenciaFoguista Estado react que guarda o valor do input de potencia do foguista.
+ * @param {boolean} props.todosDadosAquecedores.FornoPossuiPainel Estado react que guarda o valor da option selecionada no select de forno possui painel.
+ * @returns {JSX.Element} Componente com inputs que captam informa&#xE7;&#xF5;es sobre aquecimento do galp&#xE3;o.
+ */
+function DimensionamentoAquecedores({todosDadosAquecedores}){
+
+    /** Caso o valor do input de quantidade de aquecedores 1 for inteiro e maior ou igual a 0, define o estado QuantidadeAquecedor1 com o valor do input. */
+    function HandleQuantidadeAquecedor1(event){
+        const valor = event.target.value
+        if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
+            todosDadosAquecedores.setQuantidadeAquecedor1(valor)
+        }
+    }
+
+    /** Caso o valor do input de potencia dos aquecedores 1 for maior ou igual a 0, define o estado PotenciaAquecedor1 com o valor do input. */
+    function HandlePotenciaAquecedor1(event){
+        const valor = event.target.value.replace(&apos;,&apos;, &apos;.&apos;)
+        if(VerificaSeNumeroMaiorQueZero(valor)){
+            todosDadosAquecedores.setPotenciaAquecedor1(valor)
+        }
+    }
+
+    /** Caso o valor do input de quantidade de aquecedores 2 for inteiro e maior ou igual a 0, define o estado QuantidadeAqecedor2 com o valor do input. */
+    function HandleQuantidadeAquecedor2(event){
+        const valor = event.target.value
+        if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
+            todosDadosAquecedores.setQuantidadeAquecedor2(valor)
+        }
+    }
+
+    /** Caso o valor do input de potencia dos aquecedores 2 for maior ou igual a 0, define o estado PotenciaAquecedor2 com o valor do input. */
+    function HandlePotenciaAquecedor2(event){
+        const valor = event.target.value.replace(&apos;,&apos;, &apos;.&apos;)
+        if(VerificaSeNumeroMaiorQueZero(valor)){
+            todosDadosAquecedores.setPotenciaAquecedor2(valor)
+        }
+    }
+
+    /** Caso o valor do input de quantidade de foguista seja inteiro e maior ou igual a 0, define o estado QuantidadeFoguista com o valor do input. */
+    function HandleQuantidadeFoguista(event){
+        const valor = event.target.value
+        if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
+            todosDadosAquecedores.setQuantidadeFoguista(valor)
+        }
+    }
+
+    /** Caso o valor do input de potencia dos foguista seja maior ou igual a 0, define o estado PotenciaFoguista com o valor do input. */
+    function HandlePotenciaFoguista(event){
+        const valor = event.target.value.replace(&apos;,&apos;, &apos;.&apos;)
+        if(VerificaSeNumeroMaiorQueZero(valor)){
+            todosDadosAquecedores.setPotenciaFoguista(valor)
+        }
+    }
+
+    /** Define o estado FornoPossuiPainel com o valor do option selecionado no select de forno possui painel. */
+    function HandleFornoPossuiPainel(event){
+        todosDadosAquecedores.setFornoPossuiPainel(event.target.value)
+    }
+
+
+
+    return(
+        &lt;DimensionamentoSection&gt;
+                &lt;Titulo4 color=&quot;orange&quot; font_size=&apos;32px&apos;&gt;Aquecedores&lt;/Titulo4&gt;
+                &lt;FormDivLinha&gt;
+                &lt;FormDiv&gt;
+                &lt;Label font_size=&apos;16px&apos; translate=&quot;0px&quot; color=&quot;orange&quot; text_align=&apos;left&apos; width=&apos;100%&apos;&gt;Aquecedor 1:&lt;/Label&gt;
+                &lt;FormDivLinha&gt;
+                &lt;Input  type=&quot;number&quot; onWheel={(e) =&gt; e.target.blur()}  required  onChange={HandleQuantidadeAquecedor1} value={todosDadosAquecedores.QuantidadeAquecedor1} padding=&apos;20px 20px&apos; width=&apos;40%&apos; border=&apos;orange 0.5px solid&apos; border_radius=&apos;10px&apos; placeholder=&quot;Quantidade Aquecedores 1&quot;&gt;&lt;/Input&gt;
+                &lt;Input  type=&quot;number&quot; onWheel={(e) =&gt; e.target.blur()} required  onChange={HandlePotenciaAquecedor1} value={todosDadosAquecedores.PotenciaAquecedor1} padding=&apos;20px 20px&apos; width=&apos;40%&apos; border=&apos;orange 0.5px solid&apos; border_radius=&apos;10px&apos; placeholder=&quot;Pot&#xEA;ncia em CV&quot;&gt;&lt;/Input&gt;
+                &lt;/FormDivLinha&gt;
+                &lt;/FormDiv&gt;
+                &lt;FormDiv&gt;
+                &lt;Label font_size=&apos;16px&apos; translate=&quot;0px&quot; color=&quot;orange&quot; text_align=&apos;left&apos; width=&apos;100%&apos;&gt;Aquecedor 2:&lt;/Label&gt;
+                &lt;FormDivLinha&gt;
+                &lt;Input  type=&quot;number&quot; onWheel={(e) =&gt; e.target.blur()}  required onChange={HandleQuantidadeAquecedor2} value={todosDadosAquecedores.QuantidadeAquecedor2} padding=&apos;20px 20px&apos; width=&apos;40%&apos; border=&apos;orange 0.5px solid&apos; border_radius=&apos;10px&apos; placeholder=&quot;Quantidade Aquecedores 2&quot;&gt;&lt;/Input&gt;
+                &lt;Input  type=&quot;number&quot; onWheel={(e) =&gt; e.target.blur()} required  onChange={HandlePotenciaAquecedor2} value={todosDadosAquecedores.PotenciaAquecedor2} padding=&apos;20px 20px&apos; width=&apos;40%&apos; border=&apos;orange 0.5px solid&apos; border_radius=&apos;10px&apos; placeholder=&quot;Pot&#xEA;ncia em CV&quot;&gt;&lt;/Input&gt;
+                &lt;/FormDivLinha&gt;
+                &lt;/FormDiv&gt;
+                &lt;/FormDivLinha&gt;
+                &lt;FormDivLinha&gt;
+                &lt;FormDiv&gt;
+                &lt;Label font_size=&apos;16px&apos; translate=&quot;0px&quot; color=&quot;orange&quot; text_align=&apos;left&apos; width=&apos;100%&apos;&gt;Foguista:&lt;/Label&gt;
+                &lt;FormDivLinha&gt;
+                &lt;Input  type=&quot;number&quot; onWheel={(e) =&gt; e.target.blur()}  required  onChange={HandleQuantidadeFoguista} value={todosDadosAquecedores.QuantidadeFoguista} padding=&apos;20px 20px&apos; width=&apos;40%&apos; border=&apos;orange 0.5px solid&apos; border_radius=&apos;10px&apos; placeholder=&quot;Quantidade Foguista&quot;&gt;&lt;/Input&gt;
+                &lt;Input  type=&quot;number&quot; onWheel={(e) =&gt; e.target.blur()} required  onChange={HandlePotenciaFoguista} value={todosDadosAquecedores.PotenciaFoguista} padding=&apos;20px 20px&apos; width=&apos;40%&apos; border=&apos;orange 0.5px solid&apos; border_radius=&apos;10px&apos; placeholder=&quot;Pot&#xEA;ncia em CV&quot;&gt;&lt;/Input&gt;
+                &lt;/FormDivLinha&gt;
+                &lt;/FormDiv&gt;
+                &lt;FormDiv&gt;
+                &lt;Label font_size=&apos;16px&apos; translate=&quot;0px&quot; color=&quot;orange&quot; text_align=&apos;left&apos; width=&apos;100%&apos;&gt;Forno Possui Painel ?:&lt;/Label&gt;
+                &lt;FormDivLinha&gt;
+                &lt;Select value={todosDadosAquecedores.FornoPossuiPainel} onChange={HandleFornoPossuiPainel} required   padding=&apos;20px 20px&apos; border=&apos;orange 0.5px solid&apos; border_radius=&apos;10px&apos; &gt;
+                    &lt;Option value={false} color=&quot;#FF8C00&quot; font_size=&apos;22px&apos;&gt;Forno n&#xE3;o possui painel&lt;/Option&gt;
+                    &lt;Option value={true} color=&quot;#FF8C00&quot; font_size=&apos;22px&apos;&gt;Forno possui painel&lt;/Option&gt;
+                &lt;/Select&gt;
+                &lt;/FormDivLinha&gt;
+                &lt;/FormDiv&gt;
+                &lt;/FormDivLinha&gt;
+                
+            &lt;/DimensionamentoSection&gt;
+    )
+}
+
+
+export default DimensionamentoAquecedores</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

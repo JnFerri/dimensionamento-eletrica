@@ -7,7 +7,7 @@ import Select from "../Select/Select"
 import Option from "../Select/Option/Option"
 
 
-
+/** Styled-component de section que engloba componentes do formulario de dados sobre alimentação do galpão. */
 const DimensionamentoSection = styled.section`
 display:flex;
 flex-direction:column;
@@ -19,6 +19,7 @@ border-radius:30px;
 align-items:center;
 margin: 1rem 0px;
 `
+/** Styled-component de div que organiza os componentes em linha um ao lado do outro. */
 const FormDivLinha = styled.div`
     display:flex;
     align-items:center;
@@ -26,6 +27,7 @@ const FormDivLinha = styled.div`
     margin: 0.5rem 0px;
     width:100%;
 `
+/** Styled-component de div que engloba cada item do formulario com Label da pergunta e inputs abaixo. */
 const FormDiv = styled.div`
     display:flex;
     flex-direction:column;
@@ -38,8 +40,25 @@ const FormDiv = styled.div`
     padding:10px 10px;
 `
 
+/**
+ * Componente de formulário que pega os dados sobre a iluminação na pagina de dimensionamento.
+ * @param {object} props Props do componente react.
+ * @param {object} props.todosDadosIluminacao Objeto com os estados react utilizados neste componente que foram passados como propriedade deste componente a partir do componente dimensionamento.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosIluminacao.setQuantidadeLampadas Função responsável por definir novo valor para o estado QuantidadeLampadas.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosIluminacao.setPotenciaLampadas Função responsável por definir novo valor para o estado PotenciaLampadas.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosIluminacao.setCorLampadas Função responsável por definir novo valor para o estado CorLampadas.
+ * @param {React.Dispatch<React.SetStateAction<boolean>>} props.todosDadosIluminacao.setDimerizavel Função responsável por definir novo valor para o estado Dimerizavel.
+ * @param {React.Dispatch<React.SetStateAction<number>>} props.todosDadosIluminacao.setQuantidadeCircuitos Função responsável por definir novo valor para o estado QuantidadeCircuitos.
+ * @param {number} props.todosDadosIluminacao.QuantidadeLampadas Estado react que guarda o valor do input de quantidade de lampadas do formulário.
+ * @param {number} props.todosDadosIluminacao.PotenciaLampadas Estado react que guarda o valor do input de potencia das lampadas do fomrulário.
+ * @param {number} props.todosDadosIluminacao.CorLampadas Estado react que guarda o valor da option selecionada no select de cor das lampadas do formulário.
+ * @param {boolean} props.todosDadosIluminacao.Dimerizavel Estado react que guarda o valor da option selecionada no select de dimerizável do formulário.
+ * @param {number} props.todosDadosIluminacao.QuantidadeCircuitos Estado react que guarda o valor do input de quantidade de circuitos do formulário.
+ * @returns {JSX.Element} Componente com inputs que captam informações sobre a iluminação.
+ */
 function DimensionamentoIluminacao({todosDadosIluminacao}){
 
+    /** Caso o valor do input de quantidade de lampadas for um numero inteiro maior ou igual a 0, define o estado QuantidadeLampadas com o valor do input.  */
     function HandleQauntidadeLampadas(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
@@ -47,6 +66,7 @@ function DimensionamentoIluminacao({todosDadosIluminacao}){
         }
     }
 
+    /** Caso o valor do input de potencia das lampadas for um numero inteiro maior ou igual a 0, define o estado PotenciaLampadas com o valor do input. */
     function HandlePotenciaLampadas(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
@@ -54,18 +74,23 @@ function DimensionamentoIluminacao({todosDadosIluminacao}){
         }
     }
 
+    /** Caso o valor do input de cor da lampada for um numero inteiro maior ou igual a 0, define o estado CorLampadas com o valor do input. */
     function HandleCorLampadas(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
             todosDadosIluminacao.setCorLampadas(valor)
         }
     }
+
+    /** Caso o valor do input de quantidade de circuitos for um numero inteiro maior ou igual a 0, define o estado QuantidadeCircuitos com o valor do input. */
     function HandleQuantidadeCircuitos(event){
         const valor = event.target.value
         if(VerificaSeNumeroInteiroEMaiorQueZero(valor)){
             todosDadosIluminacao.setQuantidadeCircuitos(valor)
         }
     }
+
+    /** Define o estado Dimerizavel com o valor da option selecionada no select de dimerizavel do formulário. */
     function HandleDimerizavel(event){
         todosDadosIluminacao.setDimerizavel(event.target.value)
     }

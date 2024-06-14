@@ -1,0 +1,3272 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 958,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 23,
+      "column": 28
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 958,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 23,
+        "column": 28
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 0,
+        "end": 39,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 39
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 7,
+            "end": 13,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 13
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 7,
+              "end": 13,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 7
+                },
+                "end": {
+                  "line": 1,
+                  "column": 13
+                },
+                "identifierName": "styled"
+              },
+              "name": "styled"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 19,
+          "end": 38,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 19
+            },
+            "end": {
+              "line": 1,
+              "column": 38
+            }
+          },
+          "extra": {
+            "rawValue": "styled-components",
+            "raw": "\"styled-components\""
+          },
+          "value": "styled-components"
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "* Styled-component de section que serve de container para a pagina do jestor. ",
+            "start": 43,
+            "end": 125,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 3,
+                "column": 82
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "VariableDeclaration",
+        "start": 127,
+        "end": 243,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 9,
+            "column": 1
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 133,
+            "end": 243,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 6
+              },
+              "end": {
+                "line": 9,
+                "column": 1
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 133,
+              "end": 155,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 6
+                },
+                "end": {
+                  "line": 4,
+                  "column": 28
+                },
+                "identifierName": "CadastroCabosContainer"
+              },
+              "name": "CadastroCabosContainer",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "TaggedTemplateExpression",
+              "start": 158,
+              "end": 243,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 31
+                },
+                "end": {
+                  "line": 9,
+                  "column": 1
+                }
+              },
+              "tag": {
+                "type": "MemberExpression",
+                "start": 158,
+                "end": 172,
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 31
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 45
+                  }
+                },
+                "object": {
+                  "type": "Identifier",
+                  "start": 158,
+                  "end": 164,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 31
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 37
+                    },
+                    "identifierName": "styled"
+                  },
+                  "name": "styled"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "start": 165,
+                  "end": 172,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 38
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 45
+                    },
+                    "identifierName": "section"
+                  },
+                  "name": "section"
+                },
+                "computed": false
+              },
+              "quasi": {
+                "type": "TemplateLiteral",
+                "start": 172,
+                "end": 243,
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 45
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 1
+                  }
+                },
+                "expressions": [],
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "start": 173,
+                    "end": 242,
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 46
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 0
+                      }
+                    },
+                    "value": {
+                      "raw": "\nwidth:100%;\ndisplay:flex;\nflex-direction:column;\nheight:100vh;\n",
+                      "cooked": "\nwidth:100%;\ndisplay:flex;\nflex-direction:column;\nheight:100vh;\n"
+                    },
+                    "tail": true
+                  }
+                ],
+                "trailingComments": null
+              },
+              "trailingComments": null
+            },
+            "leadingComments": null,
+            "trailingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "* Styled-component de section que serve de container para a pagina do jestor. ",
+            "start": 43,
+            "end": 125,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 3,
+                "column": 82
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * Componente com um iframe da pagina publica do formulario jestor para cadastrar novos cabos. Utilizado para cadastrar novos cabos na tabela jestor.\r\n * @returns {JSX.Element} Componente com pagina do formulario publico do jestor.\r\n ",
+            "start": 245,
+            "end": 486,
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 0
+              },
+              "end": {
+                "line": 13,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "Identifier",
+        "start": 488,
+        "end": 926,
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 0
+          },
+          "end": {
+            "line": 21,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 497,
+          "end": 510,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 9
+            },
+            "end": {
+              "line": 14,
+              "column": 22
+            },
+            "identifierName": "CadastroCabos"
+          },
+          "name": "CadastroCabos",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "start": 512,
+          "end": 926,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 24
+            },
+            "end": {
+              "line": 21,
+              "column": 1
+            }
+          },
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "start": 519,
+              "end": 923,
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 4
+                },
+                "end": {
+                  "line": 20,
+                  "column": 5
+                }
+              },
+              "argument": {
+                "type": "JSXElement",
+                "start": 536,
+                "end": 914,
+                "loc": {
+                  "start": {
+                    "line": 16,
+                    "column": 8
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 33
+                  }
+                },
+                "openingElement": {
+                  "type": "JSXOpeningElement",
+                  "start": 536,
+                  "end": 560,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 32
+                    }
+                  },
+                  "attributes": [],
+                  "name": {
+                    "type": "JSXIdentifier",
+                    "start": 537,
+                    "end": 559,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 31
+                      }
+                    },
+                    "name": "CadastroCabosContainer"
+                  },
+                  "selfClosing": false
+                },
+                "closingElement": {
+                  "type": "JSXClosingElement",
+                  "start": 889,
+                  "end": 914,
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 18,
+                      "column": 33
+                    }
+                  },
+                  "name": {
+                    "type": "JSXIdentifier",
+                    "start": 891,
+                    "end": 913,
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 10
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 32
+                      }
+                    },
+                    "name": "CadastroCabosContainer"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "JSXText",
+                    "start": 560,
+                    "end": 574,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 17,
+                        "column": 12
+                      }
+                    },
+                    "extra": null,
+                    "value": "\n            "
+                  },
+                  {
+                    "type": "JSXElement",
+                    "start": 574,
+                    "end": 879,
+                    "loc": {
+                      "start": {
+                        "line": 17,
+                        "column": 12
+                      },
+                      "end": {
+                        "line": 17,
+                        "column": 317
+                      }
+                    },
+                    "openingElement": {
+                      "type": "JSXOpeningElement",
+                      "start": 574,
+                      "end": 870,
+                      "loc": {
+                        "start": {
+                          "line": 17,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 17,
+                          "column": 308
+                        }
+                      },
+                      "attributes": [
+                        {
+                          "type": "JSXAttribute",
+                          "start": 582,
+                          "end": 604,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 42
+                            }
+                          },
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "start": 582,
+                            "end": 587,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 25
+                              }
+                            },
+                            "name": "title"
+                          },
+                          "value": {
+                            "type": "StringLiteral",
+                            "start": 588,
+                            "end": 604,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 26
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 42
+                              }
+                            },
+                            "extra": null,
+                            "value": "Cadastro Cabos"
+                          }
+                        },
+                        {
+                          "type": "JSXAttribute",
+                          "start": 605,
+                          "end": 736,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 43
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 174
+                            }
+                          },
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "start": 605,
+                            "end": 610,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 43
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 48
+                              }
+                            },
+                            "name": "allow"
+                          },
+                          "value": {
+                            "type": "StringLiteral",
+                            "start": 611,
+                            "end": 736,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 49
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 174
+                              }
+                            },
+                            "extra": null,
+                            "value": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; camera *; microphone *"
+                          }
+                        },
+                        {
+                          "type": "JSXAttribute",
+                          "start": 737,
+                          "end": 810,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 175
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 248
+                            }
+                          },
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "start": 737,
+                            "end": 740,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 175
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 178
+                              }
+                            },
+                            "name": "src"
+                          },
+                          "value": {
+                            "type": "StringLiteral",
+                            "start": 741,
+                            "end": 810,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 179
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 248
+                              }
+                            },
+                            "extra": null,
+                            "value": "https://avioeste.jestor.com/public/373909ca1dbf8c109eb6c59a6cc673c1"
+                          }
+                        },
+                        {
+                          "type": "JSXAttribute",
+                          "start": 811,
+                          "end": 823,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 249
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 261
+                            }
+                          },
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "start": 811,
+                            "end": 816,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 249
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 254
+                              }
+                            },
+                            "name": "width"
+                          },
+                          "value": {
+                            "type": "StringLiteral",
+                            "start": 817,
+                            "end": 823,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 255
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 261
+                              }
+                            },
+                            "extra": null,
+                            "value": "100%"
+                          }
+                        },
+                        {
+                          "type": "JSXAttribute",
+                          "start": 824,
+                          "end": 837,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 262
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 275
+                            }
+                          },
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "start": 824,
+                            "end": 830,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 262
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 268
+                              }
+                            },
+                            "name": "height"
+                          },
+                          "value": {
+                            "type": "StringLiteral",
+                            "start": 831,
+                            "end": 837,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 269
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 275
+                              }
+                            },
+                            "extra": null,
+                            "value": "100%"
+                          }
+                        },
+                        {
+                          "type": "JSXAttribute",
+                          "start": 838,
+                          "end": 853,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 276
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 291
+                            }
+                          },
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "start": 838,
+                            "end": 849,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 276
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 287
+                              }
+                            },
+                            "name": "frameborder"
+                          },
+                          "value": {
+                            "type": "StringLiteral",
+                            "start": 850,
+                            "end": 853,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 288
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 291
+                              }
+                            },
+                            "extra": null,
+                            "value": "0"
+                          }
+                        },
+                        {
+                          "type": "JSXAttribute",
+                          "start": 854,
+                          "end": 869,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 292
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 307
+                            }
+                          },
+                          "name": {
+                            "type": "JSXIdentifier",
+                            "start": 854,
+                            "end": 869,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 292
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 307
+                              }
+                            },
+                            "name": "allowfullscreen"
+                          },
+                          "value": null
+                        }
+                      ],
+                      "name": {
+                        "type": "JSXIdentifier",
+                        "start": 575,
+                        "end": 581,
+                        "loc": {
+                          "start": {
+                            "line": 17,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 17,
+                            "column": 19
+                          }
+                        },
+                        "name": "iframe"
+                      },
+                      "selfClosing": false
+                    },
+                    "closingElement": {
+                      "type": "JSXClosingElement",
+                      "start": 870,
+                      "end": 879,
+                      "loc": {
+                        "start": {
+                          "line": 17,
+                          "column": 308
+                        },
+                        "end": {
+                          "line": 17,
+                          "column": 317
+                        }
+                      },
+                      "name": {
+                        "type": "JSXIdentifier",
+                        "start": 872,
+                        "end": 878,
+                        "loc": {
+                          "start": {
+                            "line": 17,
+                            "column": 310
+                          },
+                          "end": {
+                            "line": 17,
+                            "column": 316
+                          }
+                        },
+                        "name": "iframe"
+                      }
+                    },
+                    "children": []
+                  },
+                  {
+                    "type": "JSXText",
+                    "start": 879,
+                    "end": 889,
+                    "loc": {
+                      "start": {
+                        "line": 17,
+                        "column": 317
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 8
+                      }
+                    },
+                    "extra": null,
+                    "value": "\n        "
+                  }
+                ],
+                "extra": {
+                  "parenthesized": true,
+                  "parenStart": 525
+                }
+              }
+            }
+          ],
+          "directives": []
+        },
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "Identifier",
+        "start": 930,
+        "end": 958,
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 0
+          },
+          "end": {
+            "line": 23,
+            "column": 28
+          }
+        },
+        "declaration": {
+          "type": "Identifier",
+          "start": 945,
+          "end": 958,
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 15
+            },
+            "end": {
+              "line": 23,
+              "column": 28
+            },
+            "identifierName": "CadastroCabos"
+          },
+          "name": "CadastroCabos"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 930,
+        "end": 958,
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 0
+          },
+          "end": {
+            "line": 23,
+            "column": 28
+          }
+        },
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 488,
+          "end": 926,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 21,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 497,
+            "end": 510,
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 9
+              },
+              "end": {
+                "line": 14,
+                "column": 22
+              },
+              "identifierName": "CadastroCabos"
+            },
+            "name": "CadastroCabos",
+            "leadingComments": null
+          },
+          "generator": false,
+          "expression": false,
+          "async": false,
+          "params": [],
+          "body": {
+            "type": "BlockStatement",
+            "start": 512,
+            "end": 926,
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 24
+              },
+              "end": {
+                "line": 21,
+                "column": 1
+              }
+            },
+            "body": [
+              {
+                "type": "ReturnStatement",
+                "start": 519,
+                "end": 923,
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 5
+                  }
+                },
+                "argument": {
+                  "type": "JSXElement",
+                  "start": 536,
+                  "end": 914,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 18,
+                      "column": 33
+                    }
+                  },
+                  "openingElement": {
+                    "type": "JSXOpeningElement",
+                    "start": 536,
+                    "end": 560,
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 32
+                      }
+                    },
+                    "attributes": [],
+                    "name": {
+                      "type": "JSXIdentifier",
+                      "start": 537,
+                      "end": 559,
+                      "loc": {
+                        "start": {
+                          "line": 16,
+                          "column": 9
+                        },
+                        "end": {
+                          "line": 16,
+                          "column": 31
+                        }
+                      },
+                      "name": "CadastroCabosContainer"
+                    },
+                    "selfClosing": false
+                  },
+                  "closingElement": {
+                    "type": "JSXClosingElement",
+                    "start": 889,
+                    "end": 914,
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 33
+                      }
+                    },
+                    "name": {
+                      "type": "JSXIdentifier",
+                      "start": 891,
+                      "end": 913,
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 10
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 32
+                        }
+                      },
+                      "name": "CadastroCabosContainer"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "JSXText",
+                      "start": 560,
+                      "end": 574,
+                      "loc": {
+                        "start": {
+                          "line": 16,
+                          "column": 32
+                        },
+                        "end": {
+                          "line": 17,
+                          "column": 12
+                        }
+                      },
+                      "extra": null,
+                      "value": "\n            "
+                    },
+                    {
+                      "type": "JSXElement",
+                      "start": 574,
+                      "end": 879,
+                      "loc": {
+                        "start": {
+                          "line": 17,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 17,
+                          "column": 317
+                        }
+                      },
+                      "openingElement": {
+                        "type": "JSXOpeningElement",
+                        "start": 574,
+                        "end": 870,
+                        "loc": {
+                          "start": {
+                            "line": 17,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 17,
+                            "column": 308
+                          }
+                        },
+                        "attributes": [
+                          {
+                            "type": "JSXAttribute",
+                            "start": 582,
+                            "end": 604,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 42
+                              }
+                            },
+                            "name": {
+                              "type": "JSXIdentifier",
+                              "start": 582,
+                              "end": 587,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 20
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 25
+                                }
+                              },
+                              "name": "title"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "start": 588,
+                              "end": 604,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 26
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 42
+                                }
+                              },
+                              "extra": null,
+                              "value": "Cadastro Cabos"
+                            }
+                          },
+                          {
+                            "type": "JSXAttribute",
+                            "start": 605,
+                            "end": 736,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 43
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 174
+                              }
+                            },
+                            "name": {
+                              "type": "JSXIdentifier",
+                              "start": 605,
+                              "end": 610,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 43
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 48
+                                }
+                              },
+                              "name": "allow"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "start": 611,
+                              "end": 736,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 49
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 174
+                                }
+                              },
+                              "extra": null,
+                              "value": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; camera *; microphone *"
+                            }
+                          },
+                          {
+                            "type": "JSXAttribute",
+                            "start": 737,
+                            "end": 810,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 175
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 248
+                              }
+                            },
+                            "name": {
+                              "type": "JSXIdentifier",
+                              "start": 737,
+                              "end": 740,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 175
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 178
+                                }
+                              },
+                              "name": "src"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "start": 741,
+                              "end": 810,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 179
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 248
+                                }
+                              },
+                              "extra": null,
+                              "value": "https://avioeste.jestor.com/public/373909ca1dbf8c109eb6c59a6cc673c1"
+                            }
+                          },
+                          {
+                            "type": "JSXAttribute",
+                            "start": 811,
+                            "end": 823,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 249
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 261
+                              }
+                            },
+                            "name": {
+                              "type": "JSXIdentifier",
+                              "start": 811,
+                              "end": 816,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 249
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 254
+                                }
+                              },
+                              "name": "width"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "start": 817,
+                              "end": 823,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 255
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 261
+                                }
+                              },
+                              "extra": null,
+                              "value": "100%"
+                            }
+                          },
+                          {
+                            "type": "JSXAttribute",
+                            "start": 824,
+                            "end": 837,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 262
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 275
+                              }
+                            },
+                            "name": {
+                              "type": "JSXIdentifier",
+                              "start": 824,
+                              "end": 830,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 262
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 268
+                                }
+                              },
+                              "name": "height"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "start": 831,
+                              "end": 837,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 269
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 275
+                                }
+                              },
+                              "extra": null,
+                              "value": "100%"
+                            }
+                          },
+                          {
+                            "type": "JSXAttribute",
+                            "start": 838,
+                            "end": 853,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 276
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 291
+                              }
+                            },
+                            "name": {
+                              "type": "JSXIdentifier",
+                              "start": 838,
+                              "end": 849,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 276
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 287
+                                }
+                              },
+                              "name": "frameborder"
+                            },
+                            "value": {
+                              "type": "StringLiteral",
+                              "start": 850,
+                              "end": 853,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 288
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 291
+                                }
+                              },
+                              "extra": null,
+                              "value": "0"
+                            }
+                          },
+                          {
+                            "type": "JSXAttribute",
+                            "start": 854,
+                            "end": 869,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 292
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 307
+                              }
+                            },
+                            "name": {
+                              "type": "JSXIdentifier",
+                              "start": 854,
+                              "end": 869,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 292
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 307
+                                }
+                              },
+                              "name": "allowfullscreen"
+                            },
+                            "value": null
+                          }
+                        ],
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "start": 575,
+                          "end": 581,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 19
+                            }
+                          },
+                          "name": "iframe"
+                        },
+                        "selfClosing": false
+                      },
+                      "closingElement": {
+                        "type": "JSXClosingElement",
+                        "start": 870,
+                        "end": 879,
+                        "loc": {
+                          "start": {
+                            "line": 17,
+                            "column": 308
+                          },
+                          "end": {
+                            "line": 17,
+                            "column": 317
+                          }
+                        },
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "start": 872,
+                          "end": 878,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 310
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 316
+                            }
+                          },
+                          "name": "iframe"
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "JSXText",
+                      "start": 879,
+                      "end": 889,
+                      "loc": {
+                        "start": {
+                          "line": 17,
+                          "column": 317
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 8
+                        }
+                      },
+                      "extra": null,
+                      "value": "\n        "
+                    }
+                  ],
+                  "extra": {
+                    "parenthesized": true,
+                    "parenStart": 525
+                  }
+                }
+              }
+            ],
+            "directives": []
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * Componente com um iframe da pagina publica do formulario jestor para cadastrar novos cabos. Utilizado para cadastrar novos cabos na tabela jestor.\r\n * @returns {JSX.Element} Componente com pagina do formulario publico do jestor.\r\n ",
+              "start": 245,
+              "end": 486,
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 0
+                },
+                "end": {
+                  "line": 13,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "* Styled-component de section que serve de container para a pagina do jestor. ",
+      "start": 43,
+      "end": 125,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 82
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * Componente com um iframe da pagina publica do formulario jestor para cadastrar novos cabos. Utilizado para cadastrar novos cabos na tabela jestor.\r\n * @returns {JSX.Element} Componente com pagina do formulario publico do jestor.\r\n ",
+      "start": 245,
+      "end": 486,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 0,
+      "end": 6,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "styled",
+      "start": 7,
+      "end": 13,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 7
+        },
+        "end": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 14,
+      "end": 18,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 14
+        },
+        "end": {
+          "line": 1,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "styled-components",
+      "start": 19,
+      "end": 38,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 19
+        },
+        "end": {
+          "line": 1,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 38,
+      "end": 39,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 38
+        },
+        "end": {
+          "line": 1,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "* Styled-component de section que serve de container para a pagina do jestor. ",
+      "start": 43,
+      "end": 125,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 82
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 127,
+      "end": 132,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "CadastroCabosContainer",
+      "start": 133,
+      "end": 155,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 6
+        },
+        "end": {
+          "line": 4,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 156,
+      "end": 157,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 29
+        },
+        "end": {
+          "line": 4,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "styled",
+      "start": 158,
+      "end": 164,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 31
+        },
+        "end": {
+          "line": 4,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 164,
+      "end": 165,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 37
+        },
+        "end": {
+          "line": 4,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "section",
+      "start": 165,
+      "end": 172,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 38
+        },
+        "end": {
+          "line": 4,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 172,
+      "end": 173,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 45
+        },
+        "end": {
+          "line": 4,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "template",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "\nwidth:100%;\ndisplay:flex;\nflex-direction:column;\nheight:100vh;\n",
+      "start": 173,
+      "end": 242,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 46
+        },
+        "end": {
+          "line": 9,
+          "column": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 242,
+      "end": 243,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * Componente com um iframe da pagina publica do formulario jestor para cadastrar novos cabos. Utilizado para cadastrar novos cabos na tabela jestor.\r\n * @returns {JSX.Element} Componente com pagina do formulario publico do jestor.\r\n ",
+      "start": 245,
+      "end": 486,
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 488,
+      "end": 496,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "CadastroCabos",
+      "start": 497,
+      "end": 510,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 9
+        },
+        "end": {
+          "line": 14,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 510,
+      "end": 511,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 22
+        },
+        "end": {
+          "line": 14,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 511,
+      "end": 512,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 23
+        },
+        "end": {
+          "line": 14,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 512,
+      "end": 513,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 24
+        },
+        "end": {
+          "line": 14,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 519,
+      "end": 525,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 4
+        },
+        "end": {
+          "line": 15,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 525,
+      "end": 526,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 10
+        },
+        "end": {
+          "line": 15,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagStart",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 536,
+      "end": 537,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 8
+        },
+        "end": {
+          "line": 16,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "CadastroCabosContainer",
+      "start": 537,
+      "end": 559,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 9
+        },
+        "end": {
+          "line": 16,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagEnd",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 559,
+      "end": 560,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 31
+        },
+        "end": {
+          "line": 16,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxText",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "\n            ",
+      "start": 560,
+      "end": 574,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 32
+        },
+        "end": {
+          "line": 17,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagStart",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 574,
+      "end": 575,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 12
+        },
+        "end": {
+          "line": 17,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "iframe",
+      "start": 575,
+      "end": 581,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 13
+        },
+        "end": {
+          "line": 17,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "title",
+      "start": 582,
+      "end": 587,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 20
+        },
+        "end": {
+          "line": 17,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 587,
+      "end": 588,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 25
+        },
+        "end": {
+          "line": 17,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Cadastro Cabos",
+      "start": 588,
+      "end": 604,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 26
+        },
+        "end": {
+          "line": 17,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "allow",
+      "start": 605,
+      "end": 610,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 43
+        },
+        "end": {
+          "line": 17,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 610,
+      "end": 611,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 48
+        },
+        "end": {
+          "line": 17,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; camera *; microphone *",
+      "start": 611,
+      "end": 736,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 49
+        },
+        "end": {
+          "line": 17,
+          "column": 174
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "src",
+      "start": 737,
+      "end": 740,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 175
+        },
+        "end": {
+          "line": 17,
+          "column": 178
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 740,
+      "end": 741,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 178
+        },
+        "end": {
+          "line": 17,
+          "column": 179
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "https://avioeste.jestor.com/public/373909ca1dbf8c109eb6c59a6cc673c1",
+      "start": 741,
+      "end": 810,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 179
+        },
+        "end": {
+          "line": 17,
+          "column": 248
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "width",
+      "start": 811,
+      "end": 816,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 249
+        },
+        "end": {
+          "line": 17,
+          "column": 254
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 816,
+      "end": 817,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 254
+        },
+        "end": {
+          "line": 17,
+          "column": 255
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "100%",
+      "start": 817,
+      "end": 823,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 255
+        },
+        "end": {
+          "line": 17,
+          "column": 261
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "height",
+      "start": 824,
+      "end": 830,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 262
+        },
+        "end": {
+          "line": 17,
+          "column": 268
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 830,
+      "end": 831,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 268
+        },
+        "end": {
+          "line": 17,
+          "column": 269
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "100%",
+      "start": 831,
+      "end": 837,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 269
+        },
+        "end": {
+          "line": 17,
+          "column": 275
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "frameborder",
+      "start": 838,
+      "end": 849,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 276
+        },
+        "end": {
+          "line": 17,
+          "column": 287
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 849,
+      "end": 850,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 287
+        },
+        "end": {
+          "line": 17,
+          "column": 288
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "0",
+      "start": 850,
+      "end": 853,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 288
+        },
+        "end": {
+          "line": 17,
+          "column": 291
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "allowfullscreen",
+      "start": 854,
+      "end": 869,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 292
+        },
+        "end": {
+          "line": 17,
+          "column": 307
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagEnd",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 869,
+      "end": 870,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 307
+        },
+        "end": {
+          "line": 17,
+          "column": 308
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagStart",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 870,
+      "end": 871,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 308
+        },
+        "end": {
+          "line": 17,
+          "column": 309
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "/",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": 10,
+        "updateContext": null
+      },
+      "value": "/",
+      "start": 871,
+      "end": 872,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 309
+        },
+        "end": {
+          "line": 17,
+          "column": 310
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "iframe",
+      "start": 872,
+      "end": 878,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 310
+        },
+        "end": {
+          "line": 17,
+          "column": 316
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagEnd",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 878,
+      "end": 879,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 316
+        },
+        "end": {
+          "line": 17,
+          "column": 317
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxText",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "\n        ",
+      "start": 879,
+      "end": 889,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 317
+        },
+        "end": {
+          "line": 18,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagStart",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 889,
+      "end": 890,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "/",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": 10,
+        "updateContext": null
+      },
+      "value": "/",
+      "start": 890,
+      "end": 891,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 9
+        },
+        "end": {
+          "line": 18,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxName",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "CadastroCabosContainer",
+      "start": 891,
+      "end": 913,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 10
+        },
+        "end": {
+          "line": 18,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "jsxTagEnd",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 913,
+      "end": 914,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 32
+        },
+        "end": {
+          "line": 18,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 922,
+      "end": 923,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 4
+        },
+        "end": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 925,
+      "end": 926,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 930,
+      "end": 936,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 23,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 937,
+      "end": 944,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 7
+        },
+        "end": {
+          "line": 23,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "CadastroCabos",
+      "start": 945,
+      "end": 958,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 15
+        },
+        "end": {
+          "line": 23,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 958,
+      "end": 958,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 28
+        },
+        "end": {
+          "line": 23,
+          "column": 28
+        }
+      }
+    }
+  ]
+}

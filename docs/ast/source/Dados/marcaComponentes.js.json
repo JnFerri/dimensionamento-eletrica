@@ -1,0 +1,2541 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 428,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 5,
+      "column": 31
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 428,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 5,
+        "column": 31
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "Identifier",
+        "start": 92,
+        "end": 391,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 299
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 98,
+            "end": 391,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 6
+              },
+              "end": {
+                "line": 2,
+                "column": 299
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 98,
+              "end": 114,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 6
+                },
+                "end": {
+                  "line": 2,
+                  "column": 22
+                },
+                "identifierName": "marcaComponentes"
+              },
+              "name": "marcaComponentes",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ArrayExpression",
+              "start": 117,
+              "end": 391,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 25
+                },
+                "end": {
+                  "line": 2,
+                  "column": 299
+                }
+              },
+              "elements": [
+                {
+                  "type": "StringLiteral",
+                  "start": 118,
+                  "end": 127,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 35
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "INOBRAM",
+                    "raw": "'INOBRAM'"
+                  },
+                  "value": "INOBRAM"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 128,
+                  "end": 133,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 36
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 41
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "WEG",
+                    "raw": "'WEG'"
+                  },
+                  "value": "WEG"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 134,
+                  "end": 144,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 42
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 52
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "METALTEX",
+                    "raw": "'METALTEX'"
+                  },
+                  "value": "METALTEX"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 145,
+                  "end": 151,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 53
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 59
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "CLIP",
+                    "raw": "'CLIP'"
+                  },
+                  "value": "CLIP"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 152,
+                  "end": 168,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 60
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 76
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "OPÇÃO - PAINEL",
+                    "raw": "'OPÇÃO - PAINEL'"
+                  },
+                  "value": "OPÇÃO - PAINEL"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 169,
+                  "end": 185,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 77
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 93
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "DELTA - PAINEL",
+                    "raw": "'DELTA - PAINEL'"
+                  },
+                  "value": "DELTA - PAINEL"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 186,
+                  "end": 197,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 94
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 105
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "MARGIRIUS",
+                    "raw": "'MARGIRIUS'"
+                  },
+                  "value": "MARGIRIUS"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 198,
+                  "end": 220,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 106
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 128
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "AUTOMANIA - FONTE 24",
+                    "raw": "'AUTOMANIA - FONTE 24'"
+                  },
+                  "value": "AUTOMANIA - FONTE 24"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 221,
+                  "end": 237,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 129
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 145
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "HELLERMANTYTON",
+                    "raw": "'HELLERMANTYTON'"
+                  },
+                  "value": "HELLERMANTYTON"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 238,
+                  "end": 255,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 146
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 163
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "PHOENIX CONTATC",
+                    "raw": "'PHOENIX CONTATC'"
+                  },
+                  "value": "PHOENIX CONTATC"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 256,
+                  "end": 261,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 164
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 169
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "ABB",
+                    "raw": "'ABB'"
+                  },
+                  "value": "ABB"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 262,
+                  "end": 272,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 170
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 180
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "AVIOESTE",
+                    "raw": "'AVIOESTE'"
+                  },
+                  "value": "AVIOESTE"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 273,
+                  "end": 285,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 181
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 193
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "FANCONTROL",
+                    "raw": "'FANCONTROL'"
+                  },
+                  "value": "FANCONTROL"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 286,
+                  "end": 298,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 194
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 206
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "FULL GAUGE",
+                    "raw": "'FULL GAUGE'"
+                  },
+                  "value": "FULL GAUGE"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 299,
+                  "end": 307,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 207
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 215
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "NEWKON",
+                    "raw": "'NEWKON'"
+                  },
+                  "value": "NEWKON"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 308,
+                  "end": 322,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 216
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 230
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "OMEGA BRASIL",
+                    "raw": "'OMEGA BRASIL'"
+                  },
+                  "value": "OMEGA BRASIL"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 323,
+                  "end": 335,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 231
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 243
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "SCHUMACKER",
+                    "raw": "'SCHUMACKER'"
+                  },
+                  "value": "SCHUMACKER"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 336,
+                  "end": 347,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 244
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 255
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "SEC POWER",
+                    "raw": "'SEC POWER'"
+                  },
+                  "value": "SEC POWER"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 348,
+                  "end": 358,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 256
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 266
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "SIBRATEC",
+                    "raw": "'SIBRATEC'"
+                  },
+                  "value": "SIBRATEC"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 359,
+                  "end": 366,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 267
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 274
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "TASCO",
+                    "raw": "'TASCO'"
+                  },
+                  "value": "TASCO"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 367,
+                  "end": 380,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 275
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 288
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "TECNOFINGER",
+                    "raw": "'TECNOFINGER'"
+                  },
+                  "value": "TECNOFINGER"
+                },
+                {
+                  "type": "StringLiteral",
+                  "start": 381,
+                  "end": 390,
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 289
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 298
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "MAXIMUS",
+                    "raw": "'MAXIMUS'"
+                  },
+                  "value": "MAXIMUS"
+                }
+              ]
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "Identifier",
+        "start": 397,
+        "end": 428,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 31
+          }
+        },
+        "declaration": {
+          "type": "Identifier",
+          "start": 412,
+          "end": 428,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 15
+            },
+            "end": {
+              "line": 5,
+              "column": 31
+            },
+            "identifierName": "marcaComponentes"
+          },
+          "name": "marcaComponentes"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 397,
+        "end": 428,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 31
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 92,
+          "end": 391,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 299
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 98,
+              "end": 391,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 6
+                },
+                "end": {
+                  "line": 2,
+                  "column": 299
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 98,
+                "end": 114,
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 2,
+                    "column": 22
+                  },
+                  "identifierName": "marcaComponentes"
+                },
+                "name": "marcaComponentes",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrayExpression",
+                "start": 117,
+                "end": 391,
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 25
+                  },
+                  "end": {
+                    "line": 2,
+                    "column": 299
+                  }
+                },
+                "elements": [
+                  {
+                    "type": "StringLiteral",
+                    "start": 118,
+                    "end": 127,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 35
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "INOBRAM",
+                      "raw": "'INOBRAM'"
+                    },
+                    "value": "INOBRAM"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 128,
+                    "end": 133,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 41
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "WEG",
+                      "raw": "'WEG'"
+                    },
+                    "value": "WEG"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 134,
+                    "end": 144,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 42
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 52
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "METALTEX",
+                      "raw": "'METALTEX'"
+                    },
+                    "value": "METALTEX"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 145,
+                    "end": 151,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 53
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 59
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "CLIP",
+                      "raw": "'CLIP'"
+                    },
+                    "value": "CLIP"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 152,
+                    "end": 168,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 60
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 76
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "OPÇÃO - PAINEL",
+                      "raw": "'OPÇÃO - PAINEL'"
+                    },
+                    "value": "OPÇÃO - PAINEL"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 169,
+                    "end": 185,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 77
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 93
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "DELTA - PAINEL",
+                      "raw": "'DELTA - PAINEL'"
+                    },
+                    "value": "DELTA - PAINEL"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 186,
+                    "end": 197,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 94
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 105
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "MARGIRIUS",
+                      "raw": "'MARGIRIUS'"
+                    },
+                    "value": "MARGIRIUS"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 198,
+                    "end": 220,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 106
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 128
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "AUTOMANIA - FONTE 24",
+                      "raw": "'AUTOMANIA - FONTE 24'"
+                    },
+                    "value": "AUTOMANIA - FONTE 24"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 221,
+                    "end": 237,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 129
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 145
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "HELLERMANTYTON",
+                      "raw": "'HELLERMANTYTON'"
+                    },
+                    "value": "HELLERMANTYTON"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 238,
+                    "end": 255,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 146
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 163
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "PHOENIX CONTATC",
+                      "raw": "'PHOENIX CONTATC'"
+                    },
+                    "value": "PHOENIX CONTATC"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 256,
+                    "end": 261,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 164
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 169
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "ABB",
+                      "raw": "'ABB'"
+                    },
+                    "value": "ABB"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 262,
+                    "end": 272,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 170
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 180
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "AVIOESTE",
+                      "raw": "'AVIOESTE'"
+                    },
+                    "value": "AVIOESTE"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 273,
+                    "end": 285,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 181
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 193
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "FANCONTROL",
+                      "raw": "'FANCONTROL'"
+                    },
+                    "value": "FANCONTROL"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 286,
+                    "end": 298,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 194
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 206
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "FULL GAUGE",
+                      "raw": "'FULL GAUGE'"
+                    },
+                    "value": "FULL GAUGE"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 299,
+                    "end": 307,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 207
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 215
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "NEWKON",
+                      "raw": "'NEWKON'"
+                    },
+                    "value": "NEWKON"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 308,
+                    "end": 322,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 216
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 230
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "OMEGA BRASIL",
+                      "raw": "'OMEGA BRASIL'"
+                    },
+                    "value": "OMEGA BRASIL"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 323,
+                    "end": 335,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 231
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 243
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "SCHUMACKER",
+                      "raw": "'SCHUMACKER'"
+                    },
+                    "value": "SCHUMACKER"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 336,
+                    "end": 347,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 244
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 255
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "SEC POWER",
+                      "raw": "'SEC POWER'"
+                    },
+                    "value": "SEC POWER"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 348,
+                    "end": 358,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 256
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 266
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "SIBRATEC",
+                      "raw": "'SIBRATEC'"
+                    },
+                    "value": "SIBRATEC"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 359,
+                    "end": 366,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 267
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 274
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "TASCO",
+                      "raw": "'TASCO'"
+                    },
+                    "value": "TASCO"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 367,
+                    "end": 380,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 275
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 288
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "TECNOFINGER",
+                      "raw": "'TECNOFINGER'"
+                    },
+                    "value": "TECNOFINGER"
+                  },
+                  {
+                    "type": "StringLiteral",
+                    "start": 381,
+                    "end": 390,
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 289
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 298
+                      }
+                    },
+                    "extra": {
+                      "rawValue": "MAXIMUS",
+                      "raw": "'MAXIMUS'"
+                    },
+                    "value": "MAXIMUS"
+                  }
+                ]
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "* Array com as marcas de componente para servirem de options do select no formulario. ",
+              "start": 0,
+              "end": 90,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 90
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "* Array com as marcas de componente para servirem de options do select no formulario. ",
+      "start": 0,
+      "end": 90,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 90
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "* Array com as marcas de componente para servirem de options do select no formulario. ",
+      "start": 0,
+      "end": 90,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 90
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 92,
+      "end": 97,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "marcaComponentes",
+      "start": 98,
+      "end": 114,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 6
+        },
+        "end": {
+          "line": 2,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 115,
+      "end": 116,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 23
+        },
+        "end": {
+          "line": 2,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "[",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 117,
+      "end": 118,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 25
+        },
+        "end": {
+          "line": 2,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "INOBRAM",
+      "start": 118,
+      "end": 127,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 26
+        },
+        "end": {
+          "line": 2,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 127,
+      "end": 128,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 35
+        },
+        "end": {
+          "line": 2,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "WEG",
+      "start": 128,
+      "end": 133,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 36
+        },
+        "end": {
+          "line": 2,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 133,
+      "end": 134,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 41
+        },
+        "end": {
+          "line": 2,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "METALTEX",
+      "start": 134,
+      "end": 144,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 42
+        },
+        "end": {
+          "line": 2,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 144,
+      "end": 145,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 52
+        },
+        "end": {
+          "line": 2,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "CLIP",
+      "start": 145,
+      "end": 151,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 53
+        },
+        "end": {
+          "line": 2,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 151,
+      "end": 152,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 59
+        },
+        "end": {
+          "line": 2,
+          "column": 60
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "OPÇÃO - PAINEL",
+      "start": 152,
+      "end": 168,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 60
+        },
+        "end": {
+          "line": 2,
+          "column": 76
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 168,
+      "end": 169,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 76
+        },
+        "end": {
+          "line": 2,
+          "column": 77
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "DELTA - PAINEL",
+      "start": 169,
+      "end": 185,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 77
+        },
+        "end": {
+          "line": 2,
+          "column": 93
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 185,
+      "end": 186,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 93
+        },
+        "end": {
+          "line": 2,
+          "column": 94
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "MARGIRIUS",
+      "start": 186,
+      "end": 197,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 94
+        },
+        "end": {
+          "line": 2,
+          "column": 105
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 197,
+      "end": 198,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 105
+        },
+        "end": {
+          "line": 2,
+          "column": 106
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "AUTOMANIA - FONTE 24",
+      "start": 198,
+      "end": 220,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 106
+        },
+        "end": {
+          "line": 2,
+          "column": 128
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 220,
+      "end": 221,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 128
+        },
+        "end": {
+          "line": 2,
+          "column": 129
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "HELLERMANTYTON",
+      "start": 221,
+      "end": 237,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 129
+        },
+        "end": {
+          "line": 2,
+          "column": 145
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 237,
+      "end": 238,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 145
+        },
+        "end": {
+          "line": 2,
+          "column": 146
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "PHOENIX CONTATC",
+      "start": 238,
+      "end": 255,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 146
+        },
+        "end": {
+          "line": 2,
+          "column": 163
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 255,
+      "end": 256,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 163
+        },
+        "end": {
+          "line": 2,
+          "column": 164
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "ABB",
+      "start": 256,
+      "end": 261,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 164
+        },
+        "end": {
+          "line": 2,
+          "column": 169
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 261,
+      "end": 262,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 169
+        },
+        "end": {
+          "line": 2,
+          "column": 170
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "AVIOESTE",
+      "start": 262,
+      "end": 272,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 170
+        },
+        "end": {
+          "line": 2,
+          "column": 180
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 272,
+      "end": 273,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 180
+        },
+        "end": {
+          "line": 2,
+          "column": 181
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "FANCONTROL",
+      "start": 273,
+      "end": 285,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 181
+        },
+        "end": {
+          "line": 2,
+          "column": 193
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 285,
+      "end": 286,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 193
+        },
+        "end": {
+          "line": 2,
+          "column": 194
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "FULL GAUGE",
+      "start": 286,
+      "end": 298,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 194
+        },
+        "end": {
+          "line": 2,
+          "column": 206
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 298,
+      "end": 299,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 206
+        },
+        "end": {
+          "line": 2,
+          "column": 207
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "NEWKON",
+      "start": 299,
+      "end": 307,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 207
+        },
+        "end": {
+          "line": 2,
+          "column": 215
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 307,
+      "end": 308,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 215
+        },
+        "end": {
+          "line": 2,
+          "column": 216
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "OMEGA BRASIL",
+      "start": 308,
+      "end": 322,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 216
+        },
+        "end": {
+          "line": 2,
+          "column": 230
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 322,
+      "end": 323,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 230
+        },
+        "end": {
+          "line": 2,
+          "column": 231
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "SCHUMACKER",
+      "start": 323,
+      "end": 335,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 231
+        },
+        "end": {
+          "line": 2,
+          "column": 243
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 335,
+      "end": 336,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 243
+        },
+        "end": {
+          "line": 2,
+          "column": 244
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "SEC POWER",
+      "start": 336,
+      "end": 347,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 244
+        },
+        "end": {
+          "line": 2,
+          "column": 255
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 347,
+      "end": 348,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 255
+        },
+        "end": {
+          "line": 2,
+          "column": 256
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "SIBRATEC",
+      "start": 348,
+      "end": 358,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 256
+        },
+        "end": {
+          "line": 2,
+          "column": 266
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 358,
+      "end": 359,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 266
+        },
+        "end": {
+          "line": 2,
+          "column": 267
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "TASCO",
+      "start": 359,
+      "end": 366,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 267
+        },
+        "end": {
+          "line": 2,
+          "column": 274
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 366,
+      "end": 367,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 274
+        },
+        "end": {
+          "line": 2,
+          "column": 275
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "TECNOFINGER",
+      "start": 367,
+      "end": 380,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 275
+        },
+        "end": {
+          "line": 2,
+          "column": 288
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 380,
+      "end": 381,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 288
+        },
+        "end": {
+          "line": 2,
+          "column": 289
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "MAXIMUS",
+      "start": 381,
+      "end": 390,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 289
+        },
+        "end": {
+          "line": 2,
+          "column": 298
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "]",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 390,
+      "end": 391,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 298
+        },
+        "end": {
+          "line": 2,
+          "column": 299
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 397,
+      "end": 403,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 404,
+      "end": 411,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 7
+        },
+        "end": {
+          "line": 5,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "marcaComponentes",
+      "start": 412,
+      "end": 428,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 15
+        },
+        "end": {
+          "line": 5,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 428,
+      "end": 428,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 31
+        },
+        "end": {
+          "line": 5,
+          "column": 31
+        }
+      }
+    }
+  ]
+}

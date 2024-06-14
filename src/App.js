@@ -15,13 +15,31 @@ import ListaComponentesMotor from './Paginas/ListaComponentes/ListaComponentesMo
 import ListaComponentesCabos from './Paginas/ListaComponentes/ListaComponentesCabos/ListaComponentesCabos.js';
 import ListaComponentesMaterial from './Paginas/ListaComponentes/ListaComponentesMateriais/ListaComponentesMateriais.js';
 
+/**
+ * Estado que salva a informação se o usuario esta logado ou não para definir se o usuario pode ou não acessar as rotas.
+ * @typedef {EstadoReact} SituacaoLogin
+ * @property {boolean} SituacaoLogin True o usuario esta logado e false o usuario não esta logado.
+ * @property {React.Dispatch<React.SetStateAction<boolean>>} setSituacaoLogin Função responsável por atualizar o valor do estado SituacaoLogin.
+ */
+
+/**
+ * Estado que guarda o valor da localStorage 'Login'.
+ * @typedef {EstadoReact} LoginLocalStorage
+ * @property {object} LoginLocalStorage Objeto contendo os dados de usuario e senha do usuario logado que esta salvo no localStorage 'Login'.
+ * @property {React.Dispatch<React.SetStateAction<object>>} setLoginLocalStorage Função responsável por definir novo valor par ao estado LoginLocalStorage.
+ */
+
+/**
+ * Componente principal App responsavel por renderizar as outras rotas.
+ * @returns {JSX.Element} Componente App responsavel por englobar todas as rotas da aplicação.
+ */
 function App() {
   
   const [SituacaoLogin, setSituacaoLogin] = useState(false)
   const [LoginLocalStorage,setLoginLocalStorage] = useState(JSON.parse(localStorage.getItem('Login')) || [])
 
   
-
+  /** Toda vez que o estado LoginLocalStorage é alterado faz a conferencia dos dados da localStorage 'Login' para verificar se os dados condizem com as iformações de login que estão no backend, caso condiz retornara true e definira o estado SituacaoLogin como true informando que o usuario esta logado. */
     useEffect(() => {
       
       async function confereLoginLocalStorage(){
@@ -56,7 +74,7 @@ function App() {
       }
       <BrowserRouter>
         <Routes>
-          <Route path="/"  element={<Login setSituacaoLogin={setSituacaoLogin} setLoginLocalStorage={setLoginLocalStorage} LoginLocalStorage={LoginLocalStorage} SituacaoLogin ={SituacaoLogin} />} />
+          <Route path="/"  element={<Login setLoginLocalStorage={setLoginLocalStorage} LoginLocalStorage={LoginLocalStorage} SituacaoLogin ={SituacaoLogin} />} />
           <Route path="/cadastro" element={<ProtectedRoute component={Cadastro} isAuthenticated={SituacaoLogin} />} />
           <Route path="/cadastro/motor" element={<ProtectedRoute component={CadastroMotor} isAuthenticated={SituacaoLogin} />} />
           <Route path="/cadastro/cabos" element={<ProtectedRoute component={CadastroCabos} isAuthenticated={SituacaoLogin} />} />

@@ -1,5 +1,22 @@
 import styled from "styled-components"
 
+/**
+ * Componente de input estilizável.
+ * @property {object} props Props do componente react.
+ * @property {string} props.type Define o tipo do input. Valor padrão 'text'.
+ * @property {string} props.width Define o comprimento do componente. Valor padrão '100%'.
+ * @property {string} props.padding Define o espaçamento interno do componente. Valor padrão '0px 0px'.
+ * @property {string} props.margin Define o espaçamento externo do componente. Valor padrão '0px 0px'.
+ * @property {string} props.border Define estilo da borda do componente. Valor padrão '0px'.
+ * @property {string} props.border_radius Define o raio da curvatura dos cantos do componente. Valor Padrão '0px'.
+ * @property {string} props.text_align Define o alinhamento do texto. Valor padrão 'center'.
+ * @property {string} props.font_size Define o tamanho da fonte. Valor padrão '14px'.
+ * @property {string} props.background_color Define a cor de fundo do componente. Valor padrão 'white'.
+ * @property {cursor} props.cursor Define estilo do cursor do mouse sobre o elemento. Valor padrão 'auto'.
+ * 
+ * @example
+ * <Input type='number' padding='5px 0px' border='0.5px solid black'  border_radius='2.5px' />
+ */
 const Input = styled.input.attrs(props => ({
     type: props.type || "text" // Define o tipo de input como texto por padrão
   }))`
